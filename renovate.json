@@ -1,0 +1,12 @@
+{
+  "assignees": ["dmnktoe"],
+  "labels": ["upgrade-deps"],
+  "ignorePaths": [
+    "example/package.json",
+    ".github/workflows/**/*.yml"
+  ],
+  "extends": [
+    "config:base",
+    "config:semverAllMonthly"
+  ]
+}

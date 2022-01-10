@@ -1,11 +1,13 @@
 /* eslint-disable @typescript-eslint/ban-types */
+import theme from '@healform/design-tokens/dist/js/theme'
+
 const colors = {
   transparent: 'transparent',
   current: 'currentColor',
   dark: '#30363D',
   text: '#18181b',
   background: '#fff',
-  black: '#000',
+  black: theme.colors.black.value,
   white: '#fff',
 
   rose: {

@@ -17,28 +17,15 @@ const meta: Meta = {
 export default meta
 
 const PALETTE_COLORS: Array<keyof typeof colors> = [
-  'rose',
-  'pink',
-  'fuchsia',
-  'purple',
-  'violet',
-  'indigo',
-  'yellow',
-  'teal',
   'blue',
-  'light-blue',
-  'cyan',
-  'emerald',
-  'green',
-  'lime',
-  'amber',
+  'seagrass',
+  'violet',
+  'yellow',
+  'turquoise',
   'orange',
+  'green',
   'red',
-  'warm-gray',
-  'true-gray',
   'gray',
-  'cool-gray',
-  'blue-gray',
 ]
 
 export const Default: Story = () => {

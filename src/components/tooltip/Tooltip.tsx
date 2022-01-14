@@ -67,7 +67,7 @@ const Arrow = styled(Box)`
 `
 
 const INITIAL_SCALE = 0.8
-const DEFAULT_BG = 'gray.500'
+const DEFAULT_BG = 'cool-gray.500'
 const BLUR_AMOUNT = 20
 
 export const Tooltip: FC<TooltipProps> = ({

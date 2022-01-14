@@ -10,43 +10,15 @@ import { LiquidFontFamily, LiquidFontSize, LiquidFontWeight } from '../../styles
 import { CssVars } from '../../utils'
 import Box, { BoxProps, PolymorphicComponent } from '../primitives/Box'
 
-type Variant =
-  | 'primary'
-  | 'primaryInverse'
-  | 'primaryOutline'
-  | 'primaryTransparent'
-  | 'secondary'
-  | 'secondaryInverse'
-  | 'secondaryOutline'
-  | 'secondaryTransparent'
-  | 'tertiary'
-  | 'tertiaryOutline'
-  | 'black'
-  | 'blackOutline'
+type Variant = 'primary' | 'secondary' | 'tertiary' | 'danger' | 'semi-transparent' | 'transparent'
 type VariantSize = 'sm' | 'md' | 'lg'
 
 type HTMLButtonProps = Omit<PropsWithoutRef<PropsOf<'button'>>, 'css'>
 
 export interface ButtonProps extends Omit<BoxProps, keyof HTMLButtonProps>, HTMLButtonProps {
-  /**
-   * Choose from 12 style variants. Default: 'primary'.
-   */
   readonly variant?: Variant
-  /**
-   * Display a start icon in addition to the text to help to identify the action.
-   */
   readonly startIcon?: ReactElement
-  /**
-   * Display a end icon in addition to the text to help to identify the action.
-   */
   readonly endIcon?: ReactElement
-  /**
-   * Visually and functionally disable the button.
-   */
-  readonly disabled?: boolean
-  /**
-   * Choose from 2 sizes. Default: 'large'.
-   */
   readonly variantSize?: VariantSize
 }
 
@@ -112,10 +84,10 @@ const InnerButton = styled(Box)(
   ({ theme }) =>
     systemVariant<{}, Variant>({
       variants: {
-        primary: generateVariant('blue', theme),
-        secondary: generateVariant('seagrass', theme),
-        tertiary: generateVariant('gray', theme),
-        danger: generateVariant('red', theme),
+        primary: generateVariant('indigo', theme),
+        secondary: generateVariant('cyan', theme),
+        tertiary: generateVariant('cool-gray', theme),
+        danger: generateVariant('rose', theme),
         transparent: generateVariant('transparent', theme),
         'semi-transparent': generateVariant('semi-transparent', theme),
       },
@@ -150,8 +122,8 @@ export const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps
         alignItems="center"
         justifyContent="center"
         border="none"
-        borderRadius="md"
-        fontFamily={LiquidFontFamily.Heading}
+        borderRadius="lg"
+        fontFamily={LiquidFontFamily.Body}
         fontWeight={LiquidFontWeight.Semibold}
         ref={ref}
         as="button"

@@ -6,6 +6,7 @@ import React, { FC, useEffect, useRef, useState } from 'react'
 import { Tab as BaseTab, TabProps as BaseTabProps } from 'reakit/Tab'
 import { variant } from 'styled-system'
 
+import { BASE_FOCUS } from '../../styles/modules/mixins'
 import { LiquidRadius } from '../../styles/theme'
 import { LiquidFontWeight } from '../../styles/theme/typography'
 import { Box, BoxProps } from '../primitives/Box'
@@ -112,6 +113,7 @@ export const Tab: FC<TabProps> = ({ children, _focus, sx, _hover, _selected, _di
         ...sx,
       }}
       _focus={{
+        ...BASE_FOCUS,
         ..._focus,
       }}
       _disabled={{

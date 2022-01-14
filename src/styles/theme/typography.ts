@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import theme from '@healform/design-tokens/dist/js/theme'
-
 export const LETTER_SPACINGS = {
   tighter: '-0.05em',
   tight: '-0.025em',
@@ -70,8 +68,8 @@ export enum LiquidFontWeight {
 export type ThemeFontWeightsValues = keyof typeof FONT_WEIGHTS | (string & {}) | (number & {})
 
 export const FONT_FAMILIES = {
-  heading: theme.fonts.fontStack.special.value,
-  body: theme.fonts.fontStack.default.value,
+  heading: `Nunito, Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`,
+  body: `Nunito, Zilla Slab, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`,
   mono: `SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace`,
 } as const
 

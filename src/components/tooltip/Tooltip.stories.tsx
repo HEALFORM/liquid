@@ -46,7 +46,7 @@ export const Default = Template.bind({})
 export const WithCustomization = Template.bind({})
 
 WithCustomization.args = {
-  bg: 'yellow.500',
+  bg: 'amber.500',
 }
 
 export const WithHTMLContent = Template.bind({})

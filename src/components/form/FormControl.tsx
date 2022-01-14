@@ -39,7 +39,7 @@ export const FormControlHelperText: FC<FormControlHelperTextProps> = ({ ...props
     <Box
       fontFamily={LiquidFontFamily.Body}
       fontSize={LiquidFontSize.Sm}
-      color={useColorModeValue('gray.500', 'gray.300')}
+      color={useColorModeValue('cool-gray.500', 'cool-gray.300')}
       id={context?.helperId}
       {...props}
     />

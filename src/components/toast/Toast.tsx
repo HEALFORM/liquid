@@ -203,7 +203,7 @@ export const Toast: FC<ToastProps> = ({
             clearTimeout()
             setShow(false)
           }}
-          variant="transparent"
+          variant="tertiary"
           css={{
             '&:focus': {
               boxShadow: 'none',

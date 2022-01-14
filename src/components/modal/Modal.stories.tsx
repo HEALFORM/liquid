@@ -39,7 +39,7 @@ const Template: Story<ModalProps> = args => (
               alert('Great')
               hide()
             }}
-            variant="semi-transparent"
+            variant="tertiary"
           >
             Cool
           </Button>
@@ -48,7 +48,7 @@ const Template: Story<ModalProps> = args => (
               alert('Anw...')
               hide()
             }}
-            variant="semi-transparent"
+            variant="tertiary"
           >
             Sad
           </Button>

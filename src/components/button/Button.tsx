@@ -1,7 +1,13 @@
+/** @jsxRuntime classic */
+
+/** @jsx jsx */
+import { jsx } from '@emotion/react'
 import type { PropsOf, Theme } from '@emotion/react'
 import styled from '@emotion/styled'
+import theme from '@healform/design-tokens/dist/js/theme'
+import css from '@styled-system/css'
 import { themeGet } from '@styled-system/theme-get'
-import React, { cloneElement, FC, forwardRef, PropsWithoutRef, ReactElement } from 'react'
+import { cloneElement, FC, forwardRef, PropsWithoutRef, ReactElement } from 'react'
 import { variant as systemVariant } from 'styled-system'
 
 import colors from '../../styles/modules/colors'
@@ -23,13 +29,15 @@ type Variant =
   | 'tertiaryOutline'
   | 'black'
   | 'blackOutline'
+  | 'danger'
+  | 'dangerOutline'
 type VariantSize = 'sm' | 'md' | 'lg'
 
 type HTMLButtonProps = Omit<PropsWithoutRef<PropsOf<'button'>>, 'css'>
 
 export interface ButtonProps extends Omit<BoxProps, keyof HTMLButtonProps>, HTMLButtonProps {
   /**
-   * Choose from 12 style variants. Default: 'primary'.
+   * Choose from 14 style variants. Default: 'primary'.
    */
   readonly variant?: Variant
   /**
@@ -48,36 +56,47 @@ export interface ButtonProps extends Omit<BoxProps, keyof HTMLButtonProps>, HTML
    * Choose from 2 sizes. Default: 'large'.
    */
   readonly variantSize?: VariantSize
+  /**
+   * Stretch the button across the full width of its parent.
+   */
+  readonly stretch?: boolean
 }
 
-const generateVariant = (color: keyof typeof colors | 'semi-transparent', theme: Theme) => {
-  if (color === 'transparent') {
+const generateVariant = (color: keyof typeof colors, theme: Theme) => {
+  if (color === 'black') {
     return {
-      bg: 'transparent',
-      color: 'inherit',
+      bg: `${color}`,
+      [`${CssVars.FocusBorderColor}`]: themeGet(`colors.${color}.300`, 'rgb(66 153 225 / 60%)')({ theme }),
+
       '&:hover': {
-        bg: `rgba(0, 0, 0, 0.06)`,
+        bg: `gray.800`,
+        cursor: 'pointer',
       },
       '&:focus': {
-        boxShadow: theme.currentMode === 'light' ? `0 0 0 2px rgba(0,0,0,0.10)` : `0 0 0 2px rgba(255,255,255,0.5)`,
+        ...BASE_FOCUS,
       },
       '&:disabled': {
-        bg: `transparent`,
-        opacity: 0.6,
+        bg: `${color}.100`,
+        color: `${color}.300`,
       },
     }
   }
-  if (color === 'semi-transparent') {
+  if (color === 'gray') {
     return {
-      bg: theme.currentMode === 'light' ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.1)',
+      bg: `${color}.100`,
+      color: `black`,
+      [`${CssVars.FocusBorderColor}`]: themeGet(`colors.${color}.300`, 'rgb(66 153 225 / 60%)')({ theme }),
+
       '&:hover': {
-        bg: theme.currentMode === 'light' ? 'rgba(0,0,0,0.5)' : 'rgba(255,255,255,0.05)',
+        bg: `gray.200`,
+        cursor: 'pointer',
       },
       '&:focus': {
-        boxShadow: theme.currentMode === 'light' ? '0 0 0 2px rgba(0,0,0,0.2)' : '0 0 0 2px rgba(255,255,255,0.5)',
+        ...BASE_FOCUS,
       },
       '&:disabled': {
-        bg: `rgba(0, 0, 0, 0.3)`,
+        bg: `${color}.100`,
+        color: `${color}.300`,
       },
     }
   }
@@ -87,6 +106,110 @@ const generateVariant = (color: keyof typeof colors | 'semi-transparent', theme:
 
     '&:hover': {
       bg: `${color}.600`,
+      cursor: 'pointer',
+    },
+    '&:focus': {
+      ...BASE_FOCUS,
+    },
+    '&:disabled': {
+      bg: `${color}.100`,
+      color: `${color}.300`,
+    },
+  }
+}
+
+const generateInverseVariant = (color: keyof typeof colors, theme: Theme) => {
+  return {
+    bg: `gray.100`,
+    color: `${color}.500`,
+    [`${CssVars.FocusBorderColor}`]: themeGet(`colors.${color}.300`, 'rgb(66 153 225 / 60%)')({ theme }),
+
+    '&:hover': {
+      bg: `gray.200`,
+      color: `${color}.600`,
+      cursor: 'pointer',
+    },
+    '&:focus': {
+      ...BASE_FOCUS,
+    },
+    '&:disabled': {
+      bg: `${color}.100`,
+      color: `${color}.300`,
+    },
+  }
+}
+
+const generateOutlineVariant = (color: keyof typeof colors, theme: Theme) => {
+  if (color === 'black') {
+    return {
+      boxShadow: `0 0 0 1px inset` + themeGet(`colors.black`)({ theme }),
+      color: `black`,
+      [`${CssVars.FocusBorderColor}`]: themeGet(`colors.black`, 'rgb(66 153 225 / 60%)')({ theme }),
+
+      '&:hover': {
+        boxShadow: `none`,
+        bg: `black`,
+        color: `white`,
+        cursor: 'pointer',
+      },
+      '&:focus': {
+        ...BASE_FOCUS,
+      },
+      '&:disabled': {
+        bg: `${color}.100`,
+        color: `${color}.300`,
+      },
+    }
+  }
+  if (color === 'gray') {
+    return {
+      boxShadow: `0 0 0 1px inset` + themeGet(`colors.${color}.100`)({ theme }),
+      color: `black`,
+      [`${CssVars.FocusBorderColor}`]: themeGet(`colors.${color}.300`, 'rgb(66 153 225 / 60%)')({ theme }),
+
+      '&:hover': {
+        boxShadow: `none`,
+        bg: `${color}.100`,
+        color: `black`,
+        cursor: 'pointer',
+      },
+      '&:focus': {
+        ...BASE_FOCUS,
+      },
+      '&:disabled': {
+        bg: `${color}.100`,
+        color: `${color}.300`,
+      },
+    }
+  }
+  return {
+    boxShadow: `0 0 0 1px inset` + themeGet(`colors.${color}.500`)({ theme }),
+    color: `${color}.500`,
+    [`${CssVars.FocusBorderColor}`]: themeGet(`colors.${color}.300`, 'rgb(66 153 225 / 60%)')({ theme }),
+
+    '&:hover': {
+      bg: `${color}.500`,
+      color: `white`,
+      cursor: 'pointer',
+    },
+    '&:focus': {
+      ...BASE_FOCUS,
+    },
+    '&:disabled': {
+      bg: `${color}.100`,
+      color: `${color}.300`,
+    },
+  }
+}
+
+const generateTransparentVariant = (color: keyof typeof colors, theme: Theme) => {
+  return {
+    color: `${color}.500`,
+    [`${CssVars.FocusBorderColor}`]: themeGet(`colors.${color}.300`, 'rgb(66 153 225 / 60%)')({ theme }),
+
+    '&:hover': {
+      color: `${color}.500`,
+      bg: `gray.100`,
     },
     '&:focus': {
       ...BASE_FOCUS,
@@ -100,7 +223,7 @@ const generateVariant = (color: keyof typeof colors | 'semi-transparent', theme:
 
 const InnerButton = styled(Box)(
   {
-    transition: 'background 0.2s, box-shadow 0.3s',
+    transition: theme.animations.default.value,
     outline: 'none',
     '&:hover': {
       cursor: 'pointer',
@@ -113,11 +236,19 @@ const InnerButton = styled(Box)(
     systemVariant<{}, Variant>({
       variants: {
         primary: generateVariant('blue', theme),
+        primaryInverse: generateInverseVariant('blue', theme),
+        primaryOutline: generateOutlineVariant('blue', theme),
+        primaryTransparent: generateTransparentVariant('blue', theme),
         secondary: generateVariant('seagrass', theme),
+        secondaryInverse: generateInverseVariant('seagrass', theme),
+        secondaryOutline: generateOutlineVariant('seagrass', theme),
+        secondaryTransparent: generateTransparentVariant('seagrass', theme),
         tertiary: generateVariant('gray', theme),
+        tertiaryOutline: generateOutlineVariant('gray', theme),
+        black: generateVariant('black', theme),
+        blackOutline: generateOutlineVariant('black', theme),
         danger: generateVariant('red', theme),
-        transparent: generateVariant('transparent', theme),
-        'semi-transparent': generateVariant('semi-transparent', theme),
+        dangerOutline: generateOutlineVariant('red', theme),
       },
     }),
   systemVariant<{}, VariantSize>({
@@ -143,7 +274,7 @@ const InnerButton = styled(Box)(
 ) as PolymorphicComponent<ButtonProps>
 
 export const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, startIcon, endIcon, variant = 'primary', variantSize = 'md', ...props }, ref) => {
+  ({ children, startIcon, endIcon, variant = 'primary', variantSize = 'md', stretch = false, ...props }, ref) => {
     return (
       <InnerButton
         display="flex"
@@ -158,6 +289,13 @@ export const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps
         color="white"
         variant={variant}
         variantSize={variantSize}
+        css={css({
+          ...(stretch
+            ? {
+                width: `100%`,
+              }
+            : {}),
+        })}
         {...props}
       >
         {startIcon && cloneElement(startIcon, { mr: 2 })}

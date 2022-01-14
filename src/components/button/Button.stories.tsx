@@ -14,7 +14,7 @@ const meta: Meta = {
     endIcon: { table: { disable: true }, control: { disable: true } },
   },
   args: {
-    children: 'Join a course',
+    children: 'Termin vereinbaren',
   },
   parameters: {
     controls: { expanded: true },

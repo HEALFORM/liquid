@@ -35,7 +35,7 @@ const Template: Story<PopoverProps & { buttonText: string }> = ({ buttonText, ..
           <Text>How are you doing?</Text>
         </Popover.Body>
         <Popover.Footer>
-          <Button onClick={hide} variant="semi-transparent">
+          <Button onClick={hide} variant="tertiary">
             Close
           </Button>
         </Popover.Footer>

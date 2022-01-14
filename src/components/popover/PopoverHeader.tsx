@@ -29,7 +29,7 @@ const PopoverHeader: FC<BoxProps> = ({ children, ...rest }) => {
       >
         {children}
       </Box>
-      {!hideCloseButton && <IconButton p={2} variant="transparent" icon={<Icon as={FiX} />} onClick={hide} />}
+      {!hideCloseButton && <IconButton p={2} variant="tertiary" icon={<Icon as={FiX} />} onClick={hide} />}
     </Flex>
   )
 }

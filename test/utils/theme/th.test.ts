@@ -1,5 +1,6 @@
+import theme from '@healform/design-tokens/dist/js/theme'
+
 import { th } from '../../../src'
-import theme from "@healform/design-tokens/dist/js/theme"
 
 describe('utils/theme/th', () => {
   describe('color', () => {

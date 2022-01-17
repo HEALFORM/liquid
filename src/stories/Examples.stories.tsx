@@ -73,15 +73,7 @@ export const PageLayout: Story<{ characters: Array<Character> }> = ({ characters
             <NavItem key={c.name}>
               <Avatar bg="gray.500" src={c.avatarUrl} name={c.name} size="xs" />
               <Text>{c.name}</Text>
-              <Avatar
-                display={['none', 'flex']}
-                p={1}
-                ml="auto"
-                squared
-                bg="gray.500"
-                src={c.elementUrl}
-                size="xs"
-              />
+              <Avatar display={['none', 'flex']} p={1} ml="auto" squared bg="gray.500" src={c.elementUrl} size="xs" />
             </NavItem>
           </Tooltip>
         ))}

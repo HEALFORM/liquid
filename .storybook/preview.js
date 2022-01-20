@@ -1,6 +1,6 @@
 import { themes } from '@storybook/theming'
 import { useDarkMode } from 'storybook-dark-mode'
-
+import theme from '@healform/design-tokens/dist/js/theme'
 import LiquidProvider from '../src/LiquidProvider'
 import { liquidTheme } from '../src/styles/theme'
 
@@ -16,6 +16,12 @@ export const parameters = {
     },
     light: {
       ...themes.normal,
+      brandTitle: '@healform/liquid',
+      brandUrl: 'https://liquid.healform.de',
+      fontBase: theme.fonts.fontStack.default.value,
+      colorPrimary: theme.colors.secondary.value,
+      colorSecondary: theme.colors.primary.value,
+      appBg: theme.colors.white.value,
     },
   },
   options: {

@@ -5,7 +5,7 @@ import { Text } from '../typography'
 import Flex, { FlexProps } from './Flex'
 
 const meta: Meta = {
-  title: 'Library/Layout/Flex',
+  title: 'Layout/Flex',
   component: Flex,
   parameters: {
     layout: 'centered',

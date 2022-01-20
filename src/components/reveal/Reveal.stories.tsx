@@ -7,7 +7,7 @@ import type { RevealProps } from './Reveal'
 import Reveal from './Reveal'
 
 const meta: Meta = {
-  title: 'Library/Reveal',
+  title: 'Components/Reveal',
   component: Reveal,
   parameters: {
     chromatic: { disable: true },

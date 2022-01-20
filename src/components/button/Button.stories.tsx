@@ -7,7 +7,7 @@ import { HStack } from '../layout'
 import Button, { ButtonProps } from './Button'
 
 const meta: Meta = {
-  title: 'Library/Button',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
     startIcon: { table: { disable: true }, control: { disable: true } },

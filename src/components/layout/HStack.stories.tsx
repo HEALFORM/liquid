@@ -5,7 +5,7 @@ import { Text } from '../typography'
 import HStack, { HStackProps } from './HStack'
 
 const meta: Meta = {
-  title: 'Library/Layout/HStack',
+  title: 'Layout/HStack',
   component: HStack,
   parameters: {
     layout: 'centered',

@@ -12,7 +12,7 @@ import Tooltip from './Tooltip'
 import { TooltipProps } from './Tooltip'
 
 const meta: Meta = {
-  title: 'Library/Tooltip',
+  title: 'Components/Tooltip',
   component: Tooltip,
   argTypes: {
     truncate: { table: { disable: true }, control: { disable: true } },

@@ -5,7 +5,7 @@ import { Text } from '../typography'
 import VStack, { VStackProps } from './VStack'
 
 const meta: Meta = {
-  title: 'Library/Layout/VStack',
+  title: 'Layout/VStack',
   component: VStack,
   parameters: {
     layout: 'centered',

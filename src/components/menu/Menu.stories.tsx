@@ -9,7 +9,7 @@ import Text from '../typography/Text'
 import Menu, { MenuProps } from './Menu'
 
 const meta: Meta<MenuProps> = {
-  title: 'Library/Menu',
+  title: 'Components/Menu',
   component: Menu,
   argTypes: {
     menuList: { table: { disable: true }, control: { disable: true } },

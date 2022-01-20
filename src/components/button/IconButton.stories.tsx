@@ -6,7 +6,7 @@ import { Icon } from '../icon'
 import { IconButton, IconButtonProps } from './IconButton'
 
 const meta: Meta = {
-  title: 'Library/IconButton',
+  title: 'Components/Button/IconButton',
   component: IconButton,
   argTypes: {
     icon: ICON_CONTROL,

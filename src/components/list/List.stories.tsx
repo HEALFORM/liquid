@@ -7,7 +7,7 @@ import type { ListProps } from './List'
 import List from './List'
 
 const meta: Meta = {
-  title: 'Library/List',
+  title: 'Components/List',
   component: List,
   argTypes: {
     direction: {

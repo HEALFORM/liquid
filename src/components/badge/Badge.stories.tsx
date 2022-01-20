@@ -6,7 +6,7 @@ import { HStack } from '../layout'
 import { Badge, BadgeProps } from './Badge'
 
 const meta: Meta<BadgeProps> = {
-  title: 'Library/Badge',
+  title: 'Components/Badge',
   component: Badge,
   parameters: {
     controls: { expanded: true },

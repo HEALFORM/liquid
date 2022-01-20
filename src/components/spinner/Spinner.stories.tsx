@@ -4,7 +4,7 @@ import React from 'react'
 import { Spinner, SpinnerProps } from './Spinner'
 
 const meta: Meta<SpinnerProps> = {
-  title: 'Library/Spinner',
+  title: 'Components/Spinner',
   component: Spinner,
   args: {
     size: 'lg',

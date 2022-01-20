@@ -9,7 +9,7 @@ import { Input } from './Input'
 import { InputGroup, InputGroupProps } from './InputGroup'
 
 const meta: Meta = {
-  title: 'Library/Forms/InputGroup',
+  title: 'Components/Forms/InputGroup',
   component: InputGroup,
   args: {
     focusBorderColor: 'blue.300',

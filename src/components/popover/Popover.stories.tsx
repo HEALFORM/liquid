@@ -7,7 +7,7 @@ import Popover from './Popover'
 import { PopoverProps } from './Popover'
 
 const meta: Meta = {
-  title: 'Library/Popover',
+  title: 'Components/Popover',
   component: Popover,
   argTypes: {
     disclosure: { table: { disable: true }, control: { disable: true } },

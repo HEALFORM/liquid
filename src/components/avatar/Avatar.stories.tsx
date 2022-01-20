@@ -4,7 +4,7 @@ import React from 'react'
 import Avatar, { AvatarProps } from './Avatar'
 
 const meta: Meta = {
-  title: 'Library/Avatar',
+  title: 'Components/Avatar',
   component: Avatar,
   parameters: {
     controls: { expanded: true },

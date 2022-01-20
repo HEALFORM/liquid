@@ -8,7 +8,7 @@ import { LiquidFontWeight } from '../styles/theme/typography'
 import { colorContrast } from '../utils/color'
 
 const meta: Meta = {
-  title: 'Tokens/Colors',
+  title: 'Features/Colors',
   parameters: {
     controls: { disable: true },
   },

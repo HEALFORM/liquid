@@ -16,7 +16,7 @@ import Text from '../typography/Text'
 import Icon, { IconProps } from './Icon'
 
 const meta: Meta = {
-  title: 'Library/Icon',
+  title: 'Components/Icon',
   component: Icon,
   args: {
     color: 'rgb(0,0,0)',
@@ -81,27 +81,27 @@ const Template: Story<IconProps & { title: string; icons: Record<string, IconTyp
 export const MaterialDesign = Template.bind({})
 
 MaterialDesign.args = {
-  title: 'Library/Material Design',
+  title: 'Components/Material Design',
   icons: MdIcons,
 }
 
 export const FontAwesome = Template.bind({})
 
 FontAwesome.args = {
-  title: 'Library/Font Awesome',
+  title: 'Components/Font Awesome',
   icons: FaIcons,
 }
 
 export const FeatherIcons = Template.bind({})
 
 FeatherIcons.args = {
-  title: 'Library/Feather Icons',
+  title: 'Components/Feather Icons',
   icons: FiIcons,
 }
 
 export const VisualStudioCode = Template.bind({})
 
 VisualStudioCode.args = {
-  title: 'Library/Visual Studio Code',
+  title: 'Components/Visual Studio Code',
   icons: VscIcons,
 }

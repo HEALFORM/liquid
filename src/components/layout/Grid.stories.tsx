@@ -5,7 +5,7 @@ import { Text } from '../typography'
 import Grid from './Grid'
 
 const meta: Meta = {
-  title: 'Library/Layout/Grid',
+  title: 'Layout/Grid',
   component: Grid,
   argTypes: {
     templateColumns: {

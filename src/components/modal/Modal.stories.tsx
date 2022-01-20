@@ -7,7 +7,7 @@ import Modal from './Modal'
 import { ModalProps } from './Modal'
 
 const meta: Meta<ModalProps> = {
-  title: 'Library/Modal',
+  title: 'Components/Modal',
   component: Modal,
   argTypes: {
     overlay: { table: { disable: true }, control: { disable: true } },

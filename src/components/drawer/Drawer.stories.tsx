@@ -14,7 +14,7 @@ import { LiquidHeadingSize } from '../typography/Heading'
 import { Drawer, DrawerProps } from './Drawer'
 
 const meta: Meta<DrawerProps> = {
-  title: 'Library/Drawer',
+  title: 'Components/Drawer',
   component: Drawer,
   argTypes: {
     overlay: { table: { disable: true }, control: { disable: true } },

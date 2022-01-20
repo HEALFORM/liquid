@@ -5,7 +5,7 @@ import { Heading, HStack, Text, VStack } from '../components'
 import { FONT_SIZES, LiquidFontSize, LiquidFontWeight } from '../styles/theme/typography'
 
 const meta: Meta = {
-  title: 'Tokens/Typography',
+  title: 'Features/Typography',
   parameters: {
     controls: { disable: true },
   },

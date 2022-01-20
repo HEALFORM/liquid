@@ -75,7 +75,7 @@ export const AvatarGroup: FC<AvatarGroupProps> = ({
     <Flex direction={computedDirection} pr={Math.abs(getMarginForSize(size))} {...rest}>
       {renderAvatarChildren}
       {count > 0 && (
-        <Avatar {...margins} bg="blue.500" {...commonProps}>
+        <Avatar {...margins} bg="indigo.500" {...commonProps}>
           +{count}
         </Avatar>
       )}

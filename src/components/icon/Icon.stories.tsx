@@ -65,7 +65,7 @@ const Template: Story<IconProps & { title: string; icons: Record<string, IconTyp
               p={3}
               align="center"
               justify="center"
-              bg="gray.100"
+              bg="cool-gray.100"
             >
               <Icon as={icon} {...args} />
             </Flex>

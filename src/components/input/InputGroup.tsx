@@ -27,7 +27,7 @@ const COMMON_ELEMENT_PROPS: Partial<FlexProps> = {
   position: 'absolute',
   zIndex: 2,
   align: 'center',
-  color: 'gray.600',
+  color: 'cool-gray.600',
 }
 
 const INPUT_GROUP_LEFT_ADDON_CN = 'input__group--left-addon'

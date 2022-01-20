@@ -7,8 +7,8 @@ export const MODES: Record<AppColorScheme, Partial<Record<keyof typeof colors | 
     background: '#1f1d2c',
     input: {
       addons: {
-        background: colors['gray'][300],
-        color: colors['gray'][700],
+        background: colors['cool-gray'][300],
+        color: colors['cool-gray'][700],
       },
     },
     drawer: {
@@ -39,19 +39,19 @@ export const MODES: Record<AppColorScheme, Partial<Record<keyof typeof colors | 
     background: '#fff',
     input: {
       addons: {
-        background: colors['gray'][100],
-        color: colors['gray'][600],
+        background: colors['cool-gray'][100],
+        color: colors['cool-gray'][600],
       },
     },
     drawer: {
-      borderColor: colors['gray'][100],
+      borderColor: colors['cool-gray'][100],
     },
     menu: {
       background: '#fff',
-      borderColor: colors['gray'][300],
+      borderColor: colors['cool-gray'][300],
       optionGroup: {
-        background: colors['gray'][100],
-        borderColor: colors['gray'][300],
+        background: colors['cool-gray'][100],
+        borderColor: colors['cool-gray'][300],
       },
     },
     modal: {
@@ -62,7 +62,7 @@ export const MODES: Record<AppColorScheme, Partial<Record<keyof typeof colors | 
     },
     tabs: {
       list: {
-        borderColor: colors['gray'][200],
+        borderColor: colors['cool-gray'][200],
       },
     },
   },

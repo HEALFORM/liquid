@@ -29,7 +29,7 @@ export const Default: Story = () => {
       <VStack spacing={8}>
         {SIZES.map((set, i) => (
           <HStack align="center" spacing={4} key={`.0${i}`}>
-            <Text minWidth={12} color="gray.400">
+            <Text minWidth={12} color="cool-gray.400">
               {set.size}
             </Text>
             <Text fontSize={set.value}>The quick brown fox jumps over the lazy dog 123456789.</Text>
@@ -39,7 +39,7 @@ export const Default: Story = () => {
       <Heading as="h2">Weights</Heading>
       {WEIGHTS.map((set, i) => (
         <HStack align="center" spacing={4} key={`.0${i}`}>
-          <Text minWidth={16} color="gray.400">
+          <Text minWidth={16} color="cool-gray.400">
             {set.weight}
           </Text>
           <Text fontSize={LiquidFontSize.Xl4} fontWeight={set.value}>

@@ -1,4 +1,5 @@
 import { css } from '@emotion/react'
+import theme from '@healform/design-tokens/dist/js/theme'
 
 export enum CssVars {
   FocusBorderColor = '--liquid-focus-border-color',
@@ -40,8 +41,8 @@ export const transformGpuCssWithVariables = transformGpuValues.join(' ')
 
 export const initializeCssVars = css({
   ':root': {
-    [CssVars.FocusBorderColor]: 'rgb(66 153 225 / 60%)',
-    [CssVars.InvalidFocusBorderColor]: 'rgb(252 165 165)',
+    [CssVars.FocusBorderColor]: theme.colors.blue['500'].value,
+    [CssVars.InvalidFocusBorderColor]: theme.colors.red['500'].value,
     [CssVars.TranslateX]: '0',
     [CssVars.TranslateY]: '0',
     [CssVars.Rotate]: '0',

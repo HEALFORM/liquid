@@ -36,7 +36,7 @@ const AppContainer = styled(Grid)(
 
 const NavItem = styled(List.Item)(
   css(theme => ({
-    '&:hover': { cursor: 'pointer', bg: theme.currentMode === 'light' ? 'cool-gray.200' : 'cool-gray.600' },
+    '&:hover': { cursor: 'pointer', bg: theme.currentMode === 'light' ? 'gray.200' : 'gray.600' },
     p: [0, 2],
     gap: 2,
     borderRadius: LiquidRadius.Lg,
@@ -47,7 +47,7 @@ type Character = { name: string; avatarUrl: string; elementUrl: string; descript
 
 export const PageLayout: Story<{ characters: Array<Character> }> = ({ characters }) => (
   <AppContainer
-    bg={useColorModeValue('cool-gray.100', 'cool-gray.700')}
+    bg={useColorModeValue('gray.100', 'gray.700')}
     overflow="hidden"
     height={['100vh', 'auto']}
     gridTemplateColumns={['1fr', '300px 1fr']}
@@ -55,7 +55,7 @@ export const PageLayout: Story<{ characters: Array<Character> }> = ({ characters
   >
     <Flex
       p={6}
-      bg={useColorModeValue('cool-gray.100', 'cool-gray.700')}
+      bg={useColorModeValue('gray.100', 'gray.700')}
       spacing={4}
       overflowX={['overlay' as any, 'auto']}
       justify={['center', 'flex-start']}
@@ -71,7 +71,7 @@ export const PageLayout: Story<{ characters: Array<Character> }> = ({ characters
         {characters.map(c => (
           <Tooltip label={c.description} key={c.name}>
             <NavItem key={c.name}>
-              <Avatar bg="cool-gray.500" src={c.avatarUrl} name={c.name} size="xs" />
+              <Avatar bg="gray.500" src={c.avatarUrl} name={c.name} size="xs" />
               <Text>{c.name}</Text>
               <Avatar display={['none', 'flex']} p={1} ml="auto" squared bg="gray.500" src={c.elementUrl} size="xs" />
             </NavItem>
@@ -83,7 +83,7 @@ export const PageLayout: Story<{ characters: Array<Character> }> = ({ characters
       borderTopLeftRadius={[0, LiquidRadius.Xxl]}
       borderBottomLeftRadius={[0, LiquidRadius.Xxl]}
       boxShadow={['none', LiquidShadow.Lg]}
-      bg={useColorModeValue('cool-gray.50', 'cool-gray.600')}
+      bg={useColorModeValue('gray.50', 'gray.600')}
       overflowY="auto"
       direction="column"
       p={6}

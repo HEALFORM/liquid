@@ -40,8 +40,21 @@ export interface ButtonProps extends Omit<BoxProps, keyof HTMLButtonProps>, HTML
    * Choose from 14 style variants. Default: 'tertiary'.
    */
   readonly variant?: Variant
+  /**
+   * Display a start icon in addition to the text to help to identify the action.
+   */
   readonly startIcon?: ReactElement
+  /**
+   * Display a end icon in addition to the text to help to identify the action.
+   */
   readonly endIcon?: ReactElement
+  /**
+   * Visually and functionally disable the button.
+   */
+  readonly disabled?: boolean
+  /**
+   * Choose from 2 sizes. Default: 'large'.
+   */
   readonly variantSize?: VariantSize
   /**
    * Stretch the button across the full width of its parent.

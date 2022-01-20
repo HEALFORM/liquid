@@ -22,28 +22,15 @@ Default.args = {
 }
 
 const colors: Array<keyof LiquidTheme['colors']> = [
-  'rose',
-  'pink',
-  'fuchsia',
-  'purple',
-  'violet',
-  'indigo',
   'blue',
-  'cyan',
-  'teal',
-  'emerald',
-  'green',
-  'lime',
+  'seagrass',
+  'violet',
   'yellow',
-  'amber',
+  'turquoise',
   'orange',
+  'green',
   'red',
   'gray',
-  'light-blue',
-  'warm-gray',
-  'true-gray',
-  'cool-gray',
-  'blue-gray',
 ]
 
 export const AllColorScheme: Story<BadgeProps> = args => (

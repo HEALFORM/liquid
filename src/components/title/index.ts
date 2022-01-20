@@ -1,5 +1,5 @@
-import { Title } from './Title';
+import { Title } from './Title'
 
-export type { TitleProps } from './Title';
+export type { TitleProps } from './Title'
 
-export default Title;
+export default Title

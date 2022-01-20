@@ -1,15 +1,15 @@
-import { FC } from 'react';
-import styled from "@emotion/styled";
-import { css } from '@emotion/react';
-import theme from '@healform/design-tokens/dist/js/theme';
+import { css } from '@emotion/react'
+import styled from '@emotion/styled'
+import theme from '@healform/design-tokens/dist/js/theme'
+import { FC } from 'react'
 
-type Align = 'left' | 'right';
+type Align = 'left' | 'right'
 
 export interface CardFooterProps {
   /**
    * Direction to align the content. Either left/right
    */
-  align?: Align;
+  align?: Align
 }
 
 const baseStyles = () => css`
@@ -22,7 +22,7 @@ const baseStyles = () => css`
     display: flex;
     margin-top: ${theme.spacings.md.value};
   }
-`;
+`
 
 const alignmentStyles = ({ align = 'right' }: CardFooterProps) =>
   align === 'right' &&
@@ -30,13 +30,11 @@ const alignmentStyles = ({ align = 'right' }: CardFooterProps) =>
     @media (min-width: ${theme.breakpoints.xs.value}px) {
       justify-content: flex-end;
     }
-  `;
+  `
 
 /**
  * Footer used in the card component. Used for styling and aligment
  * purposes only.
  */
 
-export const CardFooter: FC<CardFooterProps> = styled(
-  'footer',
-)<CardFooterProps>(baseStyles, alignmentStyles);
+export const CardFooter: FC<CardFooterProps> = styled('footer')<CardFooterProps>(baseStyles, alignmentStyles)

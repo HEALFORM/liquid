@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+
 import { Hr } from './Hr'
 
 export default {
@@ -8,6 +9,6 @@ export default {
     layout: 'fullscreen',
     controls: { hideNoControlsWarning: true },
   },
-};
+}
 
 export const Base = () => <Hr />

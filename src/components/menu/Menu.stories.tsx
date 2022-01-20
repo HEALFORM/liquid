@@ -2,12 +2,12 @@ import { Meta, Story } from '@storybook/react'
 import React, { ReactNode, useState } from 'react'
 import { FiChevronDown, FiChevronUp, FiEdit, FiLogOut, FiPrinter, FiSettings, FiUser } from 'react-icons/fi'
 
+import Body from '../body'
 import { Button } from '../button'
 import { Icon } from '../icon'
 import { Modal } from '../modal'
 import Text from '../typography/Text'
 import Menu, { MenuProps } from './Menu'
-import Body from '../body'
 
 const meta: Meta<MenuProps> = {
   title: 'Components/Menu',

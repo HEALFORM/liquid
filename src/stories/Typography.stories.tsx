@@ -25,7 +25,7 @@ const WEIGHTS = Object.entries({
 export const Default: Story = () => {
   return (
     <VStack spacing={4}>
-      <Heading as="h1">Nunito</Heading>
+      <Heading as="h1">Space Grotesk</Heading>
       <VStack spacing={8}>
         {SIZES.map((set, i) => (
           <HStack align="center" spacing={4} key={`.0${i}`}>

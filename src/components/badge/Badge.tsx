@@ -18,18 +18,19 @@ const variants = [
     prop: 'variantSize',
     variants: {
       sm: {
-        py: 0,
-        px: 1,
+        py: 1,
+        px: 3,
         fontSize: LiquidFontSize.Xs,
       },
       md: {
-        p: 1,
-        fontSize: LiquidFontSize.Md,
+        py: 1,
+        px: 3,
+        fontSize: LiquidFontSize.Sm,
       },
       lg: {
-        px: 2,
         py: 1,
-        fontSize: LiquidFontSize.Lg,
+        px: 3,
+        fontSize: LiquidFontSize.Md,
       },
     },
   }),
@@ -45,7 +46,7 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(({ children, colorS
       {...styles}
       _variants={variants}
       fontWeight={LiquidFontWeight.Semibold}
-      borderRadius={LiquidRadius.Md}
+      borderRadius={LiquidRadius.Xxl}
       fontFamily={LiquidFontFamily.Body}
       ref={ref}
       {...props}

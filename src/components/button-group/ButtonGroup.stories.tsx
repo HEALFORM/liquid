@@ -4,7 +4,7 @@ import { ButtonGroup, ButtonGroupProps } from './ButtonGroup';
 import React from 'react';
 
 export default {
-  title: 'Components/Button/button-group',
+  title: 'Components/ButtonGroup',
   component: ButtonGroup,
 };
 

@@ -8,11 +8,12 @@ import Body from '../body'
 import { Button } from '../button'
 import ButtonGroup from '../button-group'
 import Headline from '../headline'
+import { VStack } from '../layout'
 
 export default {
   component: Card,
   subcomponents: { CardContent, CardFooter, CardHeader, CardImage },
-  title: 'Components/card',
+  title: 'Components/Card',
 }
 
 const cardStyles = () => css`
@@ -48,49 +49,53 @@ export const Base = () => <Card css={cardStyles} />
 
 export const Spacings = () => (
   <>
-    <Card css={squareStyles}>
-      <CardContent spacing={'small'}>
-        <div css={contentStyles} />
-      </CardContent>
-    </Card>
-    <Card css={squareStyles}>
-      <CardContent spacing={'medium'}>
-        <div css={contentStyles} />
-      </CardContent>
-    </Card>
+    <VStack spacing={4}>
+      <Card css={squareStyles}>
+        <CardContent spacing={'small'}>
+          <div css={contentStyles} />
+        </CardContent>
+      </Card>
+      <Card css={squareStyles}>
+        <CardContent spacing={'medium'}>
+          <div css={contentStyles} />
+        </CardContent>
+      </Card>
+    </VStack>
   </>
 )
 
 export const WithHeader = () => (
   <Fragment>
-    <Card css={cardStyles}>
-      <CardImage src={'https://www.healform.de/img/healform_neu_3_wallpaper.jpg'} />
-      <CardContent>
-        <CardHeader>
-          <Header />
-        </CardHeader>
-        <Content />
-      </CardContent>
-    </Card>
+    <VStack spacing={4}>
+      <Card css={cardStyles}>
+        <CardImage src={'https://www.healform.de/img/healform_neu_3_wallpaper.jpg'} />
+        <CardContent>
+          <CardHeader>
+            <Header />
+          </CardHeader>
+          <Content />
+        </CardContent>
+      </Card>
 
-    <Card css={cardStyles}>
-      <CardContent>
-        <CardHeader onClose={action('CloseButton clicked')} closeButtonLabel="Close">
-          <Header />
-        </CardHeader>
-        <Content />
-      </CardContent>
-    </Card>
+      <Card css={cardStyles}>
+        <CardContent>
+          <CardHeader onClose={action('CloseButton clicked')} closeButtonLabel="Close">
+            <Header />
+          </CardHeader>
+          <Content />
+        </CardContent>
+      </Card>
 
-    <Card css={cardStyles}>
-      <CardImage />
-      <CardContent spacing={'medium'}>
-        <CardHeader onClose={action('CloseButton clicked')} closeButtonLabel="Close">
-          <Header />
-        </CardHeader>
-        <Content />
-      </CardContent>
-    </Card>
+      <Card css={cardStyles}>
+        <CardImage />
+        <CardContent spacing={'medium'}>
+          <CardHeader onClose={action('CloseButton clicked')} closeButtonLabel="Close">
+            <Header />
+          </CardHeader>
+          <Content />
+        </CardContent>
+      </Card>
+    </VStack>
   </Fragment>
 )
 

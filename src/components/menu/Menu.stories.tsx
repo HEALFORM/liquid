@@ -7,6 +7,7 @@ import { Icon } from '../icon'
 import { Modal } from '../modal'
 import Text from '../typography/Text'
 import Menu, { MenuProps } from './Menu'
+import Body from '../body'
 
 const meta: Meta<MenuProps> = {
   title: 'Components/Menu',
@@ -40,15 +41,21 @@ Default.args = {
     <Menu.List ariaLabel="menu">
       <Menu.ListItem>
         <Icon as={FiSettings} />
-        <Text>Preferences</Text>
+        <Body size={'two'} variant={'highlight'} noMargin>
+          Preferences
+        </Body>
       </Menu.ListItem>
       <Menu.ListItem disabled>
         <Icon as={FiEdit} />
-        <Text>Edit (not available yet)</Text>
+        <Body size={'two'} variant={'highlight'} noMargin>
+          Edit (not available)
+        </Body>
       </Menu.ListItem>
       <Menu.ListItem>
         <Icon as={FiLogOut} />
-        <Text>Logout</Text>
+        <Body size={'two'} variant={'highlight'} noMargin>
+          Logout
+        </Body>
       </Menu.ListItem>
     </Menu.List>
   ),

@@ -8,7 +8,7 @@ import { FeatureCard, FeatureCardProps } from './FeatureCard'
 
 export default {
   component: FeatureCard,
-  title: 'Components/feature-card',
+  title: 'Components/Card/Feature',
 }
 
 const cardStyles = () => css`

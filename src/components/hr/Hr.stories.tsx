@@ -1,8 +1,8 @@
-import {Hr} from './Hr';
 import React from 'react';
+import { Hr } from './Hr'
 
 export default {
-  title: 'Components/hr',
+  title: 'Components/Separator',
   component: Hr,
   parameters: {
     layout: 'fullscreen',
@@ -10,4 +10,4 @@ export default {
   },
 };
 
-export const Base = () => <Hr />;
+export const Base = () => <Hr />

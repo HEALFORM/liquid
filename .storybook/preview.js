@@ -50,6 +50,7 @@ export const parameters = {
           'AvatarGroup',
           'Badge',
           'Button',
+          'ButtonGroup',
           'Card',
           'FeatureCard',
           'Hr',

@@ -4,8 +4,8 @@ import theme from '@healform/design-tokens/dist/js/theme'
 import { FC, ReactNode } from 'react'
 import React from 'react'
 
-import { ClickEvent } from '../../../../types/events'
-import { CloseButton } from './../../../button/CloseButton'
+import { ClickEvent } from '../../../../@types/events'
+import { CloseButton } from '../../../button/CloseButton'
 
 type CloseProps =
   | {
@@ -62,6 +62,6 @@ const CardHeaderCloseButton = styled(CloseButton)(closeButtonStyles)
 export const CardHeader: FC<CardHeaderProps> = ({ onClose, children, closeButtonLabel, ...props }) => (
   <CardHeaderContainer {...props}>
     {children}
-    {onClose && closeButtonLabel && <CardHeaderCloseButton onClick={onClose} label={closeButtonLabel} />}
+    {onClose && closeButtonLabel && <CardHeaderCloseButton />}
   </CardHeaderContainer>
 )

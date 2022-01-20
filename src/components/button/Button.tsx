@@ -37,7 +37,7 @@ type HTMLButtonProps = Omit<PropsWithoutRef<PropsOf<'button'>>, 'css'>
 
 export interface ButtonProps extends Omit<BoxProps, keyof HTMLButtonProps>, HTMLButtonProps {
   /**
-   * Choose from 14 style variants. Default: 'primary'.
+   * Choose from 14 style variants. Default: 'tertiary'.
    */
   readonly variant?: Variant
   /**
@@ -60,6 +60,10 @@ export interface ButtonProps extends Omit<BoxProps, keyof HTMLButtonProps>, HTML
    * Stretch the button across the full width of its parent.
    */
   readonly stretch?: boolean
+}
+
+const defaultProps: ButtonProps = {
+  variant: 'tertiary',
 }
 
 const generateVariant = (color: keyof typeof colors, theme: Theme) => {
@@ -281,7 +285,7 @@ export const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps
         alignItems="center"
         justifyContent="center"
         border="none"
-        borderRadius="md"
+        borderRadius="full"
         fontFamily={LiquidFontFamily.Heading}
         fontWeight={LiquidFontWeight.Semibold}
         ref={ref}
@@ -306,4 +310,5 @@ export const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps
   },
 )
 
+Button.defaultProps = defaultProps
 export default Button

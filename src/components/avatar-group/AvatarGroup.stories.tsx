@@ -27,10 +27,10 @@ export default meta
 
 const Template: Story<AvatarGroupProps> = args => (
   <AvatarGroup {...args}>
-    <Avatar name="Christian Blackwell" src="https://i.pravatar.cc/300" />
-    <Avatar name="Adriana Lang" src="https://i.pravatar.cc/300" />
+    <Avatar name="Christian Blackwell" src="https://www.gravatar.com/avatar/c7bf30cfa851f7fbe1adf852da902457?s=400" />
+    <Avatar name="Adriana Lang" src="https://www.gravatar.com/avatar/c7bf30cfa851f7fbe1adf852da902457?s=400" />
     <Avatar name="Yolanda Evans" />
-    <Avatar name="Horton Griffin" src="https://i.pravatar.cc/300" />
+    <Avatar name="Horton Griffin" src="https://www.gravatar.com/avatar/c7bf30cfa851f7fbe1adf852da902457?s=400" />
     <Avatar name="Chrystal Buck" />
     <Avatar name="Lindsay Blanchard" bg="yellow.700" />
     <Avatar name="Parks Hawkins" />

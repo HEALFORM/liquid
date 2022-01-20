@@ -14,7 +14,7 @@ import { FormControl } from './FormControl'
 import { SubmitButton } from './SubmitButton'
 
 const meta: Meta = {
-  title: 'Library/Forms/Form',
+  title: 'Components/Forms/Form',
   component: Form,
   parameters: {
     controls: { expanded: true },

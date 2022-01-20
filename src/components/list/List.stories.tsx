@@ -7,7 +7,7 @@ import type { ListProps } from './List'
 import List from './List'
 
 const meta: Meta = {
-  title: 'Library/List',
+  title: 'Components/List',
   component: List,
   argTypes: {
     direction: {
@@ -27,19 +27,11 @@ export default meta
 const Template: Story<ListProps> = args => (
   <List {...args} gap={2}>
     <List.Item gap={2}>
-      <Avatar
-        name="Liquid"
-        src="https://jeu-bayrou.com/wp-content/uploads/2020/10/Meilleur-Liquid-Build-a-Genshin-Impact.jpg"
-        size="xs"
-      />
+      <Avatar name="Liquid" src="https://www.gravatar.com/avatar/c7bf30cfa851f7fbe1adf852da902457?s=400" size="xs" />
       <Text>Hello Liquid</Text>
     </List.Item>
     <List.Item gap={2}>
-      <Avatar
-        name="Liquid"
-        src="https://jeu-bayrou.com/wp-content/uploads/2020/10/Meilleur-Liquid-Build-a-Genshin-Impact.jpg"
-        size="xs"
-      />
+      <Avatar name="Liquid" src="https://www.gravatar.com/avatar/c7bf30cfa851f7fbe1adf852da902457?s=400" size="xs" />
       <Text>Hello Liquid</Text>
     </List.Item>
   </List>

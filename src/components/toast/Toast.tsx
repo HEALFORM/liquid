@@ -71,9 +71,9 @@ const ToastInner = styled(motion(Box))(
           }`,
         },
         warning: {
-          color: 'amber.900',
-          bg: 'amber.50',
-          boxShadow: `0 -5px 0 ${colors.amber[100]}, ${
+          color: 'yellow.900',
+          bg: 'yellow.50',
+          boxShadow: `0 -5px 0 ${colors.yellow[100]}, ${
             theme.currentMode === 'light' ? SHADOWS.lg : SHADOWS['dark-lg']
           }`,
         },
@@ -96,7 +96,7 @@ const getIcon = (variant: IToast['variant'], props?: IconProps): ReactNode => {
     case 'danger':
       return <Icon as={FiXCircle} color="red.900" {...common} {...props} />
     case 'warning':
-      return <Icon as={FiAlertCircle} color="amber.900" {...common} {...props} />
+      return <Icon as={FiAlertCircle} color="yellow.900" {...common} {...props} />
     default:
       return ''
   }
@@ -203,7 +203,7 @@ export const Toast: FC<ToastProps> = ({
             clearTimeout()
             setShow(false)
           }}
-          variant="transparent"
+          variant="tertiary"
           css={{
             '&:focus': {
               boxShadow: 'none',

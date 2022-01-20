@@ -7,7 +7,7 @@ import { Input, InputGroup } from '../input'
 import { FormControl, FormControlProps } from './FormControl'
 
 const meta: Meta = {
-  title: 'Library/Forms/FormControl',
+  title: 'Components/Forms/FormControl',
   component: FormControl,
   parameters: {
     controls: { expanded: true },

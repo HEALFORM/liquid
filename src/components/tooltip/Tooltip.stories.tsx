@@ -12,7 +12,7 @@ import Tooltip from './Tooltip'
 import { TooltipProps } from './Tooltip'
 
 const meta: Meta = {
-  title: 'Library/Tooltip',
+  title: 'Components/Tooltip',
   component: Tooltip,
   argTypes: {
     truncate: { table: { disable: true }, control: { disable: true } },
@@ -46,7 +46,7 @@ export const Default = Template.bind({})
 export const WithCustomization = Template.bind({})
 
 WithCustomization.args = {
-  bg: 'amber.500',
+  bg: 'yellow.500',
 }
 
 export const WithHTMLContent = Template.bind({})

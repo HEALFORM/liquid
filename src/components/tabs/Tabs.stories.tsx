@@ -5,7 +5,7 @@ import Tabs from './Tabs'
 import { TabsProps } from './Tabs'
 
 const meta: Meta = {
-  title: 'Library/Tabs',
+  title: 'Components/Tabs',
   component: Tabs,
   argTypes: {
     children: { control: { disable: true }, table: { disable: true } },

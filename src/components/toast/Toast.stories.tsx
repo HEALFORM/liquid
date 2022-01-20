@@ -10,7 +10,7 @@ import { IToast, Toast } from './Toast'
 import { toast } from './index'
 
 const meta: Meta = {
-  title: 'Library/Toast',
+  title: 'Components/Toast',
   component: Toast,
   argTypes: {
     id: { table: { disable: true }, control: { disable: true } },

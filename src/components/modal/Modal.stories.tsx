@@ -7,7 +7,7 @@ import Modal from './Modal'
 import { ModalProps } from './Modal'
 
 const meta: Meta<ModalProps> = {
-  title: 'Library/Modal',
+  title: 'Components/Modal',
   component: Modal,
   argTypes: {
     overlay: { table: { disable: true }, control: { disable: true } },
@@ -39,7 +39,7 @@ const Template: Story<ModalProps> = args => (
               alert('Great')
               hide()
             }}
-            variant="semi-transparent"
+            variant="tertiary"
           >
             Cool
           </Button>
@@ -48,7 +48,7 @@ const Template: Story<ModalProps> = args => (
               alert('Anw...')
               hide()
             }}
-            variant="semi-transparent"
+            variant="tertiary"
           >
             Sad
           </Button>
@@ -68,7 +68,7 @@ export const WithCustomization = Template.bind({})
 
 WithCustomization.args = {
   ariaLabel: 'Modal example',
-  bgGradient: ['linear(to top, amber.600, amber.500)', 'linear(to top, cyan.600, cyan.500)'],
+  bgGradient: ['linear(to top, yellow.600, yellow.500)', 'linear(to top, cyan.600, cyan.500)'],
   color: 'white',
   width: ['100%', '300px'],
 }

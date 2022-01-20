@@ -1,9 +1,11 @@
+import theme from '@healform/design-tokens/dist/js/theme'
+
 import { th } from '../../../src'
 
 describe('utils/theme/th', () => {
   describe('color', () => {
     it('should return the correct value', () => {
-      expect(th.color('amber.100')).toBe('#fef3c7')
+      expect(th.color('yellow.100')).toBe(theme.colors.yellow['100'].value)
     })
     it('should return the fallback when value not found', () => {
       expect(th.color('not.found', '#000')).toBe('#000')

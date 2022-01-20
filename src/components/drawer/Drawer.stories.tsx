@@ -14,7 +14,7 @@ import { LiquidHeadingSize } from '../typography/Heading'
 import { Drawer, DrawerProps } from './Drawer'
 
 const meta: Meta<DrawerProps> = {
-  title: 'Library/Drawer',
+  title: 'Components/Drawer',
   component: Drawer,
   argTypes: {
     overlay: { table: { disable: true }, control: { disable: true } },
@@ -59,7 +59,7 @@ const Template: Story<DrawerProps> = args => {
             </FormControl>
           </Drawer.Body>
           <Drawer.Footer>
-            <Button onClick={hide} variant="transparent">
+            <Button onClick={hide} variant="tertiary">
               Cancel
             </Button>
             <Button>Submit</Button>
@@ -178,7 +178,7 @@ export const WithLongContent: Story<DrawerProps> = args => {
             </VStack>
           </Drawer.Body>
           <Drawer.Footer>
-            <Button onClick={hide} variant="transparent">
+            <Button onClick={hide} variant="tertiary">
               Cancel
             </Button>
             <Button>Submit</Button>

@@ -5,7 +5,7 @@ import { Text } from '../typography'
 import VStack, { VStackProps } from './VStack'
 
 const meta: Meta = {
-  title: 'Library/Layout/VStack',
+  title: 'Layout/VStack',
   component: VStack,
   parameters: {
     layout: 'centered',
@@ -16,10 +16,10 @@ const meta: Meta = {
 export default meta
 
 export const Default: Story<VStackProps> = () => (
-  <VStack color="black" spacing={4} p={4} bg="cool-gray.100" align="center">
+  <VStack color="black" spacing={4} p={4} bg="gray.100" align="center">
     <Text>Hello</Text>
     <Text>Everybody</Text>
-    <VStack spacing={4} p={4} bg="cool-gray.200" align="center">
+    <VStack spacing={4} p={4} bg="gray.200" align="center">
       <Text>
         I am <code>{'<VStack/>'}</code>
       </Text>

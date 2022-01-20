@@ -4,7 +4,7 @@ import React from 'react'
 import Avatar, { AvatarProps } from './Avatar'
 
 const meta: Meta = {
-  title: 'Library/Avatar',
+  title: 'Components/Avatar',
   component: Avatar,
   parameters: {
     controls: { expanded: true },
@@ -24,14 +24,14 @@ Default.args = {
 export const WithPicture = Template.bind({})
 
 WithPicture.args = {
-  name: 'Mikasa Estucasa',
-  src: 'https://risibank.fr/cache/stickers/d1261/126102-full.png',
+  name: 'Domenik Toefflinger',
+  src: 'https://www.gravatar.com/avatar/c7bf30cfa851f7fbe1adf852da902457?s=400',
 }
 
 export const Squared = Template.bind({})
 
 Squared.args = {
-  name: 'Mikasa Estucasa',
-  src: 'https://risibank.fr/cache/stickers/d1261/126102-full.png',
+  name: 'Domenik Toefflinger',
+  src: 'https://www.gravatar.com/avatar/c7bf30cfa851f7fbe1adf852da902457?s=400',
   squared: true,
 }

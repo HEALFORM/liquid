@@ -18,8 +18,8 @@ export const getPropsBasedOnPlacement = (
         maxHeight: '90%',
         borderTopLeftRadius: [0, 0],
         borderTopRightRadius: [0, 0],
-        borderBottomLeftRadius: LiquidRadius.Lg,
-        borderBottomRightRadius: LiquidRadius.Lg,
+        borderBottomLeftRadius: LiquidRadius.Xl,
+        borderBottomRightRadius: LiquidRadius.Xl,
       }
     case 'bottom':
       return {
@@ -27,8 +27,8 @@ export const getPropsBasedOnPlacement = (
         width: '100%',
         height: 'auto',
         maxHeight: '90%',
-        borderTopLeftRadius: LiquidRadius.Lg,
-        borderTopRightRadius: LiquidRadius.Lg,
+        borderTopLeftRadius: LiquidRadius.Xl,
+        borderTopRightRadius: LiquidRadius.Xl,
         borderBottomLeftRadius: [0, 0],
         borderBottomRightRadius: [0, 0],
       }
@@ -39,8 +39,8 @@ export const getPropsBasedOnPlacement = (
         minWidth: dimensions?.minWidth ?? X_MIN_WIDTH,
         height: '100%',
         alignSelf: 'flex-end',
-        borderTopLeftRadius: LiquidRadius.Lg,
-        borderBottomLeftRadius: LiquidRadius.Lg,
+        borderTopLeftRadius: LiquidRadius.Xl,
+        borderBottomLeftRadius: LiquidRadius.Xl,
         borderTopRightRadius: [0, 0],
         borderBottomRightRadius: [0, 0],
       }
@@ -51,8 +51,8 @@ export const getPropsBasedOnPlacement = (
         minWidth: dimensions?.minWidth ?? X_MIN_WIDTH,
         height: '100%',
         alignSelf: 'flex-start',
-        borderTopRightRadius: LiquidRadius.Lg,
-        borderBottomRightRadius: LiquidRadius.Lg,
+        borderTopRightRadius: LiquidRadius.Xl,
+        borderBottomRightRadius: LiquidRadius.Xl,
         borderTopLeftRadius: [0, 0],
         borderBottomLeftRadius: [0, 0],
       }

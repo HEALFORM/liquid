@@ -67,11 +67,11 @@ const MenuListItem: FC<MenuListItemProps> = forwardRef<HTMLElement, MenuListItem
         {...reakitMenu}
         px={3}
         py={2}
-        _focus={{ bg: useColorModeValue('cool-gray.100', '#161523') }}
+        _focus={{ bg: useColorModeValue('gray.100', '#161523') }}
         _disabled={{ opacity: 0.7 }}
         align="center"
         lineHeight={LiquidLineHeight.Normal}
-        borderColor="cool-gray.200"
+        borderColor="gray.200"
         css={css({
           '&:last-of-type': {
             borderBottom: 0,

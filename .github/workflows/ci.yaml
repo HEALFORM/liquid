@@ -128,7 +128,9 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Run test
         run: |
-          yarn test
+          yarn test:coverage
+      - name: Run coverage
+        uses: codecov/codecov-action@v1
   build:
     runs-on: ubuntu-latest
     strategy:

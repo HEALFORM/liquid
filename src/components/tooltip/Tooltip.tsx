@@ -14,7 +14,7 @@ import { FC, ReactNode } from 'react'
 import { Instance as TippyInstance } from 'tippy.js'
 
 import { LiquidRadius, LiquidShadow, LiquidZIndex, Z_INDICES } from '../../styles/theme'
-import { LiquidFontSize } from '../../styles/theme/typography'
+import { LiquidFontFamily, LiquidFontSize } from '../../styles/theme/typography'
 import { LAYOUT_TRANSITION_SPRING } from '../../utils/motion'
 import Box, { BoxProps } from '../primitives/Box'
 import { ShowableOnCreate } from '../types'
@@ -67,7 +67,7 @@ const Arrow = styled(Box)`
 `
 
 const INITIAL_SCALE = 0.8
-const DEFAULT_BG = 'cool-gray.500'
+const DEFAULT_BG = 'gray.900'
 const BLUR_AMOUNT = 20
 
 export const Tooltip: FC<TooltipProps> = ({
@@ -144,7 +144,8 @@ export const Tooltip: FC<TooltipProps> = ({
       {...(onShow && { onShow })}
       render={attrs => (
         <TooltipInner
-          p={2}
+          px={2}
+          py={1}
           bg={computedBg}
           css={css({
             ...(vibrancy
@@ -157,7 +158,8 @@ export const Tooltip: FC<TooltipProps> = ({
           color="white"
           borderRadius={LiquidRadius.Md}
           boxShadow={LiquidShadow.Md}
-          fontSize={LiquidFontSize.Sm}
+          fontSize={LiquidFontSize.Xs}
+          fontFamily={LiquidFontFamily.Heading}
           maxWidth="270px"
           {...attrs}
           {...props}

@@ -4,7 +4,7 @@ import React from 'react'
 import { Input, InputProps } from './Input'
 
 const meta: Meta = {
-  title: 'Library/Forms/Input',
+  title: 'Components/Forms/Input',
   component: Input,
   parameters: {
     controls: { expanded: true },

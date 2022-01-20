@@ -5,7 +5,7 @@ import { Text } from '../typography'
 import Grid from './Grid'
 
 const meta: Meta = {
-  title: 'Library/Layout/Grid',
+  title: 'Layout/Grid',
   component: Grid,
   argTypes: {
     templateColumns: {
@@ -70,14 +70,14 @@ const meta: Meta = {
 export default meta
 
 export const Default: Story = () => (
-  <Grid color="black" bg="cool-gray.100" p={4} templateColumns={['1fr', '1fr 1fr 1fr']}>
-    <Text p={4} bg="cool-gray.200">
+  <Grid color="black" bg="gray.100" p={4} templateColumns={['1fr', '1fr 1fr 1fr']}>
+    <Text p={4} bg="gray.200">
       Hello
     </Text>
-    <Text p={4} bg="cool-gray.200">
+    <Text p={4} bg="gray.200">
       Hello
     </Text>
-    <Text p={4} bg="cool-gray.200">
+    <Text p={4} bg="gray.200">
       Hello
     </Text>
   </Grid>
@@ -90,17 +90,17 @@ Default.parameters = {
 export const WithAutoFitFill: Story<{ mode: 'fit' | 'fill' }> = ({ mode = 'fill' }) => (
   <Grid
     color="black"
-    bg="cool-gray.100"
+    bg="gray.100"
     p={4}
     {...(mode === 'fit' ? { autoFit: { min: '200px', max: '1fr' } } : { autoFill: { min: '200px', max: '1fr' } })}
   >
-    <Text p={4} bg="cool-gray.200">
+    <Text p={4} bg="gray.200">
       Hello
     </Text>
-    <Text p={4} bg="cool-gray.200">
+    <Text p={4} bg="gray.200">
       Hello
     </Text>
-    <Text p={4} bg="cool-gray.200">
+    <Text p={4} bg="gray.200">
       Hello
     </Text>
   </Grid>

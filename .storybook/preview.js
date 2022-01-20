@@ -18,6 +18,46 @@ export const parameters = {
       ...themes.normal,
     },
   },
+  options: {
+    storySort: {
+      order: [
+        'Introduction', [
+          'Welcome'
+        ],
+        'Features', [
+          'Colors',
+          'Icons'
+        ],
+        'Typography', [
+          'Typography',
+          'Title',
+          'Headline',
+          'FooterHeadline',
+          'SubHeadline',
+          'Body',
+          'BodyLarge',
+          'Anchor',
+          'List'
+        ],
+        'Layout', [
+          'Grid',
+          'Flex',
+          'VStack',
+          'HStack',
+        ],
+        'Components', [
+          'Avatar',
+          'AvatarGroup',
+          'Badge',
+          'Button',
+          'Card',
+          'FeatureCard',
+          'Hr',
+          'Section',
+        ],
+      ],
+    },
+  },
 }
 
 const ThemeWrapper = ({ children }) => {

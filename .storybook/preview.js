@@ -16,8 +16,8 @@ export const parameters = {
     },
     light: {
       ...themes.normal,
-      brandTitle: '@healform/liquid',
-      brandUrl: 'https://liquid.healform.de',
+      brandTitle: 'Liquid UI',
+      brandUrl: 'https://liquid.healform.de/',
       fontBase: theme.fonts.fontStack.default.value,
       colorPrimary: theme.colors.secondary.value,
       colorSecondary: theme.colors.primary.value,

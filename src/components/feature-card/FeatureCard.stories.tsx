@@ -1,9 +1,9 @@
 import { css } from '@emotion/react'
 import React from 'react'
 
-import BodyLarge from './../bodylarge'
-import Headline from './../headline'
-import SubHeadline from './../subheadline'
+import { BodyLarge } from '../bodylarge'
+import { Headline } from '../headline'
+import { SubHeadline } from '../subheadline'
 import { FeatureCard, FeatureCardProps } from './FeatureCard'
 
 export default {

@@ -62,12 +62,12 @@ const variantStyles = ({ variant }: BodyProps) => {
     }
     case 'success': {
       return css`
-        color: ${theme.colors.success.value};
+        color: ${theme.colors.green['500'].value};
       `
     }
     case 'error': {
       return css`
-        color: ${theme.colors.danger.value};
+        color: ${theme.colors.red['500'].value};
       `
     }
     case 'subtle': {

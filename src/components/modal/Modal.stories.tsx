@@ -1,8 +1,9 @@
 import { Meta, Story } from '@storybook/react'
 import React from 'react'
 
+import { Body } from '../body'
 import { Button } from '../button'
-import { Heading, Text } from '../typography'
+import { Headline } from '../headline'
 import Modal from './Modal'
 import { ModalProps } from './Modal'
 
@@ -28,10 +29,10 @@ const Template: Story<ModalProps> = args => (
     {({ hide }) => (
       <>
         <Modal.Header>
-          <Heading>Hello Liquid</Heading>
+          <Headline as={'h5'}>Hello Liquid</Headline>
         </Modal.Header>
         <Modal.Body>
-          <Text>How are you doing?</Text>
+          <Body>How are you doing?</Body>
         </Modal.Body>
         <Modal.Footer>
           <Button
@@ -76,57 +77,57 @@ WithCustomization.args = {
 export const WithLongContent: Story<ModalProps> = args => (
   <Modal {...args} disclosure={<Button>Open</Button>}>
     <Modal.Header>
-      <Heading>Hello Liquid</Heading>
+      <Headline as={'h5'}>Hello Liquid</Headline>
     </Modal.Header>
     <Modal.Body spacing={4}>
-      <Text>I have something very long to tell you...</Text>
-      <Text>
+      <Body>I have something very long to tell you...</Body>
+      <Body>
         But first, you can change how the modal will be scrolled by using the <code>scrollBehavior</code> prop.
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolorem explicabo, hic libero minima
         repellendus. Aut corporis deleniti expedita ipsa libero possimus temporibus voluptatem voluptatibus? Dolorem eum
         iure laborum minima.
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Accusantium aliquid amet commodi delectus deserunt distinctio dolorem est excepturi explicabo fugit laborum
         maiores modi molestias mollitia nesciunt nisi officia optio quas qui quos similique, sit sunt tempore ut vero.
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Consequatur dicta doloremque ea enim ex explicabo, facilis, id inventore itaque labore minima neque pariatur
         perferendis, quasi totam! Consequatur harum ipsum laborum minus quasi ratione ullam velit. Asperiores explicabo,
         modi.
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Accusamus aliquam animi beatae consectetur debitis dolorem error esse est expedita fugiat id illum, impedit ipsa
         ipsam iusto libero molestias, necessitatibus obcaecati officia praesentium provident quaerat quia quidem
         quisquam vero.
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Expedita iure reiciendis sapiente soluta voluptate. Aspernatur, consequuntur dignissimos dolorem eaque enim hic
         illum iure laudantium libero magnam minima minus officia praesentium quisquam, quos repellat soluta veniam,
         voluptas voluptates voluptatum?
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Expedita iure reiciendis sapiente soluta voluptate. Aspernatur, consequuntur dignissimos dolorem eaque enim hic
         illum iure laudantium libero magnam minima minus officia praesentium quisquam, quos repellat soluta veniam,
         voluptas voluptates voluptatum?
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Expedita iure reiciendis sapiente soluta voluptate. Aspernatur, consequuntur dignissimos dolorem eaque enim hic
         illum iure laudantium libero magnam minima minus officia praesentium quisquam, quos repellat soluta veniam,
         voluptas voluptates voluptatum?
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Expedita iure reiciendis sapiente soluta voluptate. Aspernatur, consequuntur dignissimos dolorem eaque enim hic
         illum iure laudantium libero magnam minima minus officia praesentium quisquam, quos repellat soluta veniam,
         voluptas voluptates voluptatum?
-      </Text>
-      <Text>
+      </Body>
+      <Body>
         Expedita iure reiciendis sapiente soluta voluptate. Aspernatur, consequuntur dignissimos dolorem eaque enim hic
         illum iure laudantium libero magnam minima minus officia praesentium quisquam, quos repellat soluta veniam,
         voluptas voluptates voluptatum?
-      </Text>
+      </Body>
     </Modal.Body>
   </Modal>
 )

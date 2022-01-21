@@ -3,11 +3,11 @@ import theme from '@healform/design-tokens/dist/js/theme'
 import { action } from '@storybook/addon-actions'
 import React, { Fragment } from 'react'
 
-import Card, { CardContent, CardFooter, CardHeader, CardImage } from '.'
-import Body from '../body'
+import { Card, CardContent, CardFooter, CardHeader, CardImage } from '.'
+import { Body } from '../body'
 import { Button } from '../button'
-import ButtonGroup from '../button-group'
-import Headline from '../headline'
+import { ButtonGroup } from '../button-group'
+import { Headline } from '../headline'
 import { VStack } from '../layout'
 
 export default {

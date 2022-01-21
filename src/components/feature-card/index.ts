@@ -1,5 +1,1 @@
-import { FeatureCard } from './FeatureCard'
-
-export type { FeatureCardProps } from './FeatureCard'
-
-export default FeatureCard
+export * from './FeatureCard'

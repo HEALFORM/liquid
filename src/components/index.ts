@@ -1,3 +1,4 @@
+import '@emotion/core'
 import { Portal } from 'reakit/Portal'
 
 export * from './avatar'

@@ -16,7 +16,7 @@ export const AsLink = (args: AnchorProps) => <Anchor {...args} />
 
 AsLink.args = {
   href: 'https://liquid.healform.de',
-  children: "View SumUp's OSS projects",
+  children: 'View HEALFORM Design System',
 }
 
 export const AsButton = (args: AnchorProps) => <Anchor {...args} />

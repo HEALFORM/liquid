@@ -1,6 +1,7 @@
 import '@emotion/core'
 import { Portal } from 'reakit/Portal'
 
+export * from './anchor'
 export * from './avatar'
 export * from './avatar-group'
 export * from './badge'

@@ -98,7 +98,7 @@ export const PageLayout: Story<{ characters: Array<Character> }> = ({ characters
         <Popover
           vibrancy
           ariaLabel="Informations"
-          bg="indigo.600"
+          bg="blue.600"
           color="white"
           disclosure={<Button mt={4}>Show informations</Button>}
         >

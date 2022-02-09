@@ -1,3 +1,3 @@
 export const Divider = {
-  baseStyle: { borderColor: 'grey.50', my: 4 },
+  baseStyle: { borderColor: 'gray.50', my: 4 },
 };

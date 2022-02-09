@@ -1,5 +1,6 @@
 import React from 'react';
 import { DocsContainer } from '@storybook/addon-docs';
+import { ThemeProvider} from "../src/index";
 
 export const parameters = {
   actions: { argTypesRegex: '^on.*' },

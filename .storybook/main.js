@@ -4,20 +4,13 @@ const toPath = _path => path.join(process.cwd(), _path)
 // seems there is a current issues with webpack, storybook and Chakra deps
 // https://github.com/chakra-ui/chakra-ui/issues/2527#issuecomment-810293915
 module.exports = {
-  stories: ['../src/**/*.stories.@(ts|tsx|js|jsx|mdx)'],
-  addons: [
-    '@storybook/addon-viewport',
-    '@storybook/addon-storysource',
-    '@storybook/addon-links',
-    {
-      name: '@storybook/addon-docs',
-      options: {
-        configureJSX: true,
-      },
+  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  refs: {
+    '@chakra-ui/react': {
+      disable: true,
     },
-    '@storybook/addon-essentials',
-    'storybook-dark-mode',
-  ],
+  },
   webpackFinal: async (config) => {
     return {
       ...config,

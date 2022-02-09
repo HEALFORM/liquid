@@ -17,8 +17,8 @@ Default.parameters = {
 export const CustomMargin = Template.bind({});
 CustomMargin.args = { my: 1 };
 
-export const GreyBackground = Template.bind({});
-GreyBackground.args = {};
-GreyBackground.parameters = {
-  backgrounds: { default: 'grey' },
+export const GrayBackground = Template.bind({});
+GrayBackground.args = {};
+GrayBackground.parameters = {
+  backgrounds: { default: 'gray' },
 };

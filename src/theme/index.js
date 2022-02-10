@@ -5,7 +5,9 @@ import { Body } from '../components/body/Body.theme'
 import { Divider } from '../components/divider/Divider.theme'
 import { Headline } from '../components/headline/Headline.theme'
 import { Title } from '../components/title/Title.theme'
-import * as colors from './colors'
+import * as colors from './colors.theme'
+import * as radii from './radii.theme'
+import * as space from './space.theme'
 
 const breakpoints = createBreakpoints({
   base: '0',
@@ -18,6 +20,8 @@ const breakpoints = createBreakpoints({
 
 export default extendTheme({
   ...colors,
+  ...radii,
+  ...space,
   breakpoints,
   components: {
     Body,

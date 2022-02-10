@@ -12,7 +12,8 @@ export const parameters = {
         ],
         'Features', [
           'Colors',
-          'Icons'
+          'Icons',
+          'Space & Radii'
         ],
         'Typography', [
           'Typography',

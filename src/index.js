@@ -1,5 +1,7 @@
-export * from './components/divider';
-export * from './helpers/ThemeProvider';
+export * from './components/body'
+export * from './components/divider'
+export * from './components/title'
+export * from './helpers/ThemeProvider'
 export {
   Accordion,
   AccordionButton,
@@ -45,4 +47,4 @@ export {
   useMediaQuery,
   useMergeRefs,
   useOutsideClick,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'

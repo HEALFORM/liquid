@@ -1,10 +1,7 @@
 import { Global } from '@emotion/react'
 import * as React from 'react'
 
-import { useColors } from '../hooks'
-
 export const CSSReset = () => {
-  const [background, color] = useColors('background', 'text')
   return (
     <Global
       styles={`
@@ -22,8 +19,6 @@ export const CSSReset = () => {
           position: relative;
           min-height: 100%;
           font-feature-settings: 'kern';
-          background: ${background};
-          color: ${color};
           transition: background 0.2s, color 0.2s;
         }
   

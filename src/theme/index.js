@@ -1,7 +1,10 @@
 import { extendTheme } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 
-import { Divider } from '../components/divider/divider.theme'
+import { Body } from '../components/body/Body.theme'
+import { Divider } from '../components/divider/Divider.theme'
+import { Headline } from '../components/headline/Headline.theme'
+import { Title } from '../components/title/Title.theme'
 import * as colors from './colors'
 
 const breakpoints = createBreakpoints({
@@ -17,6 +20,9 @@ export default extendTheme({
   ...colors,
   breakpoints,
   components: {
+    Body,
     Divider,
+    Headline,
+    Title,
   },
 })

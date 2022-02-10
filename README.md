@@ -12,3 +12,41 @@ Liquid UI library codifies existing UI components into a central, well-maintaine
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@main/badge/badge-storybook.svg)](https://ui-library.healform.de/)
 
 </div>
+
+## Basic Installation
+
+If you're looking to begin developing a user-interface with Liquid, you can install the package directly via [Yarn](https://yarnpkg.com/):
+
+```bash
+yarn add @healform/liquid
+```
+
+Or if you prefer [NPM](https://npmjs.com):
+
+```bash
+npm install --save @healform/liquid
+```
+
+## Usage
+
+All components are exported via named exports - we don't have a default export. They can be imported at the top of any React file like such:
+
+```javascript
+import { Alert } from '@healform/liquid';
+```
+
+They can then be used in JSX like such:
+
+```jsx
+const MyGreatComponent = (props) => {
+  const alertTitle = 'Aww yeah...';
+  const alertStatus = 'success';
+  const alertText = 'Nice job using an alert, you did it right!';
+
+  return (
+    <Alert title={alertTitle} status={alertStatus}>
+      {alertText}
+    </Alert>
+  );
+};
+```

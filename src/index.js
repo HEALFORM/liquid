@@ -1,5 +1,6 @@
 export * from './components/body'
 export * from './components/divider'
+export * from './components/headline'
 export * from './components/title'
 export * from './helpers/ThemeProvider'
 export {

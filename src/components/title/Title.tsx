@@ -1,6 +1,7 @@
 import { Box, useStyleConfig } from '@chakra-ui/react'
 import React from 'react'
 
+// @ts-ignore
 export function Title({ children, ...props }) {
   const { size, variant, ...rest } = props
   const styles = useStyleConfig('Title', { size, variant })

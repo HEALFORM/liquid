@@ -111,18 +111,23 @@ export const colors = {
   },
 }
 
-export const colorKeys = color =>
+// @ts-ignore
+export const colorKeys = (color: string | number) =>
+  // @ts-ignore
   Object.keys(colors[color]).reduce(
     (values, currentValue) => ({
       ...values,
+      // @ts-ignore
       [`${currentValue}`]: colors[color][currentValue],
     }),
     {},
   )
 
+// @ts-ignore
 export const colorOptions = Object.keys(colors).reduce((acc, color) => {
   return [
     ...acc,
+    // @ts-ignore
     ...Object.keys(colors[color]).reduce((values, num) => {
       return [...values, `${color}.${num}`]
     }, []),

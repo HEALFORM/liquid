@@ -2,11 +2,13 @@ import React from 'react'
 
 import { Body, Box } from '../index'
 
+// @ts-ignore
 export function SpacePalette({ spaces, children, ...rest }) {
   return (
     <Box my={4} {...rest}>
       {children}
       {Object.entries(spaces).map(([space, value], index) => {
+        // @ts-ignore
         return (
           <Box as="figure" display="inline-block" mr={2} key={index}>
             <Box role="img" w={value} h={value} bg="blue.100" mb={1} />
@@ -22,6 +24,7 @@ export function SpacePalette({ spaces, children, ...rest }) {
   )
 }
 
+// @ts-ignore
 export function RadiiPalette({ radii, children, ...rest }) {
   return (
     <Box my={4} {...rest}>

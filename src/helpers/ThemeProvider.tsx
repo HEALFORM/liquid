@@ -6,13 +6,11 @@ import React from 'react'
 
 import theme from '../theme'
 
-// @ts-ignore
 function EmotionCacheProvider({ nonce, children }) {
   const cache = createCache({ key: 'csp', nonce })
   return <CacheProvider value={cache}>{children}</CacheProvider>
 }
 
-// @ts-ignore
 export const ThemeProvider = ({ children, nonce, ...props }) => {
   return (
     <EmotionCacheProvider nonce={nonce}>

@@ -36,7 +36,7 @@ export default {
 const Template = args => <Title {...args} />
 
 export const Base = Template.bind({})
-Base.args = { children: 'Cryocenter', size: 'one' }
+Base.args = { children: 'This is a Title' }
 
 const sizes = ['one', 'two', 'three', 'four']
 

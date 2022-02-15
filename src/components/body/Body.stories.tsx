@@ -28,9 +28,13 @@ export default {
       description: 'The visual variant.',
       control: {
         type: 'radio',
-        options: ['highlight'],
+        options: ['highlight', 'quote', 'success', 'error', 'subtle'],
         labels: {
           highlight: 'Highlight',
+          quote: 'Quote',
+          success: 'Success',
+          error: 'Error',
+          subtle: 'Subtle',
         },
       },
     },

@@ -33,5 +33,5 @@ export const Headline = React.forwardRef<HTMLAttributes<any>, HeadlineProps>(fun
 
 Headline.defaultProps = {
   size: 'one',
-  as: 'h1',
+  as: 'h2',
 }

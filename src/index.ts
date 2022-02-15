@@ -1,4 +1,5 @@
 export * from './components/body'
+export * from './components/bodylarge'
 export * from './components/divider'
 export * from './components/headline'
 export * from './components/title'

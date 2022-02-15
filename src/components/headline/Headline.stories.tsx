@@ -53,7 +53,7 @@ export default {
 
 export const Base = (args: HeadlineProps) => (
   <Headline {...args} noMargin>
-    This is a headline
+    This is a Headline
   </Headline>
 )
 

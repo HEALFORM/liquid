@@ -2,6 +2,7 @@ import { extendTheme } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 import { Body } from '../components/body/Body.theme'
+import { BodyLarge } from '../components/bodylarge/BodyLarge.theme'
 import { Divider } from '../components/divider/Divider.theme'
 import { Headline } from '../components/headline/Headline.theme'
 import { Title } from '../components/title/Title.theme'
@@ -25,6 +26,7 @@ export default extendTheme({
   breakpoints,
   components: {
     Body,
+    BodyLarge,
     Divider,
     Headline,
     Title,

@@ -5,7 +5,6 @@ export const Headline = {
     fontFamily: tokens.fonts.fontStack.special.value,
     fontWeight: tokens.fonts.fontWeight.bold.value,
     letterSpacing: '-0.03em',
-    mb: tokens.spacings.sm.value,
   },
   sizes: {
     one: {

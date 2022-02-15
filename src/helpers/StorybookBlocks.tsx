@@ -7,9 +7,10 @@ export function SpacePalette({ spaces, children, ...rest }) {
     <Box my={4} {...rest}>
       {children}
       {Object.entries(spaces).map(([space, value], index) => {
+        // @ts-ignore
         return (
           <Box as="figure" display="inline-block" mr={2} key={index}>
-            <Box role="img" w={value + ''} h={value + ''} bg="blue.100" mb={1} />
+            <Box role="img" w={value.toString()} h={value.toString()} bg="blue.100" mb={1} />
             <figcaption>
               <code>{`${space}`}</code>
               <br />

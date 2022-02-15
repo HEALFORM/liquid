@@ -1,7 +1,12 @@
 {
   // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
   "include": ["src"],
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts",
+  ],
   "compilerOptions": {
     "typeRoots": ["node_modules/@types/*", "src/@types/*"],
     "module": "esnext",
@@ -16,7 +21,7 @@
     // stricter type-checking for stronger correctness. Recommended by TS
     // "strict": true,
     // linter checks for common issues
-    "noImplicitReturns": true,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     // noUnused* overlap with @typescript-eslint/no-unused-vars, can disable if duplicative
     "noUnusedLocals": true,
@@ -33,6 +38,6 @@
     "forceConsistentCasingInFileNames": true,
     // `tsdx build` ignores this option, but it is commonly used when type-checking separately with `tsc`
     "noEmit": true,
-    "types": ["@types/node", "@types/jest"]
+    "types": []
   }
 }

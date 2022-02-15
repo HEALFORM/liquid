@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Headline } from './Headline'
+import { Headline, HeadlineProps } from './Headline'
 
 export default {
   title: 'Typography/Headline',
@@ -24,6 +24,24 @@ export default {
         },
       },
     },
+    as: {
+      name: 'As',
+      type: { name: 'string', required: true },
+      description: 'Different renderings of text.',
+      table: {
+        type: { summary: 'h1|h2|h3|h4|h5|h6' },
+      },
+      control: {
+        type: 'select',
+        options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+      },
+    },
+    noMargin: {
+      name: 'noMargin',
+      control: {
+        type: 'boolean',
+      },
+    },
     children: {
       description: 'Inner element or text for element',
       table: {
@@ -33,14 +51,15 @@ export default {
   },
 }
 
-const Template = args => <Headline {...args} />
-
-export const Base = Template.bind({})
-Base.args = { children: 'Cryocenter', size: 'one' }
+export const Base = (args: HeadlineProps) => (
+  <Headline {...args} noMargin>
+    This is a headline
+  </Headline>
+)
 
 const sizes = ['one', 'two', 'three', 'four']
 
-export const Sizes = args =>
+export const Sizes = (args: HeadlineProps) =>
   sizes.map(s => (
     <Headline key={s} {...args} size={s}>
       This is a Headline {s}

@@ -24,9 +24,6 @@ export interface HeadlineProps extends HTMLAttributes<HTMLHeadingElement> {
 export const Headline = React.forwardRef<HTMLAttributes<any>, HeadlineProps>(function Headline({ children, ...props }) {
   const { size, noMargin, ...rest } = props
   const styles = useStyleConfig('Headline', { size })
-  console.log('styles:', styles)
-  console.log('props:', props)
-  console.log('rest:', rest)
   return (
     <Box sx={styles} {...rest} mb={noMargin ? '0' : tokens.spacings.sm.value} as={props.as}>
       {children}

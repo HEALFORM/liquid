@@ -1,8 +1,8 @@
-export * from './components/body'
-export * from './components/bodylarge'
-export * from './components/divider'
-export * from './components/headline'
-export * from './components/title'
+export * from './components/Body'
+export * from './components/BodyLarge'
+export * from './components/Divider'
+export * from './components/Headline'
+export * from './components/Title'
 export * from './helpers/ThemeProvider'
 export {
   AspectRatio,

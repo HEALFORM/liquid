@@ -6,7 +6,7 @@ type Size = 'one' | 'two' | 'three' | 'four'
 
 export interface HeadlineProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
-   * A Circuit UI headline size. Defaults to `one`.
+   * A Liquid UI headline size. Defaults to `one`.
    */
   size?: Size | string
   /**

@@ -6,7 +6,7 @@ type Size = 'one' | 'two' | 'three' | 'four'
 
 export interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
-   * A Circuit UI title size. Defaults to `one`.
+   * A Liquid UI title size. Defaults to `one`.
    */
   size?: Size | string
   /**

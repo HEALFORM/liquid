@@ -1,17 +1,12 @@
-import { css } from '@emotion/core'
-import isPropValid from '@emotion/is-prop-valid'
-import styled from '@emotion/styled'
-import theme from '@healform/design-tokens/dist/js/theme'
-import React, { forwardRef, HTMLAttributes, Ref } from 'react'
-
-import { AsPropType } from '../../@types/prop-types'
+import { Box, useStyleConfig } from '@chakra-ui/react'
+import React, { HTMLAttributes, Ref } from 'react'
 
 type Size = 'one' | 'two'
 type Variant = 'highlight' | 'quote' | 'success' | 'error' | 'subtle'
 
-export interface BodyProps extends HTMLAttributes<HTMLParagraphElement> {
+export interface BodyProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
-   * Choose from 2 font sizes. Default `one`.
+   * Choose from style sizes.
    */
   size?: Size
   /**
@@ -19,96 +14,22 @@ export interface BodyProps extends HTMLAttributes<HTMLParagraphElement> {
    */
   variant?: Variant
   /**
-   * Remove the default margin below the text.
-   */
-  noMargin?: boolean
-  /**
-   * Render the text using any HTML element.
-   */
-  as?: AsPropType
-  /**
    * The ref to the HTML DOM element.
    */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ref?: Ref<any>
 }
 
-const baseStyles = () => css`
-  font-weight: ${theme.fonts.fontWeight.regular.value};
-  margin-bottom: ${theme.spacings.sm.value};
-`
-
-const sizeStyles = ({ size = 'one' }: BodyProps) => css`
-  font-size: ${theme.typography.body[size].fontSize.value};
-  line-height: ${theme.typography.body[size].lineHeight.value};
-`
-
-const variantStyles = ({ variant }: BodyProps) => {
-  switch (variant) {
-    default: {
-      return null
-    }
-    case 'highlight': {
-      return css`
-        font-weight: ${theme.fonts.fontWeight.bold.value};
-      `
-    }
-    case 'quote': {
-      return css`
-        font-style: italic;
-        padding-left: ${theme.spacings.lg.value};
-        border-left: 2px solid ${theme.colors.primary.value};
-      `
-    }
-    case 'success': {
-      return css`
-        color: ${theme.colors.green['500'].value};
-      `
-    }
-    case 'error': {
-      return css`
-        color: ${theme.colors.red['500'].value};
-      `
-    }
-    case 'subtle': {
-      return css`
-        color: ${theme.colors.gray['500'].value};
-      `
-    }
-  }
-}
-
-const marginStyles = ({ noMargin }: BodyProps) => {
-  if (!noMargin) {
-    return null
-  }
-
-  return css`
-    margin-bottom: 0;
-  `
-}
-
-const StyledBody = styled('p', {
-  shouldForwardProp: prop => isPropValid(prop as string) && prop !== 'size',
-})<BodyProps>(baseStyles, sizeStyles, variantStyles, marginStyles)
-
-function getHTMLElement(variant?: Variant): AsPropType {
-  if (variant === 'highlight') {
-    return 'strong'
-  }
-  if (variant === 'quote') {
-    return 'blockquote'
-  }
-  return 'p'
-}
-
-/**
- * The Body component is used to present the core textual content
- * to our users.
- */
-export const Body = forwardRef((props: BodyProps, ref?: BodyProps['ref']) => {
-  const as = props.as || getHTMLElement(props.variant)
-  return <StyledBody {...props} ref={ref} as={as} />
+export const Body = React.forwardRef<HTMLAttributes<any>, BodyProps>(function Body({ children, ...props }) {
+  const { size, variant, ...rest } = props
+  const styles = useStyleConfig('Body', { size, variant })
+  return (
+    <Box as={'p'} sx={styles} {...rest}>
+      {children}
+    </Box>
+  )
 })
 
-Body.displayName = 'Body'
+Body.defaultProps = {
+  size: 'one',
+}

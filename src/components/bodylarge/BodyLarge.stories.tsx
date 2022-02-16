@@ -9,7 +9,40 @@ export default {
   title: 'Typography/BodyLarge',
   component: BodyLarge,
   argTypes: {
-    as: { control: 'text' },
+    variant: {
+      name: 'Variant',
+      type: { name: 'string', required: false },
+      description: 'The visual variant.',
+      control: {
+        type: 'radio',
+        options: ['highlight', 'quote', 'success', 'error', 'subtle'],
+        labels: {
+          highlight: 'Highlight',
+          quote: 'Quote',
+          success: 'Success',
+          error: 'Error',
+          subtle: 'Subtle',
+        },
+      },
+    },
+    align: {
+      name: 'Align',
+      type: { name: 'string', required: false },
+      description: 'The CSS `text-align` property.',
+      table: {
+        type: { summary: 'left|center|right' },
+      },
+      control: {
+        type: 'select',
+        options: ['left', 'center', 'right'],
+      },
+    },
+    children: {
+      description: 'Inner element or text for element',
+      table: {
+        type: { summary: 'text|node' },
+      },
+    },
   },
 }
 

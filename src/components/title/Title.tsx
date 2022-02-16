@@ -1,8 +1,6 @@
-import isPropValid from '@emotion/is-prop-valid'
-import { css } from '@emotion/react'
-import styled from '@emotion/styled'
-import theme from '@healform/design-tokens/dist/js/theme'
-import type { FC, HTMLAttributes } from 'react'
+import { Box, useStyleConfig } from '@chakra-ui/react'
+import tokens from '@healform/design-tokens/dist/js/tokens'
+import React, { HTMLAttributes } from 'react'
 
 type Size = 'one' | 'two' | 'three' | 'four'
 
@@ -10,9 +8,9 @@ export interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
    * A Circuit UI title size. Defaults to `one`.
    */
-  size?: Size
+  size?: Size | string
   /**
-   * Removes the default bottom margin from the headline.
+   * Removes the default bottom margin from the title.
    */
   noMargin?: boolean
   /**
@@ -23,36 +21,17 @@ export interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-const baseStyles = () => css`
-  font-weight: ${theme.fonts.fontWeight.bold.value};
-  letter-spacing: -0.03em;
-  margin-bottom: ${theme.spacings.sm.value};
-`
+export const Title = React.forwardRef<HTMLAttributes<any>, TitleProps>(function Title({ children, ...props }) {
+  const { size, noMargin, ...rest } = props
+  const styles = useStyleConfig('Title', { size })
+  return (
+    <Box sx={styles} {...rest} mb={noMargin ? '0' : tokens.spacings.sm.value} as={props.as}>
+      {children}
+    </Box>
+  )
+})
 
-const sizeStyles = ({ size = 'one' }: TitleProps) => {
-  if (!size) {
-    return null
-  }
-
-  return css`
-    font-size: ${theme.typography.title[size].fontSize.value};
-    line-height: ${theme.typography.title[size].lineHeight.value};
-  `
+Title.defaultProps = {
+  size: 'one',
+  as: 'h2',
 }
-
-const noMarginStyles = ({ noMargin }: TitleProps) => {
-  if (!noMargin) {
-    return null
-  }
-
-  return css`
-    margin-bottom: 0;
-  `
-}
-
-/**
- * A flexible title component capable of rendering any HTML heading element.
- */
-export const Title: FC<TitleProps> = styled('h2', {
-  shouldForwardProp: prop => isPropValid(prop as string) && prop !== 'size',
-})<TitleProps>(baseStyles, sizeStyles, noMarginStyles)

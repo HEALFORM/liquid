@@ -3,6 +3,7 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 import { Body } from '../components/Body/Body.theme'
 import { BodyLarge } from '../components/BodyLarge/BodyLarge.theme'
+import { Button } from '../components/Button/Button.theme'
 import { Divider } from '../components/Divider/Divider.theme'
 import { FooterHeadline } from '../components/FooterHeadline/FooterHeadline.theme'
 import { Headline } from '../components/Headline/Headline.theme'
@@ -28,6 +29,7 @@ export default extendTheme({
   components: {
     Body,
     BodyLarge,
+    Button,
     Divider,
     FooterHeadline,
     Headline,

@@ -1,5 +1,6 @@
 export * from './components/Body'
 export * from './components/BodyLarge'
+export * from './components/Button'
 export * from './components/Divider'
 export * from './components/FooterHeadline'
 export * from './components/Headline'

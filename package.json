@@ -11,6 +11,14 @@
     "dist",
     "src"
   ],
+  "homepage": "https://github.com/HEALFORM/liquid#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HEALFORM/liquid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HEALFORM/liquid/issues"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",

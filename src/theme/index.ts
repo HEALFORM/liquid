@@ -4,6 +4,7 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 import { Body } from '../components/Body/Body.theme'
 import { BodyLarge } from '../components/BodyLarge/BodyLarge.theme'
 import { Divider } from '../components/Divider/Divider.theme'
+import { FooterHeadline } from '../components/FooterHeadline/FooterHeadline.theme'
 import { Headline } from '../components/Headline/Headline.theme'
 import { Title } from '../components/Title/Title.theme'
 import * as colors from './colors.theme'
@@ -28,6 +29,7 @@ export default extendTheme({
     Body,
     BodyLarge,
     Divider,
+    FooterHeadline,
     Headline,
     Title,
   },

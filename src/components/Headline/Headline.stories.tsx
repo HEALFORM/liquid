@@ -27,7 +27,6 @@ export default {
     as: {
       name: 'As',
       type: { name: 'string', required: true },
-      description: 'Different renderings of text.',
       table: {
         type: { summary: 'h1|h2|h3|h4|h5|h6' },
       },

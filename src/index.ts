@@ -1,6 +1,7 @@
 export * from './components/Body'
 export * from './components/BodyLarge'
 export * from './components/Divider'
+export * from './components/FooterHeadline'
 export * from './components/Headline'
 export * from './components/Title'
 export * from './helpers/ThemeProvider'

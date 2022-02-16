@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/HEALFORM/liquid/compare/v1.1.0...v1.2.0) (2022-02-16)
+
+
+### Features
+
+* Add FooterHeadline component. ([1552acc](https://github.com/HEALFORM/liquid/commit/1552acc3e8f704b35af02cd6d301a71c1b2f3b27))
+
 # [1.1.0](https://github.com/HEALFORM/liquid/compare/v1.0.0...v1.1.0) (2022-02-16)
 
 

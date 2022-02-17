@@ -33,4 +33,8 @@ export default extendTheme({
     Headline,
     Title,
   },
+  config: {
+    initialColorMode: 'light',
+    useSystemColorMode: true,
+  },
 })

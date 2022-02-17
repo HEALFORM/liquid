@@ -5,7 +5,7 @@ const toPath = _path => path.join(process.cwd(), _path)
 // https://github.com/chakra-ui/chakra-ui/issues/2527#issuecomment-810293915
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials', 'storybook-dark-mode'],
   refs: {
     '@chakra-ui/react': {
       disable: true,

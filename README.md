@@ -50,3 +50,17 @@ const MyGreatComponent = (props) => {
   );
 };
 ```
+
+## ✨ Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://dmnktoe.de"><img src="https://avatars.githubusercontent.com/u/34511635?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Domenik Töfflinger</b></sub></a><br /><a href="#infra-dmnktoe" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/HEALFORM/liquid/commits?author=dmnktoe" title="Tests">⚠️</a> <a href="https://github.com/HEALFORM/liquid/commits?author=dmnktoe" title="Code">💻</a></td>
+  </tr>
+</table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->

@@ -26,14 +26,14 @@ export const Body = {
       borderStyle: 'solid',
       borderColor: tokens.colors.primary.value,
     },
-    success: {
-      color: tokens.colors.success.value,
-    },
-    error: {
-      color: tokens.colors.danger.value,
-    },
-    subtle: {
-      color: tokens.colors.gray['500'].value,
-    },
+    success: ({ colorMode }) => ({
+      color: colorMode === 'dark' ? 'green.300' : 'green.500',
+    }),
+    error: ({ colorMode }) => ({
+      color: colorMode === 'dark' ? 'red.300' : 'red.500',
+    }),
+    subtle: ({ colorMode }) => ({
+      color: colorMode === 'dark' ? 'gray.500' : 'gray.400',
+    }),
   },
 }

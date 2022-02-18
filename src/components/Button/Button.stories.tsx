@@ -1,4 +1,4 @@
-import { CalendarIcon } from '@chakra-ui/icons'
+import { CalendarIcon, DeleteIcon } from '@chakra-ui/icons'
 import React from 'react'
 
 import { HStack } from './../../index'
@@ -105,5 +105,6 @@ Secondary.args = {
 export const Danger = Template.bind({})
 Danger.args = {
   colorScheme: 'red',
-  children: content,
+  children: 'Termin stornieren',
+  leftIcon: <DeleteIcon />,
 }

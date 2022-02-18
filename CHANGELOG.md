@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/HEALFORM/liquid/compare/v1.6.0...v1.7.0) (2022-02-18)
+
+
+### Features
+
+* **ThemeProvider:** Update `breakpoints` with new values. ([02e7b61](https://github.com/HEALFORM/liquid/commit/02e7b61469e819df161e5d1c4498f032fd356f30))
+
 # [1.6.0](https://github.com/HEALFORM/liquid/compare/v1.5.0...v1.6.0) (2022-02-18)
 
 

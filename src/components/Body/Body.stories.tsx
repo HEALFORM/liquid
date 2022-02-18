@@ -38,6 +38,12 @@ export default {
         },
       },
     },
+    noMargin: {
+      name: 'noMargin',
+      control: {
+        type: 'boolean',
+      },
+    },
     align: {
       name: 'Align',
       type: { name: 'string', required: false },

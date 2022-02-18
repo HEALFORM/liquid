@@ -3,7 +3,6 @@ import tokens from '@healform/design-tokens/dist/js/tokens'
 export const Body = {
   baseStyle: {
     fontWeight: tokens.fonts.fontWeight.regular.value,
-    marginBottom: tokens.spacings.sm.value,
   },
   sizes: {
     one: {

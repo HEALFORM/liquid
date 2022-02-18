@@ -5,6 +5,7 @@ export * from './components/Divider'
 export * from './components/FooterHeadline'
 export * from './components/Headline'
 export * from './components/IconButton'
+export * from './components/Link'
 export * from './components/Title'
 export * from './helpers/ThemeProvider'
 export {
@@ -155,7 +156,7 @@ export {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbSeparator,
-  Link,
+  // Link,
   LinkBox,
   LinkOverlay,
   Avatar,

@@ -9,8 +9,8 @@ export default {
 
 const Template = args => <Divider {...args} />
 
-export const Default = Template.bind({})
-Default.args = {}
+export const Base = Template.bind({})
+Base.args = {}
 
 export const CustomMargin = Template.bind({})
 CustomMargin.args = { my: 1 }

@@ -16,13 +16,15 @@ import * as colors from './colors.theme'
 import * as radii from './radii.theme'
 import * as space from './space.theme'
 
+import tokens from '@healform/design-tokens/dist/js/tokens'
+
 const breakpoints = createBreakpoints({
-  base: '0',
-  sm: '375px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1100px',
-  '2xl': '1400px',
+  base: tokens.breakpoints.xs.value.toString(),
+  sm: tokens.breakpoints.sm.value + 'px',
+  md: tokens.breakpoints.md.value + 'px',
+  lg: tokens.breakpoints.lg.value + 'px',
+  xl: tokens.breakpoints.xl.value + 'px',
+  '2xl': tokens.breakpoints.xxl.value + 'px',
 })
 
 export default extendTheme({

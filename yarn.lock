@@ -2039,10 +2039,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
 
-"@healform/design-tokens@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@healform/design-tokens/-/design-tokens-1.4.0.tgz#2f11359da52110c606f9d7e5913e73c677ad14af"
-  integrity sha512-MGMgoQeqr41S/JNL/Dy23DBxCjyt2JRBOKZ66XAiUCmZMwSzIukMHtbokzVHp2CDXrYjeZ6h1ejvD9mGMK1efA==
+"@healform/design-tokens@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@healform/design-tokens/-/design-tokens-1.5.0.tgz#594ebce41792806ff6bb61a6292fa83b5c802cbd"
+  integrity sha512-lquat/ZAgJm0vpX5/igfVWcHWetIPYh9Fq/GCsxi9mNN1L9jNSDr/wncTPc53rQf8V6P9hU2LBnsbx9428Rc3Q==
 
 "@hookform/resolvers@^2.5.2":
   version "2.8.8"

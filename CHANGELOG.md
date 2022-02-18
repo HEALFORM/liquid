@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/HEALFORM/liquid/compare/v1.2.0...v1.3.0) (2022-02-18)
+
+
+### Bug Fixes
+
+* **Divider:** Change default component naming to base ([e3d578f](https://github.com/HEALFORM/liquid/commit/e3d578f881d0eb272a258e7513e338a8bf3b5375))
+
+
+### Features
+
+* **Link:** Create Link component with props ([c0dbe96](https://github.com/HEALFORM/liquid/commit/c0dbe96795adfcddcd4f869ada465822d6a34d2d))
+
 # [1.2.0](https://github.com/HEALFORM/liquid/compare/v1.1.0...v1.2.0) (2022-02-16)
 
 

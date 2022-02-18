@@ -23,7 +23,7 @@ export const parameters = {
           'SubHeadline',
           'Body',
           'BodyLarge',
-          'Anchor',
+          'Link',
           'List'
         ],
         'Layout', [

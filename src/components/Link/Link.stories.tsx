@@ -1,3 +1,6 @@
+import { Box } from '@chakra-ui/react'
+import tokens from '@healform/design-tokens/dist/js/tokens'
+import { lighten } from 'polished'
 import React from 'react'
 
 import { Body } from '../Body'
@@ -22,8 +25,9 @@ export default {
       },
       control: {
         type: 'radio',
-        options: ['primary', 'reverse'],
+        options: ['inherit', 'primary', 'reverse'],
         labels: {
+          inherit: 'Inherit',
           primary: 'Primary',
           reverse: 'Reverse',
         },
@@ -67,11 +71,11 @@ Base.args = { children: 'Link text', href: '#' }
 
 export const ParagraphLink = () => (
   <Body>
-    Create consistency for the entire incident response lifecycle with{' '}
+    Die erste Kryosauna in Kassel, Baunatal und Warburg gilt als eine moderne Ganzkörperkälteanwendung bei{' '}
     <Link rel="noopener" target="_blank" href="https://healform.de/">
-      FireHydrant
+      HEALFORM
     </Link>
-    , the incident management platform for teams of all sizes.
+    , für diverse Möglichkeiten der Anwendung.
   </Body>
 )
 
@@ -160,6 +164,7 @@ ReverseExternalLink.args = {
   isExternal: true,
   variant: 'reverse',
 }
+
 ReverseExternalLink.parameters = {
   backgrounds: { default: 'dark' },
 }
@@ -173,6 +178,7 @@ export const ParagraphLinkReverse = () => (
     , the incident management platform for teams of all sizes.
   </Body>
 )
+
 ParagraphLinkReverse.parameters = {
   backgrounds: { default: 'dark' },
 }
@@ -192,6 +198,7 @@ export const LongParagraphLinkReverse = () => (
     the paragraph.
   </Body>
 )
+
 LongParagraphLinkReverse.parameters = {
   backgrounds: { default: 'dark' },
 }
@@ -204,6 +211,7 @@ SizeOneReverseExternalLink.args = {
   variant: 'reverse',
   isExternal: true,
 }
+
 SizeOneReverseExternalLink.parameters = {
   backgrounds: { default: 'dark' },
 }
@@ -216,6 +224,7 @@ SizeTwoReverseExternalLink.args = {
   variant: 'reverse',
   isExternal: true,
 }
+
 SizeTwoReverseExternalLink.parameters = {
   backgrounds: { default: 'dark' },
 }
@@ -229,6 +238,20 @@ SizeTwoReverseExternalLongLink.args = {
   variant: 'reverse',
   maxWidth: '100px',
 }
+
 SizeTwoReverseExternalLongLink.parameters = {
   backgrounds: { default: 'dark' },
 }
+
+export const InheritExample = () => (
+  <Box textAlign={'center'} p={3} bg={lighten(0.3, tokens.colors.secondary.value)}>
+    <Body noMargin>
+      🎉 Das neue HEALFORM ist da: komplett re-designed und alles neu. Entdeckt die neuen Funktionen.&nbsp;
+      <a href={'/features'}>
+        <Link variant={'inherit'} href={'/features'}>
+          Was ist neu →
+        </Link>
+      </a>
+    </Body>
+  </Box>
+)

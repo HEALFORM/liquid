@@ -70,5 +70,11 @@ export const Link = {
         },
       },
     },
+    inherit: {
+      color: 'inherit',
+      _hover: {
+        borderBottom: '1px dotted',
+      },
+    },
   },
 }

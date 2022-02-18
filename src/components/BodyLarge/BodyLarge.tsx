@@ -1,13 +1,19 @@
 import { Box, useStyleConfig } from '@chakra-ui/react'
-import React, { HTMLAttributes, Ref } from 'react'
+import tokens from '@healform/design-tokens/dist/js/tokens'
+import React, { HTMLAttributes, ReactNode, Ref } from "react";
 
 type Variant = 'highlight' | 'quote' | 'success' | 'error' | 'subtle'
 
 export interface BodyLargeProps extends HTMLAttributes<HTMLHeadingElement> {
+  children: ReactNode
   /**
    * Choose from style variants.
    */
   variant?: Variant
+  /**
+   * Removes the default bottom margin from the title.
+   */
+  noMargin?: boolean
   /**
    * The ref to the HTML DOM element.
    */
@@ -19,10 +25,10 @@ export const BodyLarge = React.forwardRef<HTMLAttributes<any>, BodyLargeProps>(f
   children,
   ...props
 }) {
-  const { variant, ...rest } = props
+  const { variant, noMargin, ...rest } = props
   const styles = useStyleConfig('BodyLarge', { variant })
   return (
-    <Box as={'p'} sx={styles} {...rest}>
+    <Box as={'p'} sx={styles} {...rest} mb={noMargin ? '0' : tokens.spacings.sm.value}>
       {children}
     </Box>
   )

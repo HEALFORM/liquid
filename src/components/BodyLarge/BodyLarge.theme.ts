@@ -5,7 +5,6 @@ export const BodyLarge = {
     fontWeight: tokens.fonts.fontWeight.regular.value,
     fontSize: tokens.typography.bodyLarge.fontSize.value,
     lineHeight: tokens.typography.bodyLarge.lineHeight.value,
-    marginBottom: tokens.spacings.sm.value,
   },
   variants: {
     highlight: {

@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/HEALFORM/liquid/compare/v1.4.0...v1.4.1) (2022-02-18)
+
+
+### Bug Fixes
+
+* **Link:** Include custom Link theming in `index.ts` ([5efd71a](https://github.com/HEALFORM/liquid/commit/5efd71a14ef0f38779a4cbdac57443e3dd358fad))
+
 # [1.4.0](https://github.com/HEALFORM/liquid/compare/v1.3.0...v1.4.0) (2022-02-18)
 
 

@@ -1,11 +1,12 @@
 import { Button as ChakraButton } from '@chakra-ui/react'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, ReactNode } from 'react'
 
 type ColorScheme = 'gray' | 'blue' | 'seagrass' | 'red'
 type Size = 'xs' | 'sm' | 'md' | 'lg'
 type Variant = 'ghost' | 'outline' | 'solid' | 'link'
 
 export interface ButtonProps {
+  children: ReactNode
   /**
    * Choose from 5 style variants. Default: 'solid'.
    */
@@ -33,11 +34,7 @@ export interface ButtonProps {
 }
 
 export const Button = React.forwardRef<HTMLAttributes<any>, ButtonProps>(function Button({ children, ...props }) {
-  return (
-    <ChakraButton {...props}>
-      {children}
-    </ChakraButton>
-  )
+  return <ChakraButton {...props}>{children}</ChakraButton>
 })
 
 Button.defaultProps = {

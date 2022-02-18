@@ -56,6 +56,25 @@ export const Sizes = args => (
   </>
 )
 
+export const ColorSchemes = args => (
+  <>
+    <HStack>
+      <Button colorScheme={'gray'} {...args}>
+        {content}
+      </Button>
+      <Button colorScheme={'blue'} {...args}>
+        {content}
+      </Button>
+      <Button colorScheme={'seagrass'} {...args}>
+        {content}
+      </Button>
+      <Button colorScheme={'red'} {...args}>
+        {content}
+      </Button>
+    </HStack>
+  </>
+)
+
 export const Primary = Template.bind({})
 Primary.args = {
   colorScheme: 'blue',

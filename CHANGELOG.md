@@ -1,3 +1,19 @@
+# [1.5.0](https://github.com/HEALFORM/liquid/compare/v1.4.1...v1.5.0) (2022-02-18)
+
+
+### Bug Fixes
+
+* Adds ReactNode for `{children}` attribute ([8c8000f](https://github.com/HEALFORM/liquid/commit/8c8000f9919e4b6a05355a3bd5328c582c18a9cb))
+* **Body:** Add missing noMargin property on Body component ([1222533](https://github.com/HEALFORM/liquid/commit/1222533f9a7f6fd24eecfebd4034a41d62b8690e))
+* **BodyLarge:** Add missing noMargin property on BodyLarge component ([94ace56](https://github.com/HEALFORM/liquid/commit/94ace56a1932aaef88af68126dde91cbd7ad5620))
+* **SubHeadline:** Include created component in `index.ts` ([0c12a02](https://github.com/HEALFORM/liquid/commit/0c12a0239ed30ac9330ef1805df0e4fad0534965))
+
+
+### Features
+
+* **Link:** Add 'inherit' variant and corresponding example ([9347d39](https://github.com/HEALFORM/liquid/commit/9347d39cb136820c6b3bbe6ce9aa95ab9197d025))
+* **SubHeadline:** Add SubHeadline component with props. ([05a972b](https://github.com/HEALFORM/liquid/commit/05a972ba9b9eda1daa09f1265de7a318024c96e3))
+
 ## [1.4.1](https://github.com/HEALFORM/liquid/compare/v1.4.0...v1.4.1) (2022-02-18)
 
 

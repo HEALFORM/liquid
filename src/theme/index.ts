@@ -5,6 +5,7 @@ import { Body } from '../components/Body/Body.theme'
 import { BodyLarge } from '../components/BodyLarge/BodyLarge.theme'
 import { Button } from '../components/Button/Button.theme'
 import { Divider } from '../components/Divider/Divider.theme'
+import { FeatureCard } from '../components/FeatureCard/FeatureCard.theme'
 import { FooterHeadline } from '../components/FooterHeadline/FooterHeadline.theme'
 import { Headline } from '../components/Headline/Headline.theme'
 import { IconButton } from '../components/IconButton/IconButton.theme'
@@ -34,6 +35,7 @@ export default extendTheme({
     BodyLarge,
     Button,
     Divider,
+    FeatureCard,
     FooterHeadline,
     Headline,
     IconButton,

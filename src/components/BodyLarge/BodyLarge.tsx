@@ -1,6 +1,6 @@
 import { Box, useStyleConfig } from '@chakra-ui/react'
 import tokens from '@healform/design-tokens/dist/js/tokens'
-import React, { HTMLAttributes, ReactNode, Ref } from "react";
+import React, { HTMLAttributes, ReactNode, Ref } from 'react'
 
 type Variant = 'highlight' | 'quote' | 'success' | 'error' | 'subtle'
 

@@ -1,5 +1,5 @@
 import { Button as ChakraButton } from '@chakra-ui/react'
-import React, { FC, HTMLAttributes, SVGProps } from 'react'
+import React, { HTMLAttributes } from 'react'
 
 type ColorScheme = 'gray' | 'blue' | 'seagrass' | 'red'
 type Size = 'xs' | 'sm' | 'md' | 'lg'
@@ -30,15 +30,11 @@ export interface ButtonProps {
    * Visually disables the button and shows a loading spinner.
    */
   isLoading?: boolean
-  /**
-   * Display an icon in addition to the text to help to identify the action.
-   */
-  icon?: FC<SVGProps<SVGSVGElement>>
 }
 
 export const Button = React.forwardRef<HTMLAttributes<any>, ButtonProps>(function Button({ children, ...props }) {
   return (
-    <ChakraButton my="mg0" {...props}>
+    <ChakraButton {...props}>
       {children}
     </ChakraButton>
   )

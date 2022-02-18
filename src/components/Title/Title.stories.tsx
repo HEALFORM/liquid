@@ -46,3 +46,11 @@ export const Sizes = args =>
       This is a Title {s}
     </Title>
   ))
+
+export const withGradient = args => (
+  <>
+    <Title as={'h1'} size={'three'} bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text" {...args}>
+      This is a fancy title with gradient.
+    </Title>
+  </>
+)

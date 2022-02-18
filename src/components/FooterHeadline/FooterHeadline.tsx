@@ -1,8 +1,9 @@
 import { Box, useStyleConfig } from '@chakra-ui/react'
 import tokens from '@healform/design-tokens/dist/js/tokens'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, ReactNode } from 'react'
 
 export interface FooterHeadlineProps extends HTMLAttributes<HTMLHeadingElement> {
+  children: ReactNode
   /**
    * Removes the default bottom margin from the headline.
    */

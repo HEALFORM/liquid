@@ -1,10 +1,11 @@
 import { Box, useStyleConfig } from '@chakra-ui/react'
 import tokens from '@healform/design-tokens/dist/js/tokens'
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, ReactNode } from 'react'
 
 type Size = 'one' | 'two' | 'three' | 'four'
 
 export interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
+  children: ReactNode
   /**
    * A Liquid UI title size. Defaults to `one`.
    */

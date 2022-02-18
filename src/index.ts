@@ -6,6 +6,7 @@ export * from './components/FooterHeadline'
 export * from './components/Headline'
 export * from './components/IconButton'
 export * from './components/Link'
+export * from './components/SubHeadline'
 export * from './components/Title'
 export * from './helpers/ThemeProvider'
 export {

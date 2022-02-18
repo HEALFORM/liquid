@@ -9,6 +9,7 @@ import { FooterHeadline } from '../components/FooterHeadline/FooterHeadline.them
 import { Headline } from '../components/Headline/Headline.theme'
 import { IconButton } from '../components/IconButton/IconButton.theme'
 import { Link } from '../components/Link/Link.theme'
+import { SubHeadline } from '../components/SubHeadline/SubHeadline.theme'
 import { Title } from '../components/Title/Title.theme'
 import * as colors from './colors.theme'
 import * as radii from './radii.theme'
@@ -37,6 +38,7 @@ export default extendTheme({
     Headline,
     IconButton,
     Link,
+    SubHeadline,
     Title,
   },
   config: {

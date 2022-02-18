@@ -37,4 +37,8 @@ export default extendTheme({
     IconButton,
     Title,
   },
+  config: {
+    initialColorMode: 'light',
+    useSystemColorMode: true,
+  },
 })

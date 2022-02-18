@@ -1,9 +1,17 @@
 import React from 'react';
 import { DocsContainer } from '@storybook/addon-docs';
 import { ThemeProvider} from "../src/index";
+import theme from "./theme";
+import themeDark from "./themeDark";
 
 export const parameters = {
   actions: { argTypesRegex: '^on.*' },
+  darkMode: {
+    // Override the default dark theme
+    dark: { ...themeDark },
+    // Override the default light theme
+    light: { ...theme },
+  },
   options: {
     storySort: {
       order: [

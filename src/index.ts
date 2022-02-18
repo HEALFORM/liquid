@@ -4,6 +4,7 @@ export * from './components/Button'
 export * from './components/Divider'
 export * from './components/FooterHeadline'
 export * from './components/Headline'
+export * from './components/IconButton'
 export * from './components/Title'
 export * from './helpers/ThemeProvider'
 export {
@@ -23,7 +24,7 @@ export {
   VStack,
   Wrap,
   WrapItem,
-  Button,
+  // Button,
   ButtonGroup,
   Checkbox,
   CheckboxGroup,
@@ -34,7 +35,7 @@ export {
   FormLabel,
   FormErrorMessage,
   FormHelperText,
-  IconButton,
+  // IconButton,
   Input,
   NumberInput,
   NumberInputField,

@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/HEALFORM/liquid/compare/v1.7.1...v1.8.0) (2022-02-22)
+
+
+### Features
+
+* **Avatar:** Add `Avatar` component with built-in props. ([2558f4c](https://github.com/HEALFORM/liquid/commit/2558f4cde963f638246328d5b4f6f257eb548620))
+
 ## [1.7.1](https://github.com/HEALFORM/liquid/compare/v1.7.0...v1.7.1) (2022-02-22)
 
 

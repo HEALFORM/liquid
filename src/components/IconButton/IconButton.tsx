@@ -1,5 +1,5 @@
-import { IconButton as ChakraIconButton } from '@chakra-ui/react'
-import React, { HTMLAttributes } from 'react'
+import {HTMLChakraProps, IconButton as ChakraIconButton} from '@chakra-ui/react'
+import React from 'react'
 
 type ColorScheme = 'gray' | 'blue' | 'seagrass' | 'red'
 type Size = 'xs' | 'sm' | 'md' | 'lg'
@@ -7,9 +7,14 @@ type Variant = 'ghost' | 'outline' | 'solid' | 'link'
 
 export interface IconButtonProps {
   /**
-   * A label that describes the button.
+   * The icon to be used in the button.
+   * @type React.ReactElement
    */
-  ariaLabel: string
+  icon?: React.ReactElement;
+  /**
+   * A11y: A label that describes the button
+   */
+  "aria-label": string;
   /**
    * Choose from 5 style variants. Default: 'solid'.
    */
@@ -31,7 +36,7 @@ export interface IconButtonProps {
    */
   isFullWidth?: boolean
   /**
-   * If true, the button will be perfectly round. Else, it'll be slightly round.
+   * If `true`, the button will be perfectly round. Else, it'll be slightly round
    */
   isRound?: boolean
   /**
@@ -40,9 +45,9 @@ export interface IconButtonProps {
   isLoading?: boolean
 }
 
-export const IconButton = React.forwardRef<HTMLAttributes<any>, IconButtonProps>(function IconButton({ children, ...props }) {
+export const IconButton = React.forwardRef<HTMLChakraProps<any>, IconButtonProps>(function IconButton({ children, ...props }) {
   return (
-    <ChakraIconButton aria-label={props.ariaLabel} {...props}>
+    <ChakraIconButton aria-label={props["aria-label"]} {...props}>
       {children}
     </ChakraIconButton>
   )

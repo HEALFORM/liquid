@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/HEALFORM/liquid/compare/v1.7.0...v1.7.1) (2022-02-22)
+
+
+### Bug Fixes
+
+* **Button:** Change `borderRadius` of ButtonComponent to `xl` ([65d6435](https://github.com/HEALFORM/liquid/commit/65d6435706cad40f2e6cc7e1e1d5eb8e05d908da))
+* Export missing `Icon`, `Collapse` & `useColorModeValue`. ([699c48f](https://github.com/HEALFORM/liquid/commit/699c48f179642c4f44cd2300e808f35292ea5a7e))
+* **IconButton:** Adds `icon?` to `IconButtonProps` ([d576937](https://github.com/HEALFORM/liquid/commit/d5769377f86b7abf6b924d83363356e168cdee0c))
+
 # [1.7.0](https://github.com/HEALFORM/liquid/compare/v1.6.0...v1.7.0) (2022-02-18)
 
 

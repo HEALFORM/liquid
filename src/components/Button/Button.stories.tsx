@@ -3,7 +3,7 @@ import React from 'react'
 
 import {HStack} from './../../index'
 import { Button, ButtonProps } from './Button'
-import {Box} from "@chakra-ui/react";
+import {Box, useColorModeValue} from "@chakra-ui/react";
 
 export default {
   title: 'Components/Button',
@@ -155,10 +155,10 @@ export const CustomStyling = args => (
           target={'_blank'}
           fontSize={'sm'}
           fontWeight={600}
-          color={'black'}
+          color={useColorModeValue('black', 'white')}
           bg={'transparent'}
           _hover={{
-            bg: 'blackAlpha.200',
+            bg: useColorModeValue('whiteAlpha.200', 'blackAlpha.200'),
           }}
           leftIcon={<CalendarIcon />}
           {...args}

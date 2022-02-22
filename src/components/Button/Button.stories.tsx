@@ -1,8 +1,9 @@
 import { CalendarIcon, DeleteIcon } from '@chakra-ui/icons'
 import React from 'react'
 
-import { HStack } from './../../index'
+import {HStack} from './../../index'
 import { Button, ButtonProps } from './Button'
+import {Box} from "@chakra-ui/react";
 
 export default {
   title: 'Components/Button',
@@ -127,3 +128,43 @@ Danger.args = {
   children: 'Termin stornieren',
   leftIcon: <DeleteIcon />,
 }
+
+export const CustomStyling = args => (
+    <>
+      <HStack>
+        <Box
+          as={"button"}
+          display={{ base: 'none', md: 'inline-flex' }}
+          href={'https://healform.de/'}
+          target={'_blank'}
+          fontSize={'sm'}
+          fontWeight={600}
+          color={'white'}
+          bg={'orange.500'}
+          _hover={{
+            bg: 'yellow.200',
+          }}
+          {...args}
+        >
+          Test
+        </Box>
+        <Button
+          as="a"
+          display={{ base: 'none', md: 'inline-flex' }}
+          href={'https://healform.de/'}
+          target={'_blank'}
+          fontSize={'sm'}
+          fontWeight={600}
+          color={'black'}
+          bg={'transparent'}
+          _hover={{
+            bg: 'blackAlpha.200',
+          }}
+          leftIcon={<CalendarIcon />}
+          {...args}
+        >
+          Jetzt anmelden
+        </Button>
+      </HStack>
+    </>
+  )

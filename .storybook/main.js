@@ -1,4 +1,6 @@
 const path = require('path')
+const { propNames } = require("@chakra-ui/styled-system")
+const excludedPropNames = propNames.concat(["as", "apply", "sx", "__css"])
 const toPath = _path => path.join(process.cwd(), _path)
 
 // seems there is a current issues with webpack, storybook and Chakra deps
@@ -23,5 +25,16 @@ module.exports = {
         },
       },
     };
+  },
+  typescript: {
+    reactDocgenTypescriptOptions: {
+      propFilter: (prop) => {
+        const isStyledSystemProp = excludedPropNames.includes(prop.name)
+        const isHTMLElementProp =
+          prop.parent?.fileName.includes("node_modules") ?? false
+
+        return !(isStyledSystemProp || isHTMLElementProp)
+      },
+    },
   },
 }

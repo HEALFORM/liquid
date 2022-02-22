@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/HEALFORM/liquid/compare/v1.8.0...v1.9.0) (2022-02-22)
+
+
+### Features
+
+* excludedPropNames ([2b36102](https://github.com/HEALFORM/liquid/commit/2b361021775fc060b7f14d87e9eec58bef9e87e6))
+
 # [1.8.0](https://github.com/HEALFORM/liquid/compare/v1.7.1...v1.8.0) (2022-02-22)
 
 

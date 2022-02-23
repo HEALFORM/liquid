@@ -1,18 +1,101 @@
 import { CalendarIcon, DeleteIcon } from '@chakra-ui/icons'
+import { Box, useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 
-import {HStack} from './../../index'
-import { Button, ButtonProps } from './Button'
-import {Box, useColorModeValue} from "@chakra-ui/react";
+import { HStack } from './../../index'
+import { Button } from './Button'
 
 export default {
   title: 'Components/Button',
   component: Button,
+  argTypes: {
+    colorScheme: {
+      name: 'Color Scheme',
+      type: { name: 'string', required: false },
+      description: 'Render the `ButtonComponent` in different color schemes.',
+      table: {
+        type: { summary: 'gray|blue|seagrass|red|orange|yellow|green' },
+        defaultValue: { summary: 'gray' },
+      },
+      control: {
+        type: 'select',
+        options: ['gray', 'blue', 'seagrass', 'red', 'green'],
+      },
+    },
+    variant: {
+      name: 'Variant',
+      type: { name: 'string', required: false },
+      description: 'Render the `ButtonComponent` in four different variants.',
+      table: {
+        type: { summary: 'solid|ghost|outline|link' },
+        defaultValue: { summary: 'solid' },
+      },
+      control: {
+        type: 'radio',
+        options: ['solid', 'ghost', 'outline', 'link'],
+      },
+    },
+    size: {
+      name: 'Size',
+      type: { name: 'string', required: false },
+      description: 'Render the `ButtonComponent` in four different sizes.',
+      table: {
+        type: { summary: 'xs|sm|md|lg' },
+        defaultValue: { summary: 'md' },
+      },
+      control: {
+        type: 'radio',
+        options: ['xs', 'sm', 'md', 'lg'],
+      },
+    },
+    isDisabled: {
+      name: 'isDisabled',
+      type: { name: 'boolean', required: false },
+      description: 'Visually and functionally disable the button.',
+      table: {
+        type: { summary: 'true|false' },
+        defaultValue: { summary: 'false' },
+      },
+      control: {
+        type: 'boolean',
+      },
+    },
+    isFullWidth: {
+      name: 'isFullWidth',
+      type: { name: 'boolean', required: false },
+      description: 'Stretch the button across the full width of its parent.',
+      table: {
+        type: { summary: 'true|false' },
+        defaultValue: { summary: 'false' },
+      },
+      control: {
+        type: 'boolean',
+      },
+    },
+    isLoading: {
+      name: 'isLoading',
+      type: { name: 'boolean', required: false },
+      description: 'Visually disables the button and shows a loading spinner.',
+      table: {
+        type: { summary: 'true|false' },
+        defaultValue: { summary: 'false' },
+      },
+      control: {
+        type: 'boolean',
+      },
+    },
+    children: {
+      description: 'Inner element or text for element',
+      table: {
+        type: { summary: 'text|node' },
+      },
+    },
+  },
 }
 
 const content = 'Termin buchen'
 
-const Template = (args: ButtonProps) => <Button {...args} />
+const Template = args => <Button {...args} />
 
 export const Base = Template.bind({})
 Base.args = {
@@ -70,6 +153,9 @@ export const ColorSchemes = args => (
         {content}
       </Button>
       <Button colorScheme={'red'} {...args}>
+        {content}
+      </Button>
+      <Button colorScheme={'green'} {...args}>
         {content}
       </Button>
     </HStack>
@@ -130,41 +216,45 @@ Danger.args = {
 }
 
 export const CustomStyling = args => (
-    <>
-      <HStack>
-        <Box
-          as={"button"}
-          display={{ base: 'none', md: 'inline-flex' }}
-          href={'https://healform.de/'}
-          target={'_blank'}
-          fontSize={'sm'}
-          fontWeight={600}
-          color={'white'}
-          bg={'orange.500'}
-          _hover={{
-            bg: 'yellow.200',
-          }}
-          {...args}
-        >
-          Test
-        </Box>
-        <Button
-          as="a"
-          display={{ base: 'none', md: 'inline-flex' }}
-          href={'https://healform.de/'}
-          target={'_blank'}
-          fontSize={'sm'}
-          fontWeight={600}
-          color={useColorModeValue('black', 'white')}
-          bg={'transparent'}
-          _hover={{
-            bg: useColorModeValue('whiteAlpha.200', 'blackAlpha.200'),
-          }}
-          leftIcon={<CalendarIcon />}
-          {...args}
-        >
-          Jetzt anmelden
-        </Button>
-      </HStack>
-    </>
-  )
+  <>
+    <HStack>
+      <Button
+        as="a"
+        display={{ base: 'none', md: 'inline-flex' }}
+        href={'https://healform.de/'}
+        target={'_blank'}
+        fontSize={'sm'}
+        fontWeight={600}
+        color="blue"
+        bg={'#ff0000'}
+        _hover={{
+          bg: "blue",
+          color: "#ff0000"
+        }}
+        leftIcon={<CalendarIcon />}
+        {...args}
+      >
+        Jetzt anmelden
+      </Button>
+      <Button
+        as="a"
+        display={{ base: 'none', md: 'inline-flex' }}
+        href={'https://healform.de/'}
+        target={'_blank'}
+        fontSize={'xl'}
+        fontWeight={600}
+        color={useColorModeValue('black', 'white')}
+        bg={'transparent'}
+        borderRadius={0}
+        p={5}
+        _hover={{
+          bg: useColorModeValue('blackAlpha.200', 'blackAlpha.800'),
+        }}
+        leftIcon={<CalendarIcon />}
+        {...args}
+      >
+        Jetzt anmelden
+      </Button>
+    </HStack>
+  </>
+)

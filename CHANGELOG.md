@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/HEALFORM/liquid/compare/v1.10.0...v1.10.1) (2022-02-23)
+
+
+### Bug Fixes
+
+* Fix exports with new created components. ([196bc49](https://github.com/HEALFORM/liquid/commit/196bc495e68b6890a36ef1f7ae26930dd77cfbc7))
+
 # [1.10.0](https://github.com/HEALFORM/liquid/compare/v1.9.1...v1.10.0) (2022-02-23)
 
 

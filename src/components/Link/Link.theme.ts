@@ -16,7 +16,7 @@ export const Link = {
       },
     },
     _hover: {
-      textDecoration: 'none',
+      textDecoration: 'underline',
     },
     _active: {
       borderRadius: 'none',
@@ -36,6 +36,7 @@ export const Link = {
   variants: {
     primary: {
       color: 'blue.500',
+      textDecoration: 'none',
       boxShadow: `${tokens.colors.blue['500'].value} 0 1px 0px 0px`,
       _focus: {
         color: 'blue.700',
@@ -44,6 +45,7 @@ export const Link = {
       _hover: {
         color: 'blue.700',
         bg: 'blue.100',
+        textDecoration: 'none',
         boxShadow: `${tokens.colors.blue['500'].value} 0 2px 0px 0px`,
         _active: {
           color: 'blue.900',
@@ -55,6 +57,7 @@ export const Link = {
     reverse: {
       color: 'gray.50',
       boxShadow: `${tokens.colors.gray['400'].value} 0 1px 0px 0px`,
+      textDecoration: 'none',
       _focus: {
         color: 'gray.500',
         outline: `${tokens.colors.gray['200'].value} auto 1px`,
@@ -62,6 +65,7 @@ export const Link = {
       _hover: {
         color: 'gray.50',
         bg: 'gray.600',
+        textDecoration: 'none',
         boxShadow: `${tokens.colors.gray['50'].value} 0 2px 0px 0px`,
         _active: {
           color: 'grey.90',
@@ -73,7 +77,7 @@ export const Link = {
     inherit: {
       color: 'inherit',
       _hover: {
-        borderBottom: '1px dotted',
+        textDecoration: 'underline',
       },
     },
   },

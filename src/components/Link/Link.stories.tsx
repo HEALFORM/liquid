@@ -21,13 +21,13 @@ export default {
       type: { name: 'string', required: false },
       description: 'Visual variant',
       table: {
-        type: { summary: 'primary|reverse' },
+        type: { summary: 'basic|primary|reverse' },
       },
       control: {
         type: 'radio',
-        options: ['inherit', 'primary', 'reverse'],
+        options: ['basic', 'primary', 'reverse'],
         labels: {
-          inherit: 'Inherit',
+          basic: 'Basic',
           primary: 'Primary',
           reverse: 'Reverse',
         },
@@ -60,6 +60,9 @@ export default {
         },
         defaultValue: { summary: 'false' },
       },
+      control: {
+        type: 'boolean',
+      },
     },
   },
 }
@@ -72,7 +75,7 @@ Base.args = { children: 'Link text', href: '#' }
 export const ParagraphLink = () => (
   <Body>
     Die erste Kryosauna in Kassel, Baunatal und Warburg gilt als eine moderne Ganzkörperkälteanwendung bei{' '}
-    <Link rel="noopener" target="_blank" href="https://healform.de/">
+    <Link variant={'primary'} rel="noopener" target="_blank" href="https://healform.de/">
       HEALFORM
     </Link>
     , für diverse Möglichkeiten der Anwendung.
@@ -248,7 +251,7 @@ export const InheritExample = () => (
     <Body noMargin>
       🎉 Das neue HEALFORM ist da: komplett re-designed und alles neu. Entdeckt die neuen Funktionen.&nbsp;
       <a href={'/features'}>
-        <Link variant={'inherit'} href={'/features'}>
+        <Link fontWeight={'bold'} variant={'inherit'} href={'/features'}>
           Was ist neu →
         </Link>
       </a>

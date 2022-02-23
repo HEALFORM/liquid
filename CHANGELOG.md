@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/HEALFORM/liquid/compare/v1.9.1...v1.10.0) (2022-02-23)
+
+
+### Features
+
+* **Badge:** Add `Badge` component with built-in props. ([d3ad8c6](https://github.com/HEALFORM/liquid/commit/d3ad8c67582f672254baf26190136b2c8eac7acb))
+
 ## [1.9.1](https://github.com/HEALFORM/liquid/compare/v1.9.0...v1.9.1) (2022-02-23)
 
 

@@ -1,3 +1,11 @@
+## [1.9.1](https://github.com/HEALFORM/liquid/compare/v1.9.0...v1.9.1) (2022-02-23)
+
+
+### Bug Fixes
+
+* **Avatar:** Prettier on `Avatar` ([1f52ae6](https://github.com/HEALFORM/liquid/commit/1f52ae6d1ed71da07a176280b8fc455919dd2d7c))
+* **Link:** Refactor `Link` component with native props. ([6ae919e](https://github.com/HEALFORM/liquid/commit/6ae919e133fee4eb24e1292f1b720098830b4436))
+
 # [1.9.0](https://github.com/HEALFORM/liquid/compare/v1.8.0...v1.9.0) (2022-02-22)
 
 

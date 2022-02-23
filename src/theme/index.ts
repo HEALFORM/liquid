@@ -1,6 +1,8 @@
 import { extendTheme } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
+import tokens from '@healform/design-tokens/dist/js/tokens'
 
+import { Badge } from '../components/Badge/Badge.theme'
 import { Body } from '../components/Body/Body.theme'
 import { BodyLarge } from '../components/BodyLarge/BodyLarge.theme'
 import { Button } from '../components/Button/Button.theme'
@@ -15,8 +17,6 @@ import { Title } from '../components/Title/Title.theme'
 import * as colors from './colors.theme'
 import * as radii from './radii.theme'
 import * as space from './space.theme'
-
-import tokens from '@healform/design-tokens/dist/js/tokens'
 
 const breakpoints = createBreakpoints({
   base: tokens.breakpoints.xs.value.toString(),
@@ -33,6 +33,7 @@ export default extendTheme({
   ...space,
   breakpoints,
   components: {
+    Badge,
     Body,
     BodyLarge,
     Button,

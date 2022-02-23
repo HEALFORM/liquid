@@ -1,3 +1,5 @@
+export * from './components/Avatar'
+export * from './components/Badge'
 export * from './components/Body'
 export * from './components/BodyLarge'
 export * from './components/Button'
@@ -62,7 +64,7 @@ export {
   SliderMark,
   Switch,
   Textarea,
-  Badge,
+  // Badge,
   CloseButton,
   Code,
   // Divider,
@@ -162,7 +164,7 @@ export {
   // Link,
   LinkBox,
   LinkOverlay,
-  Avatar,
+  // Avatar,
   AvatarBadge,
   AvatarGroup,
   Image,

@@ -1,5 +1,5 @@
 import { CalendarIcon, DeleteIcon } from '@chakra-ui/icons'
-import { Box, useColorModeValue } from '@chakra-ui/react'
+import { useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 
 import { HStack } from './../../index'

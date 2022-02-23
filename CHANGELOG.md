@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/HEALFORM/liquid/compare/v1.10.1...v1.10.2) (2022-02-23)
+
+
+### Bug Fixes
+
+* **Button:** Refactor `ButtonComponent` to accept HTML props. ([8a04911](https://github.com/HEALFORM/liquid/commit/8a04911eb76cbbd387647c3c3d4bddac9a5bde32))
+
 ## [1.10.1](https://github.com/HEALFORM/liquid/compare/v1.10.0...v1.10.1) (2022-02-23)
 
 

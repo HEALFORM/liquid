@@ -35,7 +35,7 @@ describe('theme/colors', () => {
   })
   describe('blue.600', () => {
     it('should return the correct value', () => {
-      expect(colors.blue['600]).toBe(tokens.colors.blue['600'].value)
+      expect(colors.blue['600']).toBe(tokens.colors.blue['600'].value)
     })
   })
   describe('blue.700', () => {

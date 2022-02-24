@@ -3,11 +3,13 @@ export * from './components/Badge'
 export * from './components/Body'
 export * from './components/BodyLarge'
 export * from './components/Button'
+export * from './components/ButtonGroup'
 export * from './components/Divider'
 export * from './components/FeatureCard'
 export * from './components/FooterHeadline'
 export * from './components/Headline'
 export * from './components/IconButton'
+export * from './components/Image'
 export * from './components/Link'
 export * from './components/SubHeadline'
 export * from './components/Title'
@@ -31,7 +33,7 @@ export {
   WrapItem,
   Icon,
   // Button,
-  ButtonGroup,
+  // ButtonGroup,
   Checkbox,
   CheckboxGroup,
   Editable,
@@ -167,7 +169,7 @@ export {
   // Avatar,
   AvatarBadge,
   AvatarGroup,
-  Image,
+  // Image,
   Portal,
   Fade,
   ScaleFade,

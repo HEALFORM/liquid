@@ -16,10 +16,7 @@ export interface SubHeadlineProps extends HTMLAttributes<HTMLHeadingElement> {
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export const SubHeadline = React.forwardRef<HTMLAttributes<any>, SubHeadlineProps>(function SubHeadline({
-  children,
-  ...props
-}) {
+export const SubHeadline = ({ children, ...props }: SubHeadlineProps) => {
   const { noMargin, ...rest } = props
   const styles = useStyleConfig('SubHeadline')
   return (
@@ -27,7 +24,7 @@ export const SubHeadline = React.forwardRef<HTMLAttributes<any>, SubHeadlineProp
       {children}
     </Box>
   )
-})
+}
 
 SubHeadline.defaultProps = {
   as: 'h4',

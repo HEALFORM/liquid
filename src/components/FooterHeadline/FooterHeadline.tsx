@@ -16,10 +16,7 @@ export interface FooterHeadlineProps extends HTMLAttributes<HTMLHeadingElement> 
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export const FooterHeadline = React.forwardRef<HTMLAttributes<any>, FooterHeadlineProps>(function FooterHeadline({
-  children,
-  ...props
-}) {
+export const FooterHeadline = ({ children, ...props }: FooterHeadlineProps) => {
   const { noMargin, ...rest } = props
   const styles = useStyleConfig('FooterHeadline')
   return (
@@ -27,7 +24,7 @@ export const FooterHeadline = React.forwardRef<HTMLAttributes<any>, FooterHeadli
       {children}
     </Box>
   )
-})
+}
 
 FooterHeadline.defaultProps = {
   as: 'h3',

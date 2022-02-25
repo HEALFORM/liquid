@@ -21,10 +21,7 @@ export interface BodyLargeProps extends HTMLAttributes<HTMLHeadingElement> {
   ref?: Ref<any>
 }
 
-export const BodyLarge = React.forwardRef<HTMLAttributes<any>, BodyLargeProps>(function BodyLarge({
-  children,
-  ...props
-}) {
+export const BodyLarge = ({ children, ...props }: BodyLargeProps) => {
   const { variant, noMargin, ...rest } = props
   const styles = useStyleConfig('BodyLarge', { variant })
   return (
@@ -32,4 +29,4 @@ export const BodyLarge = React.forwardRef<HTMLAttributes<any>, BodyLargeProps>(f
       {children}
     </Box>
   )
-})
+}

@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/HEALFORM/liquid/compare/v1.11.2...v1.11.3) (2022-02-25)
+
+
+### Bug Fixes
+
+* **Title:** Remove hard-coded `fontStack.default.value` from `Title` component. ([9b0c42d](https://github.com/HEALFORM/liquid/commit/9b0c42dba96855e985c7f901245750843620569f))
+
 ## [1.11.2](https://github.com/HEALFORM/liquid/compare/v1.11.1...v1.11.2) (2022-02-25)
 
 

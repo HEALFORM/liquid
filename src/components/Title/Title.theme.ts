@@ -2,7 +2,6 @@ import tokens from '@healform/design-tokens/dist/js/tokens'
 
 export const Title = {
   baseStyle: {
-    fontFamily: tokens.fonts.fontStack.default.value,
     fontWeight: 700,
   },
   sizes: {

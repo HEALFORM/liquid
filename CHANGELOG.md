@@ -1,3 +1,11 @@
+## [1.11.2](https://github.com/HEALFORM/liquid/compare/v1.11.1...v1.11.2) (2022-02-25)
+
+
+### Bug Fixes
+
+* Remove `IconButtonProps` in `IconButton` stories. ([dccb4d9](https://github.com/HEALFORM/liquid/commit/dccb4d9de74d9f2fc015db3712d951456c276c9a))
+* Removes `forwardRef` and `HTMLAttributes<any>` ([e39beff](https://github.com/HEALFORM/liquid/commit/e39beff12d5c0dca3afd94d1ab30d85ae5bef80c))
+
 ## [1.11.1](https://github.com/HEALFORM/liquid/compare/v1.11.0...v1.11.1) (2022-02-25)
 
 

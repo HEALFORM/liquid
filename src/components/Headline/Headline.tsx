@@ -1,25 +1,16 @@
 import { Box, useStyleConfig } from '@chakra-ui/react'
 import tokens from '@healform/design-tokens/dist/js/tokens'
 import React, { HTMLAttributes, ReactNode } from 'react'
+import {BaseTypographyProps} from "../../interface/Typography";
 
 type Size = 'one' | 'two' | 'three' | 'four'
 
-export interface HeadlineProps extends HTMLAttributes<HTMLHeadingElement> {
+export interface HeadlineProps extends BaseTypographyProps, HTMLAttributes<HTMLHeadingElement> {
   children: ReactNode
   /**
    * A Liquid UI headline size. Defaults to `one`.
    */
   size?: Size | string
-  /**
-   * Removes the default bottom margin from the headline.
-   */
-  noMargin?: boolean
-  /**
-   * The HTML heading element to render.
-   * Headings should be nested sequentially without skipping any levels.
-   * Learn more at https://www.w3.org/WAI/tutorials/page-structure/headings/.
-   */
-  as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
 export const Headline = React.forwardRef<HTMLAttributes<any>, HeadlineProps>(function Headline({ children, ...props }) {

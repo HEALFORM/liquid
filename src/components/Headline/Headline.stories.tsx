@@ -41,6 +41,12 @@ export default {
         type: 'boolean',
       },
     },
+    isTruncated: {
+      name: 'isTruncated',
+      control: {
+        type: 'boolean',
+      },
+    },
     children: {
       description: 'Inner element or text for element',
       table: {
@@ -64,3 +70,9 @@ export const Sizes = (args: HeadlineProps) =>
       This is a Headline {s}
     </Headline>
   ))
+
+export const Truncated = (args: HeadlineProps) => (
+  <Headline isTruncated {...args} noMargin>
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+  </Headline>
+)

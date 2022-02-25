@@ -23,6 +23,12 @@ export default {
         type: 'boolean',
       },
     },
+    isTruncated: {
+      name: 'isTruncated',
+      control: {
+        type: 'boolean',
+      },
+    },
     children: {
       description: 'Inner element or text for element',
       table: {
@@ -35,5 +41,11 @@ export default {
 export const Base = (args: FooterHeadlineProps) => (
   <FooterHeadline {...args} noMargin>
     This is a Footer Headline
+  </FooterHeadline>
+)
+
+export const Truncated = (args: FooterHeadlineProps) => (
+  <FooterHeadline isTruncated {...args}>
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
   </FooterHeadline>
 )

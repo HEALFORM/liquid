@@ -2,7 +2,7 @@ import { CalendarIcon, DeleteIcon } from '@chakra-ui/icons'
 import React from 'react'
 
 import { HStack } from './../../index'
-import { IconButton, IconButtonProps } from './IconButton'
+import { IconButton } from './IconButton'
 
 export default {
   title: 'Components/IconButton',
@@ -11,7 +11,7 @@ export default {
 
 const content = <CalendarIcon />
 
-const Template = (args: IconButtonProps) => <IconButton {...args} />
+const Template = args => <IconButton {...args} />
 
 export const Base = Template.bind({})
 Base.args = {

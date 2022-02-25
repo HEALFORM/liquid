@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/HEALFORM/liquid/compare/v1.10.2...v1.11.0) (2022-02-25)
+
+
+### Features
+
+* **ButtonGroup:** Adds `ButtonGroup` component with native props. ([1daa208](https://github.com/HEALFORM/liquid/commit/1daa208d28b918bf2515c4c812e54d8301e421fe))
+* **Image:** Adds `Image` component with native props. ([5b8f83e](https://github.com/HEALFORM/liquid/commit/5b8f83e9360281230596bd1fb6501272208e2eb9))
+
 ## [1.10.2](https://github.com/HEALFORM/liquid/compare/v1.10.1...v1.10.2) (2022-02-23)
 
 

@@ -22,7 +22,7 @@ export interface HeadlineProps extends HTMLAttributes<HTMLHeadingElement> {
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export const Headline = React.forwardRef<HTMLAttributes<any>, HeadlineProps>(function Headline({ children, ...props }) {
+export const Headline = ({ children, ...props }: HeadlineProps) => {
   const { size, noMargin, ...rest } = props
   const styles = useStyleConfig('Headline', { size })
   return (
@@ -30,7 +30,7 @@ export const Headline = React.forwardRef<HTMLAttributes<any>, HeadlineProps>(fun
       {children}
     </Box>
   )
-})
+}
 
 Headline.defaultProps = {
   size: 'one',

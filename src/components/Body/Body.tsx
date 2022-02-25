@@ -26,7 +26,7 @@ export interface BodyProps extends HTMLAttributes<HTMLHeadingElement> {
   ref?: Ref<any>
 }
 
-export const Body = React.forwardRef<HTMLAttributes<any>, BodyProps>(function Body({ children, ...props }) {
+export const Body = ({ children, ...props }: BodyProps) => {
   const { size, variant, noMargin, ...rest } = props
   const styles = useStyleConfig('Body', { size, variant })
   return (
@@ -34,7 +34,7 @@ export const Body = React.forwardRef<HTMLAttributes<any>, BodyProps>(function Bo
       {children}
     </Box>
   )
-})
+}
 
 Body.defaultProps = {
   size: 'one',

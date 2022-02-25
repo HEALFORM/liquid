@@ -9,10 +9,7 @@ export interface FeatureCardProps extends HTMLAttributes<HTMLDivElement> {
   variant?: 'neutral' | 'gradientPrimary' | 'gradientSecondary' | 'gradientMulti'
 }
 
-export const FeatureCard = React.forwardRef<HTMLAttributes<any>, FeatureCardProps>(function FeatureCard({
-  children,
-  ...props
-}) {
+export const FeatureCard = ({ children, ...props }: FeatureCardProps) => {
   const { variant, ...rest } = props
   const styles = useStyleConfig('FeatureCard', { variant })
   return (
@@ -20,7 +17,7 @@ export const FeatureCard = React.forwardRef<HTMLAttributes<any>, FeatureCardProp
       {children}
     </Box>
   )
-})
+}
 
 FeatureCard.defaultProps = {
   variant: 'neutral',

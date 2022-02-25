@@ -22,7 +22,7 @@ export interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export const Title = React.forwardRef<HTMLAttributes<any>, TitleProps>(function Title({ children, ...props }) {
+export const Title = ({ children, ...props }: TitleProps) => {
   const { size, noMargin, ...rest } = props
   const styles = useStyleConfig('Title', { size })
   return (
@@ -30,7 +30,7 @@ export const Title = React.forwardRef<HTMLAttributes<any>, TitleProps>(function 
       {children}
     </Box>
   )
-})
+}
 
 Title.defaultProps = {
   size: 'one',

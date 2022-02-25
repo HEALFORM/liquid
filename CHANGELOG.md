@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/HEALFORM/liquid/compare/v1.11.0...v1.11.1) (2022-02-25)
+
+
+### Bug Fixes
+
+* Removes nested anchor in `Link` stories. ([b7e78f0](https://github.com/HEALFORM/liquid/commit/b7e78f0582c3ba3dbaba3a58cf1a636f6c1feebf))
+
 # [1.11.0](https://github.com/HEALFORM/liquid/compare/v1.10.2...v1.11.0) (2022-02-25)
 
 

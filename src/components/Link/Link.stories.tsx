@@ -250,11 +250,9 @@ export const InheritExample = () => (
   <Box textAlign={'center'} p={3} bg={lighten(0.3, tokens.colors.secondary.value)}>
     <Body noMargin>
       🎉 Das neue HEALFORM ist da: komplett re-designed und alles neu. Entdeckt die neuen Funktionen.&nbsp;
-      <a href={'/features'}>
-        <Link fontWeight={'bold'} variant={'inherit'} href={'/features'}>
-          Was ist neu →
-        </Link>
-      </a>
+      <Link fontWeight={'bold'} variant={'inherit'} href={'/features'}>
+        Was ist neu →
+      </Link>
     </Body>
   </Box>
 )

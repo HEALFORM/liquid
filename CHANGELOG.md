@@ -1,3 +1,10 @@
+## [1.11.4](https://github.com/HEALFORM/liquid/compare/v1.11.3...v1.11.4) (2022-02-26)
+
+
+### Bug Fixes
+
+* **FeatureCard:** `FeatureCard` now supports dark-mode in `neutral` variant. ([c14e1b3](https://github.com/HEALFORM/liquid/commit/c14e1b3d4c75bdc50fc2266d09f019e28ee358b4))
+
 ## [1.11.3](https://github.com/HEALFORM/liquid/compare/v1.11.2...v1.11.3) (2022-02-25)
 
 

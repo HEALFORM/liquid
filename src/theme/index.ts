@@ -19,7 +19,6 @@ import * as radii from './radii.theme'
 import * as space from './space.theme'
 
 const breakpoints = createBreakpoints({
-  base: tokens.breakpoints.xs.value.toString(),
   sm: tokens.breakpoints.sm.value + 'px',
   md: tokens.breakpoints.md.value + 'px',
   lg: tokens.breakpoints.lg.value + 'px',

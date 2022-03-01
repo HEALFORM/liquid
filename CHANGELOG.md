@@ -1,3 +1,10 @@
+## [1.11.7](https://github.com/HEALFORM/liquid/compare/v1.11.6...v1.11.7) (2022-03-01)
+
+
+### Bug Fixes
+
+* **Props:** Export missing `IconButtonProps` ([bf93a0d](https://github.com/HEALFORM/liquid/commit/bf93a0d2f6e36c12d4ccf7029106e24997f3f9b8))
+
 ## [1.11.6](https://github.com/HEALFORM/liquid/compare/v1.11.5...v1.11.6) (2022-03-01)
 
 

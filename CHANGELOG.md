@@ -1,3 +1,10 @@
+## [1.11.5](https://github.com/HEALFORM/liquid/compare/v1.11.4...v1.11.5) (2022-03-01)
+
+
+### Bug Fixes
+
+* **Props:** Export missing `BoxProps` and `FlexProps` ([15f973a](https://github.com/HEALFORM/liquid/commit/15f973a410730a3a38da2ec765024cbb10ff9002))
+
 ## [1.11.4](https://github.com/HEALFORM/liquid/compare/v1.11.3...v1.11.4) (2022-02-26)
 
 

@@ -194,4 +194,5 @@ export {
   useToken,
   BoxProps,
   FlexProps,
+  IconButtonProps,
 } from '@chakra-ui/react'

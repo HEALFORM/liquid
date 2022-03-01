@@ -1,3 +1,10 @@
+## [1.11.6](https://github.com/HEALFORM/liquid/compare/v1.11.5...v1.11.6) (2022-03-01)
+
+
+### Bug Fixes
+
+* **Breakpoints:** Remove `base` entry from `createBreakpoints` ([a29799b](https://github.com/HEALFORM/liquid/commit/a29799b855d406212bde5f74fb9be30d4e4979b0))
+
 ## [1.11.5](https://github.com/HEALFORM/liquid/compare/v1.11.4...v1.11.5) (2022-03-01)
 
 

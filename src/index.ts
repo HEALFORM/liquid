@@ -192,4 +192,6 @@ export {
   usePrefersReducedMotion,
   useTheme,
   useToken,
+  BoxProps,
+  FlexProps,
 } from '@chakra-ui/react'

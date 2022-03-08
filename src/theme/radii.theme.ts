@@ -8,5 +8,4 @@ export const radii = {
   lg: tokens.radius.lg.value,
   xl: tokens.radius.xl.value,
   xxl: tokens.radius.xxl.value,
-  full: tokens.radius.circle.value,
 }

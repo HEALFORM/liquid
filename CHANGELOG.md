@@ -1,3 +1,10 @@
+## [1.11.8](https://github.com/HEALFORM/liquid/compare/v1.11.7...v1.11.8) (2022-03-08)
+
+
+### Bug Fixes
+
+* Remove Chakra UI `borderRadius` `full` overwrite. ([723a52a](https://github.com/HEALFORM/liquid/commit/723a52af21f679927b4a764544247f94531fccf1))
+
 ## [1.11.7](https://github.com/HEALFORM/liquid/compare/v1.11.6...v1.11.7) (2022-03-01)
 
 

@@ -1,3 +1,10 @@
+## [1.11.9](https://github.com/HEALFORM/liquid/compare/v1.11.8...v1.11.9) (2022-03-09)
+
+
+### Bug Fixes
+
+* **FeatureCard:** Remove `transform: scale` ([2861073](https://github.com/HEALFORM/liquid/commit/28610732fb47f3646d7bf8806eb606af5f15c4d8))
+
 ## [1.11.8](https://github.com/HEALFORM/liquid/compare/v1.11.7...v1.11.8) (2022-03-08)
 
 

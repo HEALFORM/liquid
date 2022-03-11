@@ -1,2 +1,2 @@
-export * from './CastleIcon';
-export * from './HerculesIcon';
+export * from './HealformIcon'
+export * from './HerculesIcon'

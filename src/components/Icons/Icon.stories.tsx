@@ -1,53 +1,35 @@
-import React from 'react';
-import {
-  Box,
-  Code,
-  Icon,
-  Text,
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
-} from './../../index';
-import { iconList } from './Icon';
-import { colorOptions } from '../../theme/colors.theme';
+import { Icon } from '@chakra-ui/react'
+import React from 'react'
+
+import { colorOptions } from '../../theme/colors.theme'
+import { Box, Code, Text, Table, Thead, Tbody, Tr, Th, Td } from './../../index'
+import * as Icons from './index'
+
+const icons = Object.values(Icons)
 
 export default {
-  title: 'Components/Icon',
+  title: 'Components/Icons',
   component: Icon,
   argTypes: {
-    name: {
-      options: iconList.sort(),
-      table: { defaultValue: { summary: 'info' } },
-      control: {
-        type: 'select',
-        options: iconList.sort(),
-      },
-    },
     color: {
-      options: colorOptions,
       table: {
         defaultValue: { summary: 'currentColor' },
         type: {
           summary: `${colorOptions.join('|')}`,
         },
-        control: {
-          type: 'select',
-          options: `${colorOptions.join('|')}`,
-        },
+      },
+      control: {
+        type: 'select',
+        options: colorOptions,
       },
     },
   },
-};
+}
 
-export const Default = (args) => <Icon {...args} />;
-
-export const AllIcons = (args) => (
+export const Base = args => (
   <>
     <Box as="code" display="block" pb={4}>
-      There are {iconList.length} icons
+      There are {icons.length} icons
     </Box>
     <Table>
       <Thead>
@@ -60,25 +42,27 @@ export const AllIcons = (args) => (
         </Tr>
       </Thead>
       <Tbody>
-        {iconList.sort().map((icon, index) => (
-          <Tr key={index}>
-            <Td>
-              <Icon name={icon} {...args} />
-            </Td>
-            <Td>
-              <Text as="kbd">{icon}</Text>
-            </Td>
-            <Td>
-              <Code py={1} px={2}>
-                {`<${icon[0].toUpperCase() + icon.substring(1) + 'Icon'} />`}
-              </Code>
-            </Td>
-          </Tr>
-        ))}
+        {icons
+          .map((icon, index) => (
+            <Tr key={index}>
+              <Td>
+                <Icon as={icon} {...args} />
+              </Td>
+              <Td>
+                <Text as="kbd">{icon.displayName}</Text>
+              </Td>
+              <Td>
+                <Code py={1} px={2}>
+                  {`<${icon.displayName} />`}
+                </Code>
+              </Td>
+            </Tr>
+          ))
+          .sort()}
       </Tbody>
     </Table>
   </>
-);
-AllIcons.argTypes = {
-  name: { table: { disable: true }, control: { disable: true } },
-};
+)
+Base.argTypes = {
+  as: { table: { disable: true }, control: { disable: true } },
+}

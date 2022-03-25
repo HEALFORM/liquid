@@ -38,10 +38,5 @@ describe('theme/radii', () => {
       expect(radii.xxl).toBe(tokens.radius.xxl.value)
     })
   })
-  describe('radii.full', () => {
-    it('should return the correct value', () => {
-      expect(radii.full).toBe(tokens.radius.circle.value)
-    })
-  })
 })
 

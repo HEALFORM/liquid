@@ -1,3 +1,12 @@
+# [1.12.0](https://github.com/HEALFORM/liquid/compare/v1.11.11...v1.12.0) (2022-03-25)
+
+
+### Features
+
+* Set `cssVarPrefix` to `healform` ([5019513](https://github.com/HEALFORM/liquid/commit/501951306da8bc559e3ed24797f685bf3c73cb1e))
+* **ThemeProvider:** Remove required `nonce` and set class names prefix to `healform` ([f99fe39](https://github.com/HEALFORM/liquid/commit/f99fe39798473bd676c777abbd8191590d395b2d))
+* Update dependencies to their latest minor version. ([5f623c2](https://github.com/HEALFORM/liquid/commit/5f623c25ca095bb93748186ec7c3940b305c0402))
+
 ## [1.11.11](https://github.com/HEALFORM/liquid/compare/v1.11.10...v1.11.11) (2022-03-25)
 
 

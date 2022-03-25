@@ -6,14 +6,14 @@ import React from 'react'
 
 import theme from '../theme'
 
-function EmotionCacheProvider({ nonce, children }) {
-  const cache = createCache({ key: 'csp', nonce })
+function EmotionCacheProvider({ children }) {
+  const cache = createCache({ key: 'healform' })
   return <CacheProvider value={cache}>{children}</CacheProvider>
 }
 
-export const ThemeProvider = ({ children, nonce, ...props }) => {
+export const ThemeProvider = ({ children, ...props }) => {
   return (
-    <EmotionCacheProvider nonce={nonce}>
+    <EmotionCacheProvider>
       <ChakraProvider theme={theme} {...props}>
         <CSSReset />
         {children}

@@ -1,3 +1,10 @@
+## [1.11.11](https://github.com/HEALFORM/liquid/compare/v1.11.10...v1.11.11) (2022-03-25)
+
+
+### Bug Fixes
+
+* **Tests:** Remove `radii.full` test ([c69d058](https://github.com/HEALFORM/liquid/commit/c69d058e348c8c2b65fb3241637ed3201e00854f))
+
 ## [1.11.10](https://github.com/HEALFORM/liquid/compare/v1.11.9...v1.11.10) (2022-03-25)
 
 

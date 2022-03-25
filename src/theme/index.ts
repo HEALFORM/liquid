@@ -46,6 +46,7 @@ export default extendTheme({
     Title,
   },
   config: {
+    cssVarPrefix: 'healform',
     initialColorMode: 'light',
     useSystemColorMode: true,
   },

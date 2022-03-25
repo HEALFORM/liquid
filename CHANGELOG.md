@@ -1,3 +1,10 @@
+## [1.11.10](https://github.com/HEALFORM/liquid/compare/v1.11.9...v1.11.10) (2022-03-25)
+
+
+### Bug Fixes
+
+* **Dependencies:** Remove unused dependencies from `package.json` ([df40a79](https://github.com/HEALFORM/liquid/commit/df40a790c0055cb11a81dc29a01ae4dae33a5b79))
+
 ## [1.11.9](https://github.com/HEALFORM/liquid/compare/v1.11.8...v1.11.9) (2022-03-09)
 
 

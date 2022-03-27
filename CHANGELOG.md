@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/HEALFORM/liquid/compare/v1.12.0...v1.12.1) (2022-03-27)
+
+
+### Bug Fixes
+
+* **Dependencies:** Remove double entries in `package.json` ([528cee7](https://github.com/HEALFORM/liquid/commit/528cee796d301d92297d586e50b3a4da72fbdd13))
+
 # [1.12.0](https://github.com/HEALFORM/liquid/compare/v1.11.11...v1.12.0) (2022-03-25)
 
 

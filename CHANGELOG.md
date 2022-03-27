@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/HEALFORM/liquid/compare/v1.12.1...v1.12.2) (2022-03-27)
+
+
+### Bug Fixes
+
+* Downgrade `framer-motion` ([0796844](https://github.com/HEALFORM/liquid/commit/079684495875ae7ed2db047acb462a567b78f671))
+
 ## [1.12.1](https://github.com/HEALFORM/liquid/compare/v1.12.0...v1.12.1) (2022-03-27)
 
 

@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/HEALFORM/liquid/compare/v1.12.2...v1.13.0) (2022-03-28)
+
+
+### Features
+
+* **Container:** Add `Container` component in five different sizes. ([6c03cc1](https://github.com/HEALFORM/liquid/commit/6c03cc117dbea33b3ec2a632dde6a3033c431482))
+
 ## [1.12.2](https://github.com/HEALFORM/liquid/compare/v1.12.1...v1.12.2) (2022-03-27)
 
 

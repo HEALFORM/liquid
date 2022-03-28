@@ -4,6 +4,7 @@ export * from './components/Body'
 export * from './components/BodyLarge'
 export * from './components/Button'
 export * from './components/ButtonGroup'
+export * from './components/Container'
 export * from './components/Divider'
 export * from './components/FeatureCard'
 export * from './components/FooterHeadline'
@@ -20,7 +21,7 @@ export {
   Center,
   Square,
   Circle,
-  Container,
+  // Container,
   Flex,
   Spacer,
   Grid,

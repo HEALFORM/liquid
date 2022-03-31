@@ -1,3 +1,10 @@
+## [1.13.1](https://github.com/HEALFORM/liquid/compare/v1.13.0...v1.13.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* **Divider:** Set `borderWidth` to 1px ([e50533b](https://github.com/HEALFORM/liquid/commit/e50533b80535fdf0da1ef9366d98301018d25ff5))
+
 # [1.13.0](https://github.com/HEALFORM/liquid/compare/v1.12.2...v1.13.0) (2022-03-28)
 
 

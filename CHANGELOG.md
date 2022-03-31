@@ -1,3 +1,12 @@
+# [1.14.0](https://github.com/HEALFORM/liquid/compare/v1.13.1...v1.14.0) (2022-03-31)
+
+
+### Features
+
+* Add `resolveJsonModule` to tsconfig.json ([f8a73f0](https://github.com/HEALFORM/liquid/commit/f8a73f09e29ffb9112f9f993a57b89ca18355d34))
+* Exports and applies the colors for the ThemeProvider one-to-one from the `@healform/design-tokens` ([0129b10](https://github.com/HEALFORM/liquid/commit/0129b1092d52f5d406beede52d09f8481b25593e))
+* Match token imports to new `@healform/design-token` format ([6b8cb8b](https://github.com/HEALFORM/liquid/commit/6b8cb8bc87f57e342dc8849050b8c8222d27ab59))
+
 ## [1.13.1](https://github.com/HEALFORM/liquid/compare/v1.13.0...v1.13.1) (2022-03-31)
 
 

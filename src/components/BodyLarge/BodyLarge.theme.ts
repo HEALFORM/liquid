@@ -15,7 +15,7 @@ export const BodyLarge = {
       paddingLeft: tokens.spacings.lg.value,
       borderLeft: '2px',
       borderStyle: 'solid',
-      borderColor: tokens.colors.primary.value,
+      borderColor: tokens.colors.primary['500'].value,
     },
     success: ({ colorMode }) => ({
       color: colorMode === 'dark' ? 'green.300' : 'green.500',

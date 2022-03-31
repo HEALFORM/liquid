@@ -23,15 +23,15 @@ export const FeatureCard = {
       )(props),
     }),
     gradientPrimary: {
-      background: `url(${imgUrl}) right bottom no-repeat, linear-gradient(80.45deg, ${tokens.colors.primary.value} 0%, ${tokens.colors.primaryDark.value} 99.59%)`,
+      background: `url(${imgUrl}) right bottom no-repeat, linear-gradient(80.45deg, ${tokens.colors.primary['500'].value} 0%, ${tokens.colors.primary['700'].value} 99.59%)`,
       color: tokens.colors.white.value,
     },
     gradientSecondary: {
-      background: `url(${imgUrl}) right bottom no-repeat, linear-gradient(80.45deg, ${tokens.colors.secondary.value} 0%, ${tokens.colors.secondaryDark.value} 99.59%)`,
+      background: `url(${imgUrl}) right bottom no-repeat, linear-gradient(80.45deg, ${tokens.colors.secondary['500'].value} 0%, ${tokens.colors.secondary['700'].value} 99.59%)`,
       color: tokens.colors.white.value,
     },
     gradientMulti: {
-      background: `url(${imgUrl}) right bottom no-repeat, linear-gradient(80.45deg, ${tokens.colors.primary.value} 0%, ${tokens.colors.secondary.value} 99.59%)`,
+      background: `url(${imgUrl}) right bottom no-repeat, linear-gradient(80.45deg, ${tokens.colors.primary['500'].value} 0%, ${tokens.colors.secondary['500'].value} 99.59%)`,
       color: tokens.colors.white.value,
     },
   },

@@ -8,6 +8,6 @@ export default create({
   brandUrl: 'https://healform.de',
   brandImage: logo,
   fontBase: tokens.fonts.fontStack.default.value,
-  colorSecondary: tokens.colors.primary.value,
+  colorSecondary: tokens.colors.primary['500'].value,
   appBg: tokens.colors.white.value,
 });

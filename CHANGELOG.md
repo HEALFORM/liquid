@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/HEALFORM/liquid/compare/v1.14.0...v1.14.1) (2022-03-31)
+
+
+### Bug Fixes
+
+* Update `@healform/design-tokens` dependency ([4e4f2e7](https://github.com/HEALFORM/liquid/commit/4e4f2e747423622fe2c40a58a12c601f9a62c7f0))
+
 # [1.14.0](https://github.com/HEALFORM/liquid/compare/v1.13.1...v1.14.0) (2022-03-31)
 
 

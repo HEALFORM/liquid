@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/HEALFORM/liquid/compare/v1.14.1...v1.14.2) (2022-03-31)
+
+
+### Bug Fixes
+
+* ESLint ([c9d29e7](https://github.com/HEALFORM/liquid/commit/c9d29e70df5ecec265f8c2d41c9883e0fb08bc70))
+
 ## [1.14.1](https://github.com/HEALFORM/liquid/compare/v1.14.0...v1.14.1) (2022-03-31)
 
 

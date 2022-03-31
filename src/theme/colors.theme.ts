@@ -1,8 +1,6 @@
 import * as tokens from '@healform/design-tokens/dist/json/tokens-nested.json';
-
-export const colors = {
-  ...tokens.colors
-}
+const colorsData = tokens.colors
+export const colors = colorsData
 
 export const colorKeys = (color: string | number) =>
   Object.keys(colors[color]).reduce(

@@ -247,7 +247,7 @@ SizeTwoReverseExternalLongLink.parameters = {
 }
 
 export const InheritExample = () => (
-  <Box textAlign={'center'} p={3} bg={lighten(0.3, tokens.colors.secondary.value)}>
+  <Box textAlign={'center'} p={3} bg={lighten(0.3, tokens.colors.secondary['500'].value)}>
     <Body noMargin>
       🎉 Das neue HEALFORM ist da: komplett re-designed und alles neu. Entdeckt die neuen Funktionen.&nbsp;
       <Link fontWeight={'bold'} variant={'inherit'} href={'/features'}>

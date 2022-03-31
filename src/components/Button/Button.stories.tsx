@@ -2,7 +2,7 @@ import { CalendarIcon, DeleteIcon } from '@chakra-ui/icons'
 import { useColorModeValue } from '@chakra-ui/react'
 import React from 'react'
 
-import { HStack } from './../../index'
+import { Wrap } from './../../index'
 import { Button } from './Button'
 
 export default {
@@ -14,12 +14,12 @@ export default {
       type: { name: 'string', required: false },
       description: 'Render the `ButtonComponent` in different color schemes.',
       table: {
-        type: { summary: 'gray|blue|seagrass|red|orange|yellow|green' },
+        type: { summary: 'gray|blue|seagrass|red|orange|yellow|green|violet|turquoise' },
         defaultValue: { summary: 'gray' },
       },
       control: {
         type: 'select',
-        options: ['gray', 'blue', 'seagrass', 'red', 'green'],
+        options: ['gray', 'blue', 'seagrass', 'red', 'orange', 'yellow', 'green', 'violet', 'turquoise'],
       },
     },
     variant: {
@@ -104,7 +104,7 @@ Base.args = {
 
 export const Variants = args => (
   <>
-    <HStack>
+    <Wrap>
       <Button variant="solid" {...args}>
         {content}
       </Button>
@@ -117,13 +117,13 @@ export const Variants = args => (
       <Button variant="link" {...args}>
         {content}
       </Button>
-    </HStack>
+    </Wrap>
   </>
 )
 
 export const Sizes = args => (
   <>
-    <HStack>
+    <Wrap>
       <Button size={'xs'} {...args}>
         {content}
       </Button>
@@ -136,13 +136,13 @@ export const Sizes = args => (
       <Button size={'lg'} {...args}>
         {content}
       </Button>
-    </HStack>
+    </Wrap>
   </>
 )
 
 export const ColorSchemes = args => (
   <>
-    <HStack>
+    <Wrap>
       <Button colorScheme={'gray'} {...args}>
         {content}
       </Button>
@@ -155,10 +155,22 @@ export const ColorSchemes = args => (
       <Button colorScheme={'red'} {...args}>
         {content}
       </Button>
+      <Button colorScheme={'orange'} {...args}>
+        {content}
+      </Button>
+      <Button colorScheme={'yellow'} {...args}>
+        {content}
+      </Button>
       <Button colorScheme={'green'} {...args}>
         {content}
       </Button>
-    </HStack>
+      <Button colorScheme={'violet'} {...args}>
+        {content}
+      </Button>
+      <Button colorScheme={'turquoise'} {...args}>
+        {content}
+      </Button>
+    </Wrap>
   </>
 )
 
@@ -170,14 +182,14 @@ Primary.args = {
 
 export const PrimaryLoading = args => (
   <>
-    <HStack>
+    <Wrap>
       <Button isLoading colorScheme="blue" variant="outline" {...args}>
         {content}
       </Button>
       <Button isLoading loadingText="Submitting" colorScheme="blue" variant="outline" {...args}>
         {content}
       </Button>
-    </HStack>
+    </Wrap>
   </>
 )
 
@@ -217,7 +229,7 @@ Danger.args = {
 
 export const CustomStyling = args => (
   <>
-    <HStack>
+    <Wrap>
       <Button
         as="a"
         display={{ base: 'none', md: 'inline-flex' }}
@@ -225,11 +237,11 @@ export const CustomStyling = args => (
         target={'_blank'}
         fontSize={'sm'}
         fontWeight={600}
-        color="blue"
+        color="orange"
         bg={'#ff0000'}
         _hover={{
-          bg: "blue",
-          color: "#ff0000"
+          bg: 'blue',
+          color: '#ff0000',
         }}
         leftIcon={<CalendarIcon />}
         {...args}
@@ -255,6 +267,6 @@ export const CustomStyling = args => (
       >
         Jetzt anmelden
       </Button>
-    </HStack>
+    </Wrap>
   </>
 )

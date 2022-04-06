@@ -1,6 +1,7 @@
 import React from 'react'
 import LoremIpsum from 'react-lorem-ipsum'
 
+import { Box } from '../../index'
 import { Headline } from '../Headline'
 import { Container, ContainerProps } from './Container'
 
@@ -41,6 +42,8 @@ export const Sizes = (args: ContainerProps) =>
   sizes.map(s => (
     <Container key={s} {...args} size={s} mb={2}>
       <Headline size={'two'}>Container: {s}</Headline>
-      <LoremIpsum />
+      <Box mb={5}>
+        <LoremIpsum />
+      </Box>
     </Container>
   ))

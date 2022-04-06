@@ -1,4 +1,4 @@
-import { Box, BoxProps } from "@chakra-ui/react";
+import { Box, BoxProps } from '@chakra-ui/react'
 import React, { ReactNode } from 'react'
 
 type Size = '4xl' | '5xl' | '6xl' | '7xl' | '8xl'

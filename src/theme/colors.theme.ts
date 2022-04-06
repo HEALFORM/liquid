@@ -1,4 +1,5 @@
-import * as tokens from '@healform/design-tokens/dist/json/tokens-nested.json';
+import tokens from '@healform/design-tokens/dist/json/tokens-nested.json'
+
 const colorsData = tokens.colors
 export const colors = colorsData
 

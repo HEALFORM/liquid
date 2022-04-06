@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/HEALFORM/liquid/compare/v1.14.4...v1.15.0) (2022-04-06)
+
+
+### Features
+
+* **Icons:** Adds custom icons as component. ([8ae612a](https://github.com/HEALFORM/liquid/commit/8ae612a737593430a3a3616dd2d051872ffb400a))
+
 ## [1.14.4](https://github.com/HEALFORM/liquid/compare/v1.14.3...v1.14.4) (2022-04-06)
 
 

@@ -1,3 +1,10 @@
+## [1.14.4](https://github.com/HEALFORM/liquid/compare/v1.14.3...v1.14.4) (2022-04-06)
+
+
+### Bug Fixes
+
+* Update dependencies. ([f772d02](https://github.com/HEALFORM/liquid/commit/f772d02b669a670adf95e47b1414e491e92bd9d9))
+
 ## [1.14.3](https://github.com/HEALFORM/liquid/compare/v1.14.2...v1.14.3) (2022-03-31)
 
 

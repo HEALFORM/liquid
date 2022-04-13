@@ -6,6 +6,7 @@ export const Link = {
     textDecoration: 'none',
     outline: 'transparent',
     transition: 'all 0.1s ease-in-out',
+    lineHeight: 'base',
     _focus: {
       outlineOffset: '0.25em',
       boxShadow: 'none',
@@ -25,12 +26,10 @@ export const Link = {
   },
   sizes: {
     one: {
-      fontSize: tokens.typography.body.one.fontSize.value,
-      lineHeight: tokens.typography.body.one.lineHeight.value,
+      fontSize: 'md',
     },
     two: {
-      fontSize: tokens.typography.body.two.fontSize.value,
-      lineHeight: tokens.typography.body.two.lineHeight.value,
+      fontSize: 'sm',
     },
   },
   variants: {
@@ -68,8 +67,8 @@ export const Link = {
         textDecoration: 'none',
         boxShadow: `${tokens.colors.gray['50'].value} 0 2px 0px 0px`,
         _active: {
-          color: 'grey.90',
-          bg: 'grey.30',
+          color: 'gray.900',
+          bg: 'gray.300',
           boxShadow: `${tokens.colors.gray['500'].value} 0 2px 0px 0px`,
         },
       },

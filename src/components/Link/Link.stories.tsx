@@ -1,6 +1,4 @@
 import { Box } from '@chakra-ui/react'
-import tokens from '@healform/design-tokens/dist/js/tokens'
-import { lighten } from 'polished'
 import React from 'react'
 
 import { Body } from '../Body'
@@ -247,7 +245,7 @@ SizeTwoReverseExternalLongLink.parameters = {
 }
 
 export const InheritExample = () => (
-  <Box textAlign={'center'} p={3} bg={lighten(0.3, tokens.colors.secondary['500'].value)}>
+  <Box textAlign={'center'} p={3} bg="secondary.200">
     <Body noMargin>
       🎉 Das neue HEALFORM ist da: komplett re-designed und alles neu. Entdeckt die neuen Funktionen.&nbsp;
       <Link fontWeight={'bold'} variant={'inherit'} href={'/features'}>

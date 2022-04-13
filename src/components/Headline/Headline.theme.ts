@@ -1,27 +1,20 @@
-import tokens from '@healform/design-tokens/dist/js/tokens'
-
 export const Headline = {
   baseStyle: {
-    fontFamily: tokens.fonts.fontStack.special.value,
-    fontWeight: tokens.fonts.fontWeight.bold.value,
-    letterSpacing: '-0.03em',
+    fontWeight: 'semibold',
+    letterSpacing: 'tight',
   },
   sizes: {
     one: {
-      fontSize: tokens.typography.headline.one.fontSize.value,
-      lineHeight: tokens.typography.headline.one.lineHeight.value,
+      fontSize: '5xl',
     },
     two: {
-      fontSize: tokens.typography.headline.two.fontSize.value,
-      lineHeight: tokens.typography.headline.two.lineHeight.value,
+      fontSize: '4xl',
     },
     three: {
-      fontSize: tokens.typography.headline.three.fontSize.value,
-      lineHeight: tokens.typography.headline.three.lineHeight.value,
+      fontSize: '3xl',
     },
     four: {
-      fontSize: tokens.typography.headline.four.fontSize.value,
-      lineHeight: tokens.typography.headline.four.lineHeight.value,
+      fontSize: '2xl',
     },
   },
 }

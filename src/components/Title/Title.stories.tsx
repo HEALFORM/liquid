@@ -42,14 +42,22 @@ const sizes = ['one', 'two', 'three', 'four']
 
 export const Sizes = args =>
   sizes.map(s => (
-    <Title key={s} {...args} size={s}>
+    <Title noMargin key={s} {...args} size={s}>
       This is a Title {s}
     </Title>
   ))
 
+export const isTruncated = args => (
+  <>
+    <Title as={'h1'} {...args} isTruncated>
+      This is a very long title thats going to be truncated because it is too long.
+    </Title>
+  </>
+)
+
 export const withGradient = args => (
   <>
-    <Title as={'h1'} size={'three'} bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text" {...args}>
+    <Title as={'h1'} size={'two'} bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text" {...args}>
       This is a fancy title with gradient.
     </Title>
   </>

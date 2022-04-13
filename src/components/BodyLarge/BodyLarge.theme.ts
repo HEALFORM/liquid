@@ -1,21 +1,19 @@
-import tokens from '@healform/design-tokens/dist/js/tokens'
-
 export const BodyLarge = {
   baseStyle: {
-    fontWeight: tokens.fonts.fontWeight.regular.value,
-    fontSize: tokens.typography.bodyLarge.fontSize.value,
-    lineHeight: tokens.typography.bodyLarge.lineHeight.value,
+    fontWeight: 'normal',
+    fontSize: 'xl',
+    lineHeight: 'base',
   },
   variants: {
     highlight: {
-      fontWeight: tokens.fonts.fontWeight.bold.value,
+      fontWeight: 'bold',
     },
     quote: {
       fontStyle: 'italic',
-      paddingLeft: tokens.spacings.lg.value,
+      paddingLeft: '5',
       borderLeft: '2px',
       borderStyle: 'solid',
-      borderColor: tokens.colors.primary['500'].value,
+      borderColor: 'primary.500',
     },
     success: ({ colorMode }) => ({
       color: colorMode === 'dark' ? 'green.300' : 'green.500',

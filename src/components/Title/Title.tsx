@@ -1,10 +1,9 @@
-import { Box, useStyleConfig } from '@chakra-ui/react'
-import tokens from '@healform/design-tokens/dist/js/tokens'
-import React, { HTMLAttributes, ReactNode } from 'react'
+import { Heading as ChakraHeading, HeadingProps, useStyleConfig } from '@chakra-ui/react'
+import React, { ReactNode } from 'react'
 
 type Size = 'one' | 'two' | 'three' | 'four'
 
-export interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
+export interface TitleProps extends HeadingProps {
   children: ReactNode
   /**
    * A Liquid UI title size. Defaults to `one`.
@@ -26,9 +25,9 @@ export const Title = ({ children, ...props }: TitleProps) => {
   const { size, noMargin, ...rest } = props
   const styles = useStyleConfig('Title', { size })
   return (
-    <Box sx={styles} {...rest} mb={noMargin ? '0' : tokens.spacings.sm.value} as={props.as}>
+    <ChakraHeading sx={styles} {...rest} mb={noMargin ? '0' : '3'} as={props.as}>
       {children}
-    </Box>
+    </ChakraHeading>
   )
 }
 

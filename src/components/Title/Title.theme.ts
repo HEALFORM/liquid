@@ -1,25 +1,19 @@
-import tokens from '@healform/design-tokens/dist/js/tokens'
-
 export const Title = {
   baseStyle: {
-    fontWeight: 700,
+    fontWeight: 'bold',
   },
   sizes: {
     one: {
-      fontSize: tokens.typography.title.one.fontSize.value,
-      lineHeight: tokens.typography.title.one.lineHeight.value,
+      fontSize: '9xl',
     },
     two: {
-      fontSize: tokens.typography.title.two.fontSize.value,
-      lineHeight: tokens.typography.title.two.lineHeight.value,
+      fontSize: '8xl',
     },
     three: {
-      fontSize: tokens.typography.title.three.fontSize.value,
-      lineHeight: tokens.typography.title.three.lineHeight.value,
+      fontSize: '7xl',
     },
     four: {
-      fontSize: tokens.typography.title.four.fontSize.value,
-      lineHeight: tokens.typography.title.four.lineHeight.value,
+      fontSize: '6xl',
     },
   },
 }

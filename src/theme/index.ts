@@ -26,11 +26,18 @@ const breakpoints = createBreakpoints({
   '2xl': tokens.breakpoints.xxl.value + 'px',
 })
 
+const fonts = {
+  heading: tokens.fonts.fontStack.heading.value,
+  body: tokens.fonts.fontStack.body.value,
+  mono: tokens.fonts.fontStack.mono.value,
+}
+
 export default extendTheme({
   ...colors,
   ...radii,
   ...space,
   breakpoints,
+  fonts,
   components: {
     Badge,
     Body,

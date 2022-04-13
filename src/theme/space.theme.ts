@@ -19,6 +19,6 @@ export const space = {
   md: tokens.spacings.md.value,
   lg: tokens.spacings.lg.value,
   xl: tokens.spacings.xl.value,
-  xxl: tokens.spacings.xxl.value,
-  xxxl: tokens.spacings.xxxl.value,
+  '2xl': tokens.spacings.xxl.value,
+  '3xl': tokens.spacings.xxxl.value,
 }

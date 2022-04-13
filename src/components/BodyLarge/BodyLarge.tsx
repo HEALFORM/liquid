@@ -1,10 +1,9 @@
-import { Box, useStyleConfig } from '@chakra-ui/react'
-import tokens from '@healform/design-tokens/dist/js/tokens'
-import React, { HTMLAttributes, ReactNode, Ref } from 'react'
+import { Text as ChakraText, TextProps, useStyleConfig } from '@chakra-ui/react'
+import React, { ReactNode, Ref } from 'react'
 
 type Variant = 'highlight' | 'quote' | 'success' | 'error' | 'subtle'
 
-export interface BodyLargeProps extends HTMLAttributes<HTMLHeadingElement> {
+export interface BodyLargeProps extends TextProps {
   children: ReactNode
   /**
    * Choose from style variants.
@@ -25,8 +24,8 @@ export const BodyLarge = ({ children, ...props }: BodyLargeProps) => {
   const { variant, noMargin, ...rest } = props
   const styles = useStyleConfig('BodyLarge', { variant })
   return (
-    <Box as={'p'} sx={styles} {...rest} mb={noMargin ? '0' : tokens.spacings.sm.value}>
+    <ChakraText as={'p'} sx={styles} {...rest} mb={noMargin ? '0' : '3'}>
       {children}
-    </Box>
+    </ChakraText>
   )
 }

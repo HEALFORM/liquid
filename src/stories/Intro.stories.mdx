@@ -2,44 +2,65 @@ import { Meta } from '@storybook/addon-docs';
 import tokens from '@healform/design-tokens/dist/js/tokens'
 import { Headline } from '../components/Headline'
 import { Body } from '../components/Body'
+import { BodyLarge } from '../components/BodyLarge'
+import { Link } from '../components/Link'
+import { Divider } from '../components/Divider'
 
 <Meta title="Introduction/Welcome" />
 
-<img src="https://i.imgur.com/gITOD4N.png" width="100px"/>
+<img src="https://i.imgur.com/gITOD4N.png" width="120px"/>
 
-<Headline size="one" mt="5">
+<Headline size="three" mt="5">
   @healform/liquid
 </Headline>
 
-<Body size="one">
+<BodyLarge>
   Liquid UI library codifies existing UI components into a central, well-maintained repository.
   It is built to address having to paste the same components into multiple projects again and again.
   This simplifies building UI's with HEALFORM's design patterns.
+</BodyLarge>
+
+[![CI](https://github.com/HEALFORM/liquid/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/HEALFORM/liquid/actions/workflows/ci.yaml)
+
+<Divider />
+
+<Headline size="four">
+  Basic Installation
+</Headline>
+
+<Body size="one">
+  If you're looking to begin developing a user-interface with Liquid, you can install the package directly via <Link variant="primary" href="https://yarnpkg.com/" target="_blank" isExternal>Yarn</Link>:
 </Body>
-
-## Basic Installation
-
-If you're looking to begin developing a user-interface with Liquid, you can install the package directly via [Yarn](https://yarnpkg.com/):
 
 ```bash
 yarn add @healform/liquid
 ```
 
-Or if you prefer [NPM](https://npmjs.com):
+<Body size="one">
+  Or if you prefer <Link variant="primary" href="https://npmjs.com" target="_blank" isExternal>NPM</Link>:
+</Body>
 
 ```bash
 npm install --save @healform/liquid
 ```
 
-## Usage
+<Divider />
 
-All components are exported via named exports - we don't have a default export. They can be imported at the top of any React file like such:
+<Headline size="four">
+  Usage
+</Headline>
+
+<Body size="one">
+  All components are exported via named exports - we don't have a default export. They can be imported at the top of any
+  React file like such:
+</Body>
 
 ```javascript
 import { Alert } from '@healform/liquid';
 ```
-
-They can then be used in JSX like such:
+<Body size="one">
+  They can then be used in JSX like such:
+</Body>
 
 ```jsx
 const MyGreatComponent = (props) => {

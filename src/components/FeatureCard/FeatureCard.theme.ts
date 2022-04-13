@@ -6,13 +6,12 @@ const imgUrl = 'https://static.healform.de/__assets/bg-1.svg'
 
 export const FeatureCard = {
   baseStyle: {
-    borderRadius: tokens.radius.xl.value,
+    borderRadius: 'xl',
     display: 'inline-block',
-    padding: `${tokens.spacings.lg.value} ${tokens.spacings.xl.value} ${tokens.spacings.lg.value} ${tokens.spacings.lg.value}`,
-    fontSize: '12px',
-    lineHeight: '20px',
-    fontWeight: tokens.fonts.fontWeight.semibold.value,
-    transition: tokens.animations.slow.value,
+    pt: 'lg',
+    pr: 'xl',
+    pb: 'lg',
+    pl: 'lg',
     width: '100%',
   },
   variants: {

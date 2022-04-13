@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BodyLarge } from '../BodyLarge'
+import { Body } from '../Body'
 import { Headline } from '../Headline'
 import { SubHeadline } from '../SubHeadline'
 import { FeatureCard, FeatureCardProps } from './FeatureCard'
@@ -14,13 +14,13 @@ export const Base = (args: FeatureCardProps) => (
   <>
     <FeatureCard {...args} style={{ minHeight: '120px', maxWidth: '90vw', width: '600px' }}>
       <SubHeadline as={'h5'}>Pathogenese</SubHeadline>
-      <Headline size={'one'} as={'h2'}>
+      <Headline size={'three'} as={'h2'}>
         Patienten berichten über diverse Anwendungsmöglichkeiten
       </Headline>
-      <BodyLarge>
+      <Body noMargin>
         Wir distanzieren uns von jeglichen Heilaussagen oder Versprechungen. Alle Aussagen sind im Sinne des
         Heilmittelwerbegesetzes zu verstehen.
-      </BodyLarge>
+      </Body>
     </FeatureCard>
   </>
 )

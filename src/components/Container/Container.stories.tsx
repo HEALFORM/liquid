@@ -2,7 +2,7 @@ import React from 'react'
 import LoremIpsum from 'react-lorem-ipsum'
 
 import { Box } from '../../index'
-import { Headline } from '../Headline'
+import { SubHeadline } from '../SubHeadline'
 import { Container, ContainerProps } from './Container'
 
 export default {
@@ -41,7 +41,7 @@ const sizes = ['4xl', '5xl', '6xl', '7xl', '8xl']
 export const Sizes = (args: ContainerProps) =>
   sizes.map(s => (
     <Container key={s} {...args} size={s} mb={2}>
-      <Headline size={'two'}>Container: {s}</Headline>
+      <SubHeadline>Container: {s}</SubHeadline>
       <Box mb={5}>
         <LoremIpsum />
       </Box>

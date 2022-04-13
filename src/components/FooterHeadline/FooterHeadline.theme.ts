@@ -1,12 +1,9 @@
-import tokens from '@healform/design-tokens/dist/js/tokens'
-
 export const FooterHeadline = {
-  baseStyle: {
-    fontSize: tokens.typography.body.one.fontSize.value,
-    color: tokens.colors.gray['500'].value,
-    fontFamily: tokens.fonts.fontStack.special.value,
+  baseStyle: ({ colorMode }) => ({
+    color: colorMode === 'dark' ? 'gray.400' : 'gray.500',
+    fontSize: 'lg',
     textTransform: 'uppercase',
-    letterSpacing: '0.15rem',
-    fontWeight: tokens.fonts.fontWeight.semibold.value,
-  },
+    letterSpacing: 'widest',
+    fontWeight: 'medium',
+  }),
 }

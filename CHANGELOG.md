@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/HEALFORM/liquid/compare/v1.15.0...v1.16.0) (2022-04-13)
+
+
+### Features
+
+* Use `design-tokens` only in `extendTheme` and native ones in components ([594e431](https://github.com/HEALFORM/liquid/commit/594e4314b857ecbb02fb054470735517a5f2c9a1)), closes [#23](https://github.com/HEALFORM/liquid/issues/23)
+
 # [1.15.0](https://github.com/HEALFORM/liquid/compare/v1.14.4...v1.15.0) (2022-04-06)
 
 

@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/HEALFORM/liquid/compare/v1.16.0...v1.17.0) (2022-04-22)
+
+
+### Features
+
+* Use `Aktiv Grotesk` as new default font. ([bc320b3](https://github.com/HEALFORM/liquid/commit/bc320b36c6d91f28126cc8934dab51841408edc7))
+
 # [1.16.0](https://github.com/HEALFORM/liquid/compare/v1.15.0...v1.16.0) (2022-04-13)
 
 

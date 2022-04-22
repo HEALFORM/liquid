@@ -27,8 +27,8 @@ const breakpoints = createBreakpoints({
 })
 
 const fonts = {
-  heading: tokens.fonts.fontStack.heading.value,
-  body: tokens.fonts.fontStack.body.value,
+  heading: 'aktiv-grotesk-extended',
+  body: 'aktiv-grotesk',
   mono: tokens.fonts.fontStack.mono.value,
 }
 

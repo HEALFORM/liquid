@@ -1,7 +1,9 @@
 export const Body = {
   baseStyle: {
     fontWeight: 'normal',
+    fontSize: 'sm',
     lineHeight: 'base',
+    letterSpacing: 'tight',
   },
   sizes: {
     one: {

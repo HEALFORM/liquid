@@ -2,6 +2,7 @@ import React from 'react'
 import LoremIpsum from 'react-lorem-ipsum'
 
 import { Box } from '../../index'
+import { Body } from '../Body'
 import { SubHeadline } from '../SubHeadline'
 import { Container, ContainerProps } from './Container'
 
@@ -32,7 +33,9 @@ export default {
 
 export const Base = (args: ContainerProps) => (
   <Container {...args}>
-    <LoremIpsum />
+    <Body>
+      <LoremIpsum />
+    </Body>
   </Container>
 )
 
@@ -43,7 +46,9 @@ export const Sizes = (args: ContainerProps) =>
     <Container key={s} {...args} size={s} mb={2}>
       <SubHeadline>Container: {s}</SubHeadline>
       <Box mb={5}>
-        <LoremIpsum />
+        <Body>
+          <LoremIpsum />
+        </Body>
       </Box>
     </Container>
   ))

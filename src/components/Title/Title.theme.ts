@@ -1,6 +1,7 @@
 export const Title = {
   baseStyle: {
-    fontWeight: 'bold',
+    fontWeight: 'semibold',
+    letterSpacing: 'tighter',
   },
   sizes: {
     one: {

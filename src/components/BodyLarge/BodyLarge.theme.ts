@@ -3,6 +3,7 @@ export const BodyLarge = {
     fontWeight: 'normal',
     fontSize: 'xl',
     lineHeight: 'base',
+    letterSpacing: 'tight',
   },
   variants: {
     highlight: {

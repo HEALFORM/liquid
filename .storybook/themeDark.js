@@ -7,7 +7,6 @@ export default create({
   brandTitle: 'HEALFORM UI Library',
   brandUrl: 'https://healform.de',
   brandImage: logo,
-  fontBase: tokens.fonts.fontStack.body.value,
   colorSecondary: tokens.colors.primary['500'].value,
   appBg: tokens.colors.gray['900'].value,
 });

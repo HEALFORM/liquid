@@ -1,7 +1,8 @@
 export const Headline = {
   baseStyle: {
-    fontWeight: 'semibold',
-    letterSpacing: 'tight',
+    fontWeight: 'medium',
+    letterSpacing: 'tighter',
+    fontFamily: 'body',
   },
   sizes: {
     one: {

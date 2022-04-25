@@ -50,8 +50,8 @@
     ]
   },
   "resolutions": {
-    "eslint": "7.32.0",
-    "typescript": "4.4.4"
+    "eslint": "8.14.0",
+    "typescript": "4.6.3"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
@@ -67,11 +67,11 @@
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "@types/react": "^17.0.44",
-    "@types/react-dom": "^17.0.15",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "codecov": "^3.8.3",
-    "framer-motion": "^4.1.17",
-    "lint-staged": "^11.2.6",
+    "framer-motion": "^6.0.0",
+    "lint-staged": "^12.0.0",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "patch-package": "^6.4.7",
@@ -91,7 +91,7 @@
     "@emotion/serialize": "^1.0.3",
     "@emotion/styled": "^11.8.1",
     "@hookform/resolvers": "^2.5.2",
-    "@size-limit/preset-small-lib": "^6.0.4",
+    "@size-limit/preset-small-lib": "^7.0.0",
     "@storybook/addon-actions": "^6.4.21",
     "@storybook/addon-docs": "^6.4.21",
     "@storybook/addon-essentials": "^6.4.21",
@@ -108,11 +108,11 @@
     "@trivago/prettier-plugin-sort-imports": "^3.0.0",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.26",
-    "babel-jest": "^27.3.1",
+    "babel-jest": "^28.0.0",
     "babel-loader": "^8.2.4",
     "babel-plugin-module-resolver": "^4.1.0",
     "chromatic": "^6.5.4",
-    "eslint": "7.32.0",
+    "eslint": "8.14.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -124,13 +124,13 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-hook-form": "^7.29.0",
     "react-icons": "^4.2.0",
     "react-lorem-ipsum": "^1.4.10",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "size-limit": "^6.0.4",
+    "size-limit": "^7.0.0",
     "standard-version": "^9.3.1",
     "storybook-dark-mode": "^1.0.9",
     "tsdx": "^0.14.1",
@@ -140,8 +140,8 @@
     "zod": "^3.14.4"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "zod": "^3.0.0"
   },
   "engines": {

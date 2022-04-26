@@ -4,7 +4,6 @@ export const FooterHeadline = {
     fontSize: 'md',
     textTransform: 'uppercase',
     letterSpacing: 'widest',
-    fontWeight: 'semibold',
-    fontFamily: 'body',
+    fontWeight: 'medium',
   }),
 }

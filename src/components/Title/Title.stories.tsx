@@ -11,16 +11,18 @@ export default {
       type: { name: 'string', required: true },
       description: 'Different sizes of text.',
       table: {
-        type: { summary: 'one|two|three|four' },
+        type: { summary: 'one|two|three|four|five|six' },
       },
       control: {
         type: 'select',
-        options: ['one', 'two', 'three', 'four'],
+        options: ['one', 'two', 'three', 'four', 'five', 'six'],
         labels: {
           one: 'One',
           two: 'Two',
           three: 'Three',
           four: 'Four',
+          five: 'Five',
+          six: 'Six',
         },
       },
     },
@@ -38,7 +40,7 @@ const Template = args => <Title {...args} />
 export const Base = Template.bind({})
 Base.args = { children: 'This is a Title' }
 
-const sizes = ['one', 'two', 'three', 'four']
+const sizes = ['one', 'two', 'three', 'four', 'five', 'six']
 
 export const Sizes = args =>
   sizes.map(s => (
@@ -57,7 +59,13 @@ export const isTruncated = args => (
 
 export const withGradient = args => (
   <>
-    <Title as={'h1'} size={'two'} bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text" {...args}>
+    <Title as={'h1'} size={'one'} bgGradient="linear(to-l, red.600, orange.300)" bgClip="text" {...args}>
+      This is a fancy title with gradient.
+    </Title>
+    <Title as={'h1'} size={'two'} bgGradient="linear(to-l, primary.500, seagrass.400)" bgClip="text" {...args}>
+      This is a fancy title with gradient.
+    </Title>
+    <Title as={'h1'} size={'three'} bgGradient="linear(to-b, turquoise.500, violet.400)" bgClip="text" {...args}>
       This is a fancy title with gradient.
     </Title>
   </>

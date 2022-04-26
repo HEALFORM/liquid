@@ -1,7 +1,8 @@
 export const Title = {
   baseStyle: {
-    fontWeight: 'semibold',
+    fontWeight: 'medium',
     letterSpacing: 'tighter',
+    lineHeight: '0.9',
   },
   sizes: {
     one: {
@@ -15,6 +16,12 @@ export const Title = {
     },
     four: {
       fontSize: '6xl',
+    },
+    five: {
+      fontSize: '5xl',
+    },
+    six: {
+      fontSize: '4xl',
     },
   },
 }

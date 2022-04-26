@@ -59,7 +59,7 @@
     "@chakra-ui/react-env": "^1.1.6",
     "@chakra-ui/theme-tools": "^1.3.6",
     "@commitlint/config-conventional": "^16.2.1",
-    "@healform/design-tokens": "^1.8.1",
+    "@healform/design-tokens": "^1.9.3",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",

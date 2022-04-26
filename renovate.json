@@ -1,12 +1,20 @@
 {
   "assignees": ["dmnktoe"],
-  "labels": ["upgrade-deps"],
-  "ignorePaths": [
-    "example/package.json",
-    ".github/workflows/**/*.yml"
-  ],
+  "labels": ["dependencies"],
   "extends": [
     "config:base",
-    "config:semverAllMonthly"
+    ":enablePreCommit",
+    ":preserveSemverRanges",
+    ":disableDependencyDashboard"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "addLabels": ["ci"]
+    },
+    {
+      "matchManagers": ["npm"],
+      "addLabels": ["npm"]
+    }
   ]
 }

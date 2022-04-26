@@ -2,6 +2,7 @@ import { extendTheme } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 import tokens from '@healform/design-tokens/dist/js/tokens'
 
+import { Avatar } from '../components/Avatar/Avatar.theme'
 import { Badge } from '../components/Badge/Badge.theme'
 import { Body } from '../components/Body/Body.theme'
 import { BodyLarge } from '../components/BodyLarge/BodyLarge.theme'
@@ -39,6 +40,7 @@ export default extendTheme({
   breakpoints,
   fonts,
   components: {
+    Avatar,
     Badge,
     Body,
     BodyLarge,

@@ -1,3 +1,10 @@
+## [1.18.5](https://github.com/HEALFORM/liquid/compare/v1.18.4...v1.18.5) (2022-04-27)
+
+
+### Bug Fixes
+
+* Set default CSS `body` `color` to black value ([d263070](https://github.com/HEALFORM/liquid/commit/d263070336de84c881e123896e33c9aef9f71788))
+
 ## [1.18.4](https://github.com/HEALFORM/liquid/compare/v1.18.3...v1.18.4) (2022-04-27)
 
 

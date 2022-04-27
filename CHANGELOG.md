@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/HEALFORM/liquid/compare/v1.18.1...v1.18.2) (2022-04-27)
+
+
+### Bug Fixes
+
+* Remove react-lorem-ipsum package. ([628ac05](https://github.com/HEALFORM/liquid/commit/628ac05eb35e2e2f3d4945e8926d850ca210a088))
+
 ## [1.18.1](https://github.com/HEALFORM/liquid/compare/v1.18.0...v1.18.1) (2022-04-27)
 
 

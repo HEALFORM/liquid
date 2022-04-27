@@ -3,7 +3,7 @@ export const Badge = {
     px: 2,
     py: 0,
     borderRadius: 'xl',
-    fontFamily: 'heading',
-    fontWeight: 'medium',
+    fontFamily: 'body',
+    fontWeight: 'bold',
   },
 }

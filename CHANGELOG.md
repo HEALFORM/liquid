@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/HEALFORM/liquid/compare/v1.17.0...v1.18.0) (2022-04-27)
+
+
+### Features
+
+* **Switch:** Adds `Switch` component. ([8593a76](https://github.com/HEALFORM/liquid/commit/8593a76034b97696a81ce7b49f2dbab3b4d10a8d))
+
 # [1.17.0](https://github.com/HEALFORM/liquid/compare/v1.16.0...v1.17.0) (2022-04-22)
 
 

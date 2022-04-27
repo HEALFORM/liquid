@@ -1,3 +1,10 @@
+## [1.18.6](https://github.com/HEALFORM/liquid/compare/v1.18.5...v1.18.6) (2022-04-27)
+
+
+### Bug Fixes
+
+* **Badge:** Set badge it's default font-family to `body` ([787d636](https://github.com/HEALFORM/liquid/commit/787d6367a2ba004a4d6b446b2c8f8fb1d5a238e5))
+
 ## [1.18.5](https://github.com/HEALFORM/liquid/compare/v1.18.4...v1.18.5) (2022-04-27)
 
 

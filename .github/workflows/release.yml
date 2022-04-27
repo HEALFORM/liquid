@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Commit
         uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Cache yarn dependencies
@@ -37,7 +37,7 @@ jobs:
       - name: Checkout Commit
         uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Restore yarn dependencies
@@ -64,7 +64,7 @@ jobs:
       - name: Checkout Commit
         uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Restore yarn dependencies

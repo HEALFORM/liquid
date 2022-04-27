@@ -1,3 +1,10 @@
+## [1.18.4](https://github.com/HEALFORM/liquid/compare/v1.18.3...v1.18.4) (2022-04-27)
+
+
+### Bug Fixes
+
+* **Badge:** Set Badge `fontWeight` to medium ([fec33d9](https://github.com/HEALFORM/liquid/commit/fec33d91e6f6b6b02de16937865a8c3366fef194))
+
 ## [1.18.3](https://github.com/HEALFORM/liquid/compare/v1.18.2...v1.18.3) (2022-04-27)
 
 

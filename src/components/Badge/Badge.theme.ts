@@ -4,5 +4,6 @@ export const Badge = {
     py: 0,
     borderRadius: 'xl',
     fontFamily: 'heading',
+    fontWeight: 'medium',
   },
 }

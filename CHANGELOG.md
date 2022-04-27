@@ -1,3 +1,11 @@
+## [1.18.1](https://github.com/HEALFORM/liquid/compare/v1.18.0...v1.18.1) (2022-04-27)
+
+
+### Bug Fixes
+
+* Include newest version of `@healform/design-tokens` ([afae2cc](https://github.com/HEALFORM/liquid/commit/afae2cc77d140d9289366a7018770f88a4d22d46))
+* Remove @healform/design-tokens ([c545181](https://github.com/HEALFORM/liquid/commit/c5451817290bcd3a25700c4c9fe18ce8ff833323))
+
 # [1.18.0](https://github.com/HEALFORM/liquid/compare/v1.17.0...v1.18.0) (2022-04-27)
 
 

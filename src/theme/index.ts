@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, useColorModeValue } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 import tokens from '@healform/design-tokens/dist/js/tokens'
 
@@ -34,6 +34,13 @@ const fonts = {
 }
 
 export default extendTheme({
+  styles: {
+    global: () => ({
+      body: {
+        color: useColorModeValue('black', 'white'),
+      },
+    }),
+  },
   ...colors,
   ...radii,
   ...space,

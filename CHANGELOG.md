@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/HEALFORM/liquid/compare/v1.18.2...v1.18.3) (2022-04-27)
+
+
+### Bug Fixes
+
+* **Title:** Increase Title `lineHeight` value ([67e7df3](https://github.com/HEALFORM/liquid/commit/67e7df3b4152ab95859f1a7a8f2211f8c84b8bb2))
+
 ## [1.18.2](https://github.com/HEALFORM/liquid/compare/v1.18.1...v1.18.2) (2022-04-27)
 
 

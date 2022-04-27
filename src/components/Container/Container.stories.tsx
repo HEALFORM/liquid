@@ -1,10 +1,12 @@
 import React from 'react'
-import LoremIpsum from 'react-lorem-ipsum'
 
 import { Box } from '../../index'
 import { Body } from '../Body'
 import { SubHeadline } from '../SubHeadline'
 import { Container, ContainerProps } from './Container'
+
+const LoremIpsum =
+  'Lorem ipsum odor amet, consectetuer adipiscing elit. Ante montes urna fames mi dapibus praesent etiam ante. Curae orci consectetur litora sodales interdum nisl neque. Mus purus pretium tempus sed condimentum orci ultricies amet integer. Morbi purus turpis mauris dictum lacinia tortor molestie eros elementum. Neque suscipit nisi lobortis duis eleifend dolor pretium tellus in. Erat nam luctus, magna porta facilisis pharetra.'
 
 export default {
   title: 'Layout/Container',
@@ -33,9 +35,7 @@ export default {
 
 export const Base = (args: ContainerProps) => (
   <Container {...args}>
-    <Body>
-      <LoremIpsum />
-    </Body>
+    <Body>{LoremIpsum}</Body>
   </Container>
 )
 
@@ -46,9 +46,7 @@ export const Sizes = (args: ContainerProps) =>
     <Container key={s} {...args} size={s} mb={2}>
       <SubHeadline>Container: {s}</SubHeadline>
       <Box mb={5}>
-        <Body>
-          <LoremIpsum />
-        </Body>
+        <Body>{LoremIpsum}</Body>
       </Box>
     </Container>
   ))

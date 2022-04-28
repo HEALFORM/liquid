@@ -2,7 +2,7 @@ export const Title = {
   baseStyle: {
     fontWeight: 'medium',
     letterSpacing: 'tighter',
-    lineHeight: '1',
+    lineHeight: '1.1',
   },
   sizes: {
     one: {

@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/HEALFORM/liquid/compare/v1.18.7...v1.19.0) (2022-05-05)
+
+
+### Features
+
+* **Card:** Adds Card component to the UI library ([e2a5b59](https://github.com/HEALFORM/liquid/commit/e2a5b5996a4b897454eee75f0d228fc88dd8cc52))
+
 ## [1.18.7](https://github.com/HEALFORM/liquid/compare/v1.18.6...v1.18.7) (2022-04-28)
 
 

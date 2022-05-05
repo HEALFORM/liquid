@@ -7,6 +7,7 @@ import { Badge } from '../components/Badge/Badge.theme'
 import { Body } from '../components/Body/Body.theme'
 import { BodyLarge } from '../components/BodyLarge/BodyLarge.theme'
 import { Button } from '../components/Button/Button.theme'
+import { Card } from '../components/Card/Card.theme'
 import { Divider } from '../components/Divider/Divider.theme'
 import { FeatureCard } from '../components/FeatureCard/FeatureCard.theme'
 import { FooterHeadline } from '../components/FooterHeadline/FooterHeadline.theme'
@@ -52,6 +53,7 @@ export default extendTheme({
     Body,
     BodyLarge,
     Button,
+    Card,
     Divider,
     FeatureCard,
     FooterHeadline,

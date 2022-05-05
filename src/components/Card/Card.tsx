@@ -1,4 +1,4 @@
-import { Box, AspectRatio, Image, Stack, useColorModeValue, BoxProps } from '@chakra-ui/react'
+import { Box, AspectRatio, Image, Stack, useColorModeValue, BoxProps, useStyleConfig } from '@chakra-ui/react'
 import React from 'react'
 import { FiChevronRight } from 'react-icons/fi'
 
@@ -7,7 +7,13 @@ import { Button } from '../Button'
 import { Headline } from '../Headline'
 import { Link } from '../Link'
 
+type Variant = 'default' | 'border' | 'primaryBg' | 'grayBg'
+
 export interface CardProps extends BoxProps {
+  /**
+   * Choose from style variants.
+   */
+  variant?: Variant | string
   /**
    * Render an image for the card at the top.
    */
@@ -35,6 +41,9 @@ export interface CardProps extends BoxProps {
 }
 
 export const Card = ({ ...props }: CardProps) => {
+  const { variant } = props
+  const styles = useStyleConfig('Card', { variant })
+
   function renderSwitch(imageRatio: any) {
     switch (imageRatio) {
       case 'square':
@@ -45,7 +54,7 @@ export const Card = ({ ...props }: CardProps) => {
   }
 
   return (
-    <Box>
+    <Box sx={styles}>
       {props.image && (
         <AspectRatio ratio={renderSwitch(props.imageRatio)} mb={3}>
           <Image src={props.image} loading="lazy" borderRadius="lg" />

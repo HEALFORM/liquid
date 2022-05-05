@@ -1,12 +1,22 @@
 import React from 'react'
 
-import { Box } from './../../index'
+import { Box, SimpleGrid } from './../../index'
 import { Card, CardProps } from './Card'
 
 export default {
   title: 'Components/Card',
   component: Card,
   argTypes: {
+    variant: {
+      name: 'Variant',
+      table: {
+        type: { summary: 'default|border|primaryBg|grayBg' },
+      },
+      control: {
+        type: 'select',
+        options: ['default', 'border', 'primaryBg', 'grayBg'],
+      },
+    },
     image: {
       name: 'Card Image',
       control: {
@@ -56,6 +66,27 @@ export const Base = (args: CardProps) => (
   </Box>
 )
 
+const variants = ['default', 'border', 'primaryBg', 'grayBg']
+
+export const Variants = (args: CardProps) => (
+  <>
+    <SimpleGrid columns={{ base: 1, md: 2 }} spacing="5">
+      {variants.map(v => (
+        <Card
+          variant={v}
+          key={v}
+          image={image}
+          title={title}
+          description={description}
+          url={url}
+          buttonText={buttonText}
+          {...args}
+        />
+      ))}
+    </SimpleGrid>
+  </>
+)
+
 export const SquareImage = (args: CardProps) => (
   <Box maxW="400px">
     <Card
@@ -93,5 +124,11 @@ export const TextDescriptionOnly = (args: CardProps) => (
 export const TextDescriptionButtonOnly = (args: CardProps) => (
   <Box maxW="400px">
     <Card title={title} description={description} url={url} buttonText={buttonText} {...args} />
+  </Box>
+)
+
+export const ImageTextButtonOnly = (args: CardProps) => (
+  <Box maxW="400px">
+    <Card image={image} imageRatio="rectangle" title={title} url={url} buttonText={buttonText} {...args} />
   </Box>
 )

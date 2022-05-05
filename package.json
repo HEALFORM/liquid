@@ -36,7 +36,8 @@
     "patch:package": "patch-package",
     "husky:install": "husky install",
     "release": "semantic-release",
-    "chromatic": "npx chromatic --skip '@(renovate/**|dependabot/**|refs/tags/**)'"
+    "chromatic": "npx chromatic --skip '@(renovate/**|dependabot/**|refs/tags/**)'",
+    "upgrade:packages": "yarn-upgrade-minor"
   },
   "lint-staged": {
     "*.md": [
@@ -58,7 +59,7 @@
     "@chakra-ui/react": "^1.8.8",
     "@chakra-ui/react-env": "^1.1.6",
     "@chakra-ui/theme-tools": "^1.3.6",
-    "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.4",
     "@healform/design-tokens": "^3.1.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
@@ -78,12 +79,13 @@
     "polished": "^4.2.2",
     "postinstall-postinstall": "^2.1.0",
     "semantic-release": "^19.0.2",
-    "webpack": "^5.72.0"
+    "webpack": "^5.72.0",
+    "yarn-upgrade-minor": "^1.0.13"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
+    "@babel/core": "^7.17.10",
     "@babel/eslint-parser": "^7.16.0",
-    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.0",
     "@emotion/cache": "^11.5.0",
     "@emotion/css": "^11.9.0",
@@ -106,8 +108,8 @@
     "@storybook/theming": "^6.4.22",
     "@styled-system/css": "^5.1.5",
     "@trivago/prettier-plugin-sort-imports": "^3.0.0",
-    "@types/jest": "^27.4.1",
-    "@types/node": "^16.11.31",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^16.11.33",
     "babel-jest": "^27.3.1",
     "babel-loader": "^8.2.5",
     "babel-plugin-module-resolver": "^4.1.0",
@@ -135,7 +137,7 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "type-fest": "^2.12.2",
-    "typescript": "^4.6.3",
+    "typescript": "^4.6.4",
     "zod": "^3.14.4"
   },
   "peerDependencies": {

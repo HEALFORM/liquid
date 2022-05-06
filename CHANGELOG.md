@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/HEALFORM/liquid/compare/v1.19.0...v1.19.1) (2022-05-06)
+
+
+### Bug Fixes
+
+* **Card:** export * from './components/Card' ([a9d4e86](https://github.com/HEALFORM/liquid/commit/a9d4e86f7dbeedddbaa561ff29e0540bfc87bf7a))
+
 # [1.19.0](https://github.com/HEALFORM/liquid/compare/v1.18.7...v1.19.0) (2022-05-05)
 
 

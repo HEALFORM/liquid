@@ -93,7 +93,7 @@
     "@emotion/serialize": "^1.0.3",
     "@emotion/styled": "^11.8.1",
     "@hookform/resolvers": "^2.5.2",
-    "@size-limit/preset-small-lib": "^6.0.4",
+    "@size-limit/preset-small-lib": "^7.0.0",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-docs": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",

@@ -1,16 +1,19 @@
-import { Box, BoxProps } from '@chakra-ui/react'
+import { Box, BoxProps, Text, Flex, Spacer } from '@chakra-ui/react'
 import React from 'react'
 
 import { Body } from '../Body'
 import { Button } from '../Button'
 import { Headline } from '../Headline'
-import { Image } from '../Image'
 
 export interface ImageCardProps extends BoxProps {
   /**
    * Render an image for the card at the top.
    */
   image?: string
+  /**
+   *
+   */
+  keyword: string
   /**
    *
    */
@@ -31,12 +34,32 @@ export interface ImageCardProps extends BoxProps {
 
 export const ImageCard = ({ ...props }: ImageCardProps) => {
   return (
-    <Box w="full" flexDirection="column" overflow="hidden" display="flex" borderRadius="lg">
-      <Box w="full" display="flex" flexShrink={0} justifyContent="flex-start" position="absolute" alignItems="center">
-        <Box w="full" p={3} color="white">
-          <Body variant="highlight" noMargin textTransform="uppercase" opacity="0.667">
-            Neu
-          </Body>
+    <Box
+      w="full"
+      flexDirection="column"
+      overflow="hidden"
+      display="flex"
+      borderRadius="lg"
+      m={0}
+      position="relative"
+      boxSizing="border-box"
+      height="auto"
+    >
+      <Box
+        w="full"
+        display="flex"
+        flexShrink={0}
+        justifyContent="flex-start"
+        position="absolute"
+        alignItems="center"
+        top={4}
+        overflow="hidden"
+        pl={4}
+      >
+        <Box w="full" color="white" ml={0}>
+          <Text variant="highlight" textTransform="uppercase" opacity="0.667" fontSize="sm" fontWeight="bold">
+            {props.keyword}
+          </Text>
           <Headline size="four">{props.title}</Headline>
         </Box>
       </Box>
@@ -51,8 +74,8 @@ export const ImageCard = ({ ...props }: ImageCardProps) => {
         overflowY="auto"
         textAlign="left"
       >
-        <Box w="full" h="200px" borderRadius="lg" overflow="hidden" maxW="100%">
-          <Image objectFit="cover" w="full" src="https://nextui.org/images/card-example-5.jpeg" />
+        <Box w="full" h="500px" borderRadius="lg" overflow="hidden" maxW="100%">
+          <Box as="img" objectFit="cover" src={props.image} w="full" h="full" />
         </Box>
       </Box>
       <Box
@@ -72,7 +95,17 @@ export const ImageCard = ({ ...props }: ImageCardProps) => {
         borderBottomLeftRadius="lg"
         borderBottomRightRadius="lg"
       >
-        Servus
+        <Flex minWidth="max-content" alignItems="center" gap="2" flexGrow={1}>
+          <Box>
+            <Body size="two" noMargin>
+              {props.description}
+            </Body>
+          </Box>
+          <Spacer />
+          <Button colorScheme="white" variant="outline" size="sm">
+            {props.buttonText}
+          </Button>
+        </Flex>
       </Box>
     </Box>
   )

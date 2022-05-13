@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, SimpleGrid } from './../../index'
+import { Box } from './../../index'
 import { ImageCard, ImageCardProps } from './ImageCard'
 
 export default {
@@ -41,6 +41,7 @@ export default {
 }
 
 const image = 'https://static.healform.de/__assets/content__facebook/img/og-image_healform-main.jpg'
+const keyword = 'Neu'
 const title = 'Bumper Plates'
 const description = 'Bumper plates are a great way to add a little extra protection to your vehicle.'
 const url = 'https://www.healform.de/'
@@ -48,6 +49,14 @@ const buttonText = 'Learn More'
 
 export const Base = (args: ImageCardProps) => (
   <Box maxW="400px">
-    <ImageCard image={image} title={title} description={description} url={url} buttonText={buttonText} {...args} />
+    <ImageCard
+      image={image}
+      keyword={keyword}
+      title={title}
+      description={description}
+      url={url}
+      buttonText={buttonText}
+      {...args}
+    />
   </Box>
 )
